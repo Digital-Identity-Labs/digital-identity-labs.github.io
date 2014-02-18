@@ -1,0 +1,22 @@
+
+div.brand_logo {
+  background-color: white;
+  border-radius: 16px;
+  xwidth: 80%;
+  xheight: 88px;
+  padding: 4px;
+}
+
+img.brand_logo {
+  height: 64px;
+}
+
+div.project_logo {
+  height: 120px;
+}
+
+img.top_logo {
+  height: 90px;
+  display: inline-block;
+  vertical-align: middle;
+}
