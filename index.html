@@ -1,35 +1,21 @@
 ---
-layout: default
+layout: shield
 title: Your New Jekyll Site
 ---
-  
-<div class="container-fluid">
-    
-  {% include jumbotron.html %}
-    
-  <div class="row">
-      
-    <div class="col-md-6">
-      {% include projects/indiid.html %}
-    </div><!--/span-->
-      
-    <div class="col-md-6">
-      {% include projects/labs.html %}
-    </div><!--/span-->
-    
-  </div><!--/row-->
-  
-  <div class="row">
-    
-    <div class="col-md-4">
-      {% include contact_details/image.html %}
-    </div><!--/span-->
-    
-    <div class="col-md-8">
-      {% include contact_details.html %}
-    </div><!--/span-->
-  
-  </div><!--/row-->
-  
-</div><!--/container-->
 
+{% include header_wrap.html %}
+
+{% include brand_wrap.html %}
+
+{% include about_wrap.html %}
+
+{% include projects.html %}
+
+{% include divider1.html %}		
+
+{% include services.html %}	
+
+
+{% include contact_details.html %}
+
+	
