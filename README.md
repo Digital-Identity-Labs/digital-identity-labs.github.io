@@ -1,4 +1,4 @@
 digital-identity-labs.github.io
 ===============================
 
-Simple company details
+Simple company brochure website, generated with Jekyll.

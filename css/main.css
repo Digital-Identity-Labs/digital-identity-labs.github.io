@@ -20,3 +20,7 @@ img.top_logo {
   display: inline-block;
   vertical-align: middle;
 }
+
+span.coname {
+  color: white;
+}

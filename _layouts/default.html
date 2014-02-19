@@ -1,71 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+  
   <head>
+    
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="../../images//ico/favicon.ico">
+    <meta name="viewport"     content="width=device-width, initial-scale=1.0">
+    <meta name="description"  content="Digital Identity Ltd">
+    <meta name="author"       content="Digital Identity Ltd">
+    <link rel="shortcut icon" href="/images/favicon.png">
 
     <title>{{ page.title }}</title>
-
-    <!-- Latest compiled and minified CSS -->
+    
+    <!-- Latest compiled and minified CSS for Bootstrap, from CDN -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     
+    <!-- ZenDesk style -->
     <style type="text/css" media="screen, projection">
       @import url(//asset0.zendesk.com/external/zenbox/v2.1/zenbox.css);
     </style>
     
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <!-- Custom styles for this template -->
+    <link href="css/shield.css"         rel="stylesheet">
+    <link href="css/main.css"           rel="stylesheet">
+    <link href="css/animate-custom.css" rel="stylesheet">
+    
+    <!-- Google fonts - seem to be causing slight delay... -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700'                  rel='stylesheet' type='text/css'>
+       
+    <!-- Load Modernizer Javascript early -->
+	  <script type="text/javascript" src="/javascript/modernizr.custom.js"></script>
+
   </head>
 
-  <body>
-    
-    
-    
-    
-    <div class="container">
-
-       {{ content }}
-
-      <hr>
-
-      {% include footer.html %}
-
-    </div><!--/.container-->
-
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    
-    <!--[if lt IE 7 ]>
-    	<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script>
-    	<script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script>
-    <![endif]-->
-    
-    <script type="text/javascript">
-      var _gauges = _gauges || [];
-      (function() {
-        var t   = document.createElement('script');
-        t.type  = 'text/javascript';
-        t.async = true;
-        t.id    = 'gauges-tracker';
-        t.setAttribute('data-site-id', '4ea49ad1613f5d5d0d000001');
-        t.src = '//secure.gaug.es/track.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(t, s);
-      })();
-    </script>
+  <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
+  
+    {{ content }}
+      
+    {% include footer.html %}    
+    {% include javascript.html %}
     
   </body>
+
 </html>
