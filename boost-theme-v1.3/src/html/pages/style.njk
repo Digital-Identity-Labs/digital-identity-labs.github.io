@@ -1,0 +1,71 @@
+{% extends "layouts/no-footer.njk" %}
+{% set page = "style" %}
+{% block content %}
+    <main id="main">
+        <div class="bg-light mb-5">
+            <div class="container">
+                <div class="row py-5">
+                    <div class="col-lg-9">
+                        <h1 class="display-4 mb-4">Style</h1>
+                        <p class="lead">Typography and colors used to style this theme.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <h2 class="h5 font-sans-serif font-weight-normal text-uppercase text-secondary mb-5">Typography</h2>
+
+            <div class="row mb-5">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="h5 font-sans-serif font-weight-normal">Headlines:</h3>
+                    <span class="display-1 font-serif">Aa</span>
+                    <span class="h5 d-block mb-5">Merriweather</span>
+                    <h3 class="h5 font-sans-serif font-weight-normal">Body:</h3>
+                    <span class="display-1">Aa</span>
+                    <span class="h5 font-sans-serif d-block">Merriweather Sans</span>
+                </div>
+
+                <div class="col-lg-8">
+                    <h1>Get started with Bootstrap</h1>
+                    <p class="lead">Bootstrap is the world’s most popular framework for building responsive, mobile-first sites.</p>
+                    <p>Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with our <a href="https://sass-lang.com/">Sass</a> variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins.</p>
+                    <p class="mb-4">Originally created by a designer and a developer at Twitter, Bootstrap has become one of the most popular front-end frameworks and open source projects in the world.</p>
+                    <a href="#" class="btn btn-pill btn-primary mr-2">Primary</a>
+                    <a href="#" class="btn btn-pill btn-outline-primary">Outline</a>
+                </div>
+            </div>
+
+            <h2 class="h5 font-sans-serif font-weight-normal text-uppercase text-secondary mb-5">Colors</h2>
+
+            <div class="row mx-0 mb-5">
+                <div class="col-lg-3 bg-primary text-white pt-3 px-3 pb-6">
+                    Primary
+                </div>
+                <div class="col-lg-3 bg-secondary text-white pt-3 px-3 pb-6">
+                    Secondary
+                </div>
+                <div class="col-lg-3 bg-success text-white pt-3 px-3 pb-6">
+                    Success
+                </div>
+                <div class="col-lg-3 bg-info text-white pt-3 px-3 pb-6">
+                    Info
+                </div>
+                <div class="col-lg-3 bg-warning text-white pt-3 px-3 pb-6">
+                    Warning
+                </div>
+                <div class="col-lg-3 bg-danger text-white pt-3 px-3 pb-6">
+                    Danger
+                </div>
+                <div class="col-lg-3 bg-light text-dark pt-3 px-3 pb-6">
+                    Light
+                </div>
+                <div class="col-lg-3 bg-dark text-white pt-3 px-3 pb-6">
+                    Dark
+                </div>
+            </div>
+        </div>
+
+    </main>
+{% endblock %}
