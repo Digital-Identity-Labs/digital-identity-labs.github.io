@@ -1,0 +1,31 @@
+{% extends "layouts/no-footer.njk" %}
+{% block content %}
+    <main id="main">
+        <div class="bg-skew bg-skew-light pb-3 min-vh-80">
+
+            <div class="container my-6 my-lg-7">
+                <div class="row justify-content-center">
+                    <div class="col-md-9 col-lg-6">
+                        <div class="text-center">
+                            <h1 class="h2 my-3">Forgot password</h1>
+                            <p>Enter your email to receive a reset link</p>
+                        </div>
+                        <form class="py-4">
+                            <div class="form-group mb-4">
+                                <label for="email" class="small text-uppercase">Email Address</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <button type="submit" class="btn btn-pill btn-primary btn-block">Send reset link</button>
+                        </form>
+                        <hr role="presentation">
+                        <div class="text-center">
+                            <small><a href="account-log-in.html">Back to Login</a></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- end bg-skew -->
+
+    </main>
+{% endblock %}

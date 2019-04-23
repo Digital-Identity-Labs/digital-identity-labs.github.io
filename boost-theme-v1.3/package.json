@@ -1,0 +1,24 @@
+{
+    "name": "boost",
+    "version": "1.3.0",
+    "description": "A clean and accessible bootstrap theme.",
+    "author": "11bits",
+    "devDependencies": {
+        "autoprefixer": "^9.5.0",
+        "browser-sync": "^2.26.3",
+        "cssnano": "^4.1.10",
+        "del": "^4.1.0",
+        "gulp": "^4.0.0",
+        "gulp-imagemin": "^5.0.3",
+        "gulp-nunjucks-render": "^2.2.3",
+        "gulp-postcss": "^8.0.0",
+        "gulp-rename": "^1.4.0",
+        "gulp-sass": "^4.0.2"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "^5.8.1",
+        "bootstrap": "^4.3.1",
+        "jquery": "^3.3.1",
+        "popper.js": "^1.14.7"
+    }
+}

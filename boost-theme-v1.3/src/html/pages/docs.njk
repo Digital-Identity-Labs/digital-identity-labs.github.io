@@ -1,0 +1,240 @@
+{% extends "layouts/docs.njk" %}
+{% set page = "docs" %}
+{% block content %}
+    <main id="main">
+        <div class="bg-light mb-5">
+            <div class="container">
+                <div class="row py-5">
+                    <div class="col-lg-9">
+                        <h1 class="display-4 mb-4">Documentation</h1>
+                        <p class="lead mb-4">A brief guide to get started with Boost.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 pl-lg-4 order-lg-2">
+                    <nav id="nav-comp" class="navbar navbar-expand-lg navbar-light sticky-top mb-3 pl-0" aria-label="Docs navigation">
+                        <a class="collapsed btn btn-outline-dark btn-block d-lg-none mb-3 p-3" href="#collapseOne" data-toggle="collapse" data-target="#navbarDocs" aria-expanded="false" aria-controls="navbarDocs" aria-label="Toggle navigation">
+                            <span class="text-uppercase">Navigation<i class="fas fa-angle-down ml-4 rotate-icon"></i></span>
+                        </a>
+
+                        <div class="collapse navbar-collapse" id="navbarDocs">
+                            <ul class="navbar-nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#getting-started">Getting started</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#files-structure">Files structure</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#basic-template">Basic template</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#accessibility">Accessibility</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#changelog">Changelog</a>
+                                </li>
+                                <li class="nav-item d-none d-lg-block">
+                                    <a class="nav-link" href="#">Go top &uarr;</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-lg-9 order-lg-1">
+                    <h2 id="getting-started" class="py-3">Getting Started</h2>
+                    <p>Unzip the theme package to any folder and open a command line at that location.</p>
+                    <p>Boost's dev tools require Node and Gulp CLI. To install Node go to <a href="https://nodejs.org/en/" target="_blank">Node.js </a> and follow the instructions. To install <a href="https://gulpjs.com/" target="_blank">Gulp CLI</a> run the following command:</p>
+                    <pre class="mb-4"><code class="language-bash py-2">npm i gulp-cli -g</code></pre>
+                    <p>Then run the following npm command to install all the theme's dependencies:</p>
+                    <pre class="mb-4"><code class="language-bash py-2">npm i</code></pre>
+                    <p>Boost uses <a href="https://www.browsersync.io/" target="_blank">Browsersync</a> to serve pages from the dist directory. Running <strong>gulp</strong> will compile the theme, copy all required files to the dist directory and will open a browser window to <code>dist/index.html</code>.</p>
+                    <pre class="mb-4"><code class="language-bash py-2">gulp</code></pre>
+
+                    <p>Other gulp tasks available:</p>
+                    <ul class="mb-4">
+                        <li class="mb-2">
+                            <code>gulp css</code>: Compiles and minifies <code>scss</code> files to <code>dist</code>.
+                        </li>
+                        <li class="mb-2">
+                            <code>gulp watch</code>: Starts a local server and watch for changes.
+                        </li>
+                    </ul>
+                    <hr class="my-4">
+                    <h2 id="files-structure" class="py-3">Files structure</h2>
+                    <p>Within the theme you’ll find the following directories and files:</p>
+                    <pre class="mb-5">
+                        <code class="lang-markup py-3">
+                            ├── dist/
+                            │   ├── css/
+                            │   │   ├── fontawesome-all.min.css
+                            │   │   ├── theme.min.css
+                            │   ├── img/
+                            │   ├── js/
+                            │   │   ├── bootstrap.min.js
+                            │   │   ├── jquery.slim.min.js
+                            │   │   ├── popper.min.js
+                            │   ├── webfonts/
+                            │   ├── index.html
+                            │   ├── ..
+                            │   src/
+                            │   ├── html/
+                            │   │   ├── pages/
+                            │   │   ├── templates/
+                            │   ├── img/
+                            │   ├── scss/
+                            │   │   ├── custom/
+                            │   │   ├── theme.scss
+                            ├── gulpfile.js
+                            ├── package.json
+                            ├── README.md
+
+                        </code>
+                    </pre>
+                    <hr class="my-4">
+                    <h2 id="basic-template" class="py-3">Basic template</h2>
+                    <p>The basic template is a guideline for how to structure your pages when building with this theme.</p>
+                    <pre>
+                        <code class="lang-html py-3">
+                            &lt;!doctype html&gt;
+                            &lt;html lang="en"&gt;
+                            &lt;head&gt;
+                            &lt;meta charset="utf-8"&gt;
+                            &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;
+
+                            &lt;!-- Google Fonts --&gt;
+                            &lt;link href="https://fonts.googleapis.com/css?family=Merriweather:400,700%7CMerriweather+Sans:300,400,700" rel="stylesheet"&gt;
+
+                            &lt;!-- Font Awesome --&gt;
+                            &lt;link rel="stylesheet" href="css/fontawesome-all.min.css"&gt;
+
+                            &lt;!-- CSS (including Bootstrap) --&gt;
+                            &lt;link rel="stylesheet" href="css/theme.min.css"&gt;
+
+                            &lt;title&gt;Bootstrap Theme&lt;/title&gt;
+                            &lt;/head&gt;
+                            &lt;body&gt;
+                            &lt;h1&gt;Hello, world!&lt;/h1&gt;
+
+                            &lt;!-- Bootstrap JS --&gt;
+                            &lt;script src="js/jquery.slim.min.js"&gt;&lt;/script&gt;
+                            &lt;script src="js/popper.min.js"&gt;&lt;/script&gt;
+                            &lt;script src="js/bootstrap.min.js"&gt;&lt;/script&gt;
+                            &lt;/body&gt;
+                        </code>
+                    </pre>
+                    <hr class="my-4">
+                    <h2 id="accessibility" class="py-3">Accessibility</h2>
+                    <p>Boost theme is built with accessibility in mind and includes the following best practices:</p>
+                    <ul>
+                        <li>Valid and semantic code</li>
+                        <li>'Skip to main content' link</li>
+                        <li>Underlined links within paragraphs</li>
+                        <li>High color contrast between text and background</li>
+                        <li>ARIA attributes</li>
+                    </ul>
+                    <hr class="my-4">
+                    <h2 id="changelog" class="py-3">Changelog</h2>
+                    <h3 class="h6 mt-4"><code class="text-danger">1.3.0</code> - 04 April 2019</h3>
+                    <span class="badge badge-light mb-2 p-2">Added</span>
+                    <ul>
+                        <li>Pages
+                            <ul>
+                                <li>App</li>
+                                <li>Course</li>
+                                <li>Saas</li>
+                                <li>Log in</li>
+                                <li>Sign up</li>
+                                <li>Forgot password</li>
+                                <li>Pricing cards</li>
+                                <li>Pricing table</li>
+                                <li>Style</li>
+                            </ul>
+                        </li>
+                        <li>Styles
+                            <ul>
+                                <li>Border to separate links on mobile navigation</li>
+                                <li>Font family class (serif/sans-serif): <code>_text.scss</code></li>
+                                <li>Class for minimum height size: <code>.min-vh-{10-90}</code></li>
+                                <li>Spacing value: <code>7 ($spacer * 8)</code></li>
+                                <li>Style for centered blockquote: <code>_type.scss</code></li>
+                                <li><code>.stretched-link</code> to links in the blog page cards</li>
+                                <li>Transition effect to linked thumbnails</li>
+
+                            </ul>
+                            <li>Attributes</li>
+                            <ul>
+                                <li><code>aria-hidden</code> attribute to accordion icons</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <span class="badge badge-light mb-2 p-2">Updated</span>
+                    <ul>
+                        <li>Bootstrap to <code>4.3.1</code></li>
+                        <li>Font Awesome to <code>5.8.1</code></li>
+                        <li>Gulp to <code>4.0.0</code></li>
+                    </ul>
+
+                    <hr>
+
+                    <h3 class="h6 mt-4"><code class="text-danger">1.2.0</code> - 04 February 2019</h3>
+                    <span class="badge badge-light mb-2 p-2">Added</span>
+                    <ul>
+                        <li><code>role="presentation"</code> to decorative <code>&lt;hr&gt;'s</code></li>
+                    </ul>
+                    <span class="badge badge-light mb-2 p-2">Updated</span>
+                    <ul>
+                        <li>Bootstrap to <code>4.2.1</code>   </li>
+                        <li>Popper.js to <code>1.14.7</code> </li>
+                        <li>Font Awesome to <code>5.7.0</code></li>
+                    </ul>
+                    <span class="badge badge-light mb-2 p-2">Changed</span>
+                    <ul>
+                        <li>Navbar:
+                            <ul>
+                                <li>moved <code>.container</code> outside of <code>&lt;nav&gt;</code></li>
+                                <li>padding: <code>_variables.scss</code> </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <span class="badge badge-light mb-2 p-2">Removed</span>
+                    <ul>
+                        <li>Unused background property: <code>_alerts.scss</code></li>
+                    </ul>
+
+                    <hr>
+
+                    <h3 class="h6 mt-4"><code class="text-danger">1.1.0</code> - 24 October 2018</h3>
+                    <span class="badge badge-light mb-2 p-2">Added</span>
+                    <ul>
+                        <li>Pages: blog and article</li>
+                        <li>Pagination styles: <code>_pagination.scss</code></li>
+                        <li>Table styles: <code>_tables.scss</code></li>
+                    </ul>
+                    <span class="badge badge-light mb-2 p-2">Updated</span>
+                    <ul>
+                        <li>Font Awesome to <code>5.4.1</code></li>
+                    </ul>
+                    <span class="badge badge-light mb-2 p-2">Changed</span>
+                    <ul>
+                        <li>Accordion:
+                            <ul>
+                                <li>header link nested inside heading element</li>
+                                <li><code>role="button"</code> attribute added</li>
+                            </ul>
+                        </li>
+                        <li>Transition properties: <code>_cards.scss, _links.scss</code> </li>
+                    </ul>
+
+                    <hr>
+
+                    <h3 class="h6 mt-4"><code class="text-danger">1.0.0</code> - Initial release</h3>
+                    <hr class="my-4">
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}
