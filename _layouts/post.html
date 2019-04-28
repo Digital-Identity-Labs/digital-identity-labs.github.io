@@ -1,9 +1,53 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
 
-<div class="post">
-{{ content }}
+<div class="container">
+    <div class="row justify-content-center my-5">
+        <div class="col-lg-9">
+            <img src="/img/{{ post.header_image }}" class="img-fluid img-thumbnail" alt="{{ post.header_image_text }}">
+        </div>
+    </div>
 </div>
+
+<div class="bg-skew bg-skew-light">
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <article class="pb-2h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+                    <h1 class="text-center">{{ page.title | escape }}</h1>
+                    <p class="small mb-5 text-center"><span class="text-secondary">published on </span><span>
+
+                        <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}"
+                              itemprop="datePublished">
+                {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
+                {{ page.date | date: date_format }}
+            </time>
+                       </span></p>
+
+                    {{ content }}
+
+
+                    <p class="small mt-5 text-center"><span class=" text-secondary">Tagged: </span><a href="#"
+                                                                                                      class="text-dark">{{
+                        page.tags }}</a></p>
+
+
+                    <!-- Article author -->
+                    <div class="media my-5">
+                        <img class="avatar avatar-lg mr-3" src="/images/peterb_sq.png" alt="Post author">
+                        <div class="media-body">
+                            <h3 class="h5 mt-0" itemprop="author" itemscope itemtype="http://schema.org/Person">{{ page.author | escape }}</h3>
+                            <p class="mb-0 text-secondary">{{ page.bio | escape }}</p>
+                        </div>
+                    </div>
+                </article>
+
+                <hr class="sep border-primary" role="presentation">
+
+            </div>
+        </div>
+    </div>
+
+</div><!-- end bg-skew -->
