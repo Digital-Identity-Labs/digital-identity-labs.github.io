@@ -3,7 +3,8 @@ layout: post
 title:  "Return of the blog"
 date:   2019-04-25 15:12:03
 categories: general
-header_image: clock.jpg
+xheader_image: clock.jpg
+author: Pete Birkinshaw
 ---
 
 It seems like a good time to start blogging again. Indiid's blog ran out of content 

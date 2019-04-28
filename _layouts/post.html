@@ -1,27 +1,53 @@
 ---
 layout: default
 ---
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
-    <header class="post-header">
-        <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-        <p class="post-meta">
-            <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+<div class="container">
+    <div class="row justify-content-center my-5">
+        <div class="col-lg-9">
+            <img src="/img/{{ post.header_image }}" class="img-fluid img-thumbnail" alt="{{ post.header_image_text }}">
+        </div>
+    </div>
+</div>
+
+<div class="bg-skew bg-skew-light">
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <article class="pb-2h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+                    <h1 class="text-center">{{ page.title | escape }}</h1>
+                    <p class="small mb-5 text-center"><span class="text-secondary">published on </span><span>
+
+                        <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}"
+                              itemprop="datePublished">
+                {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
                 {{ page.date | date: date_format }}
             </time>
-            {%- if page.author -%}
-            • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author | escape }}</span></span>
-            {%- endif -%}</p>
-    </header>
+                       </span></p>
 
-    <div class="post-content e-content" itemprop="articleBody">
-        {{ content }}
+                    {{ content }}
+
+
+                    <p class="small mt-5 text-center"><span class=" text-secondary">Tagged: </span><a href="#"
+                                                                                                      class="text-dark">{{
+                        page.tags }}</a></p>
+
+
+                    <!-- Article author -->
+                    <div class="media my-5">
+                        <img class="avatar avatar-lg mr-3" src="/images/peterb_sq.png" alt="Post author">
+                        <div class="media-body">
+                            <h3 class="h5 mt-0" itemprop="author" itemscope itemtype="http://schema.org/Person">{{ page.author | escape }}</h3>
+                            <p class="mb-0 text-secondary">{{ page.bio | escape }}</p>
+                        </div>
+                    </div>
+                </article>
+
+                <hr class="sep border-primary" role="presentation">
+
+            </div>
+        </div>
     </div>
 
-    {%- if site.disqus.shortname -%}
-    {%- include disqus_comments.html -%}
-    {%- endif -%}
-
-    <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
-</article>
+</div><!-- end bg-skew -->
