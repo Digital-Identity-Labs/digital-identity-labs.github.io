@@ -13,7 +13,7 @@ tags:
 We've released a minor update to [Ishigaki](https://github.com/Digital-Identity-Labs/ishigaki), our Docker image for the Shibboleth IdP.
 
 The Jetty project released Jetty 9.4.18, a minor update, a few days ago, and today The 
-Shibboleth Consortium released a minor update to the Shibboleth IdP, so
+Shibboleth Consortium released a minor update to the Shibboleth IdP (3.4.4), so
 it's time for a new release of Ishigaki: 0.4.5.
 
 Jetty has had [quite a few bugfixes since 9.4.15](https://github.com/eclipse/jetty.project/releases), including fixes for a directory
