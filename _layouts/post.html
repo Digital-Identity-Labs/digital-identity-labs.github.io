@@ -21,7 +21,7 @@ layout: default
 
                         <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}"
                               itemprop="datePublished">
-                {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
+                {%- assign date_format = site.date_format | default: "%Y-%m-%d" -%}
                 {{ page.date | date: date_format }}
             </time>
                        </span></p>
@@ -29,10 +29,13 @@ layout: default
                     {{ content }}
 
 
-                    <p class="small mt-5 text-center"><span class=" text-secondary">Tagged: </span><a href="#"
-                                                                                                      class="text-dark">{{
-                        page.tags }}</a></p>
+                    <p class="small mt-5 text-center"><span class=" text-secondary">Tagged: </span>
 
+                    {% for tag in page.tags %}
+                     <span class="badge badge-secondary"> {{ tag | escape }} </span>
+                    {% endfor %}
+
+                    </p>
 
                     <!-- Article author -->
                     <div class="media my-5">

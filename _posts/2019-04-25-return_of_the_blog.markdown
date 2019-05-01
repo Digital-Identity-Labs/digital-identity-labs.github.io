@@ -5,6 +5,9 @@ date:   2019-04-25 15:12:03
 categories: general
 xheader_image: clock.jpg
 author: Pete Birkinshaw
+tags:
+  - mimoto
+  - digitalidentity
 ---
 
 It seems like a good time to start blogging about Digital Identity again.
