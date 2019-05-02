@@ -40,7 +40,4 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
-collections:
-  scenarios:
-    output: true
-    permalink: /:collection/:name
+permalink: /blog/:year:month:day-:slug
