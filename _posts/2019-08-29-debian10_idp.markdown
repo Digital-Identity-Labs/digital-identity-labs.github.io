@@ -1,0 +1,25 @@
+---
+layout: post
+title:  "Ishagaki Update: 0.4.6 - time for Debian 10"
+date:   2019-08-29 10:55:00
+categories: software
+xheader_image: clock.jpg
+author: Pete Birkinshaw
+tags:
+  - docker
+  - shibboleth
+---
+
+We've released an update to [Ishigaki](https://github.com/Digital-Identity-Labs/ishigaki), 
+our rather elegant Docker image for the Shibboleth IdP.
+
+Ishigaki now includes Jetty 9.4.20, a minor update containing lots of bugfixes.
+
+We've also updated the base OS for the container: Ishigaki now runs on
+ Debian 10 Buster, via the excellent MiniDeb from [Bitnami](https://bitnami.com/).
+ 
+ Neither change should cause any differences in how you use Ishigaki. 
+
+  * [Ishigaki source code and docs](https://github.com/Digital-Identity-Labs/ishigaki)
+  * [Ishigaki Docker image](https://cloud.docker.com/u/digitalidentity/repository/docker/digitalidentity/ishigaki)
+    
