@@ -1,0 +1,21 @@
+---
+layout: post
+title:  "Ishagaki Update: 0.4.7 - Shibboleth IdP 3.4.5"
+date:   2019-09-24 14:49:00
+categories: software
+xheader_image: clock.jpg
+author: Pete Birkinshaw
+tags:
+  - docker
+  - shibboleth
+---
+
+Time for another update to [Ishigaki](https://github.com/Digital-Identity-Labs/ishigaki),
+ a containerised Shibboleth IdP for use with Docker and Kubernetes.
+
+Ishigaki is now using [Shibboleth IdP 3.4.5](https://wiki.shibboleth.net/confluence/display/IDP30/ReleaseNotes#ReleaseNotes-3.4.5(Sep18,2019)),
+ a patch update that brings various bug fixes and a fix for potential leaks of site-specific identifiers. 
+
+  * [Ishigaki source code and docs](https://github.com/Digital-Identity-Labs/ishigaki)
+  * [Ishigaki Docker image](https://cloud.docker.com/u/digitalidentity/repository/docker/digitalidentity/ishigaki)
+    
