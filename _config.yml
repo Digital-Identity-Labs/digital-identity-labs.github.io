@@ -26,7 +26,7 @@ url: "digitalidentity.ltd.uk" # the base hostname & protocol for your site, e.g.
 #github_username:  jekyll
 
 show_excerpts: true
-paginate: 5
+paginate: 100
 
 date_format: "%Y-%m-%d"
 
@@ -40,4 +40,5 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+  - .idea
 permalink: /blog/:year:month:day-:slug
