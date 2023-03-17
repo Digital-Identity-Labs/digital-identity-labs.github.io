@@ -1,0 +1,126 @@
+---
+layout: post
+title:  "Smee, a SAML-wrangling library for Elixir"
+date:   2023-03-17 14:25:00
+categories: software
+header_image: smee.png
+author: Pete Birkinshaw
+---
+
+Last week we released [Smee](https://github.com/Digital-Identity-Labs/smee), a pragmatic library for handling SAML metadata with Elixir, Erlang or any other BEAM language.
+
+Smee started life as an sprawling mess of code used over five years in an internal application to download and process
+SAML metadata. The Metadata Management App ("MDMA") downloads metadata from various NREN federations, breaks it up, digests the XML into a Postgresql database, and provides the information over a GraphQL API. Rather than having a number of applications all downloading and processing metadata individually (wasting a lot of CPU time, RAM and storage, and risking inconsistencies) MDMA handles everything centrally and other applications can look-up only what they need over the API.
+
+Which is great, but... Metadata Management App has become over-complicated and increasingly glitchy. It started life as Christmas coding experiment to learn Elixir and to try out data processing architecture ideas I'd learned working for the BBC in their Search team, and then grew into something large and useful *before* I'd got the hang of writing good Elixir code. I think I made a lot of good educational mistakes on the way but it means the software is simply not good enough to be used more widely. It would also be good to reuse some of the code in other applications, rather than make every app we create depend on the   Metadata Management App.
+
+So Smee is the first part of rebuilding Metadata Management App. The code for the first half of The Metadata Management App has now been extracted, restructured and made a lot less messy. Restructuring the code has made it much easier to debug and test, and it now has almost 500 tests. It already has far fewer bugs. I'm hoping the next version of Metadata Management App will be smaller, faster, easier to work with, and more reliable as a result.
+
+We're open-sourcing Smee under the Apache 2.0 license because it might be useful to other organisations and we'd appreciate any feedback or contributions from other users, and also because it'll encourage me to keep the code clear and clean and documented. We've been able to use and learn from XSLT code published under Apache 2.0 by various higher education organisations so it's both fair and convenient to use the same license in Smee.
+
+Other parts of Metadata Management App might not be open-sourced, at least at first - the SQL storage aspects are much more application specific. But we expect to release some add-ons soon to extend what Smee can do, and some smaller applications that depend on Smee.
+
+You can get the code for Smee at [Github](https://github.com/Digital-Identity-Labs/smee), and the package is available through [Hex.pm](https://hex.pm/packages/smee). The API documentation is online at <https://hexdocs.pm/smee>
+
+## What is SAML metadata?
+
+[SAML](https://en.wikipedia.org/wiki/Security_Assertion_Markup_Language) is a standard for federated authentication, allowing single-sign-on even across different organisations with no need to provision users on all services in advance. It's been around for ages now and is very widely used in education and research organisations.
+
+For login services (IdPs) and authenticated websites (SPs) to work together they need to both trust each and know the technical details of how to connect and share information. This is done by exchanging *metadata* - XML records that act as profiles describing each service. Exchanging and installing individual server metadata for each service might work for small organisations using ADFS, but simply doesn't scale for higher education and research, where tens of thousands of services are available, so trusted metadata is curated and distributed by national bodies ("NREN"s).
+
+Smee lets you download and process that metadata and to use the information within it or create new collections of service information.
+
+## What can Smee do?
+
+The core parts of Smee are:
+
+* **Sources**: records that describe where metadata can be found and how to process it
+* **Metadata**: records that wrap an entire file of SAML metadata
+* **Entities**: records that contain information for a single SAML service (an "entity")
+
+Processing metadata can be very memory-intensive, so where possible Smee encourages use of Elixir streams - rather than returning large lists of XML records it will output one record at a time. Data can also be compressed.
+
+Smee has filters for removing entities from streams, validation and signature checking functions, and allows use of XSLT to extract information or change metadata. There's an MDQ-compatible API for downloading individual metadata records.
+
+And of course in the end it's just Elixir code - you are not limited to use pre-existing features. Elixir's functional strengths, concurrency and data pipelining make it a good choice for this sort of data processing.
+
+## Simple Examples
+
+### Getting entity details from an MDQ service
+
+If we'd like to grab service information for CERN's login server (IdP) from the JISC's MDQ service, we can do so like this:
+
+```elixir
+alias Smee.MDQ
+
+cern_idp = 
+  MDQ.source("http://mdq.ukfederation.org.uk/")
+  |> MDQ.lookup!("https://cern.ch/login")
+
+```
+
+Outputting the XML:
+
+```elixir
+IO.puts Smee.Entity.xml(cern_idp)
+```
+
+
+### Downloading and streaming a metadata aggregate to output a list of all IdP entityIDs
+
+Here we define a source (the UK's national education and research federation, run by JISC), download the aggregated file containing about 10,000 services' information, and then filter the stream of entities so that only IdPs remain and grab their unique IDs to return in a list.
+
+```elixir
+alias Smee.{Source, Fetch, Filter, Metadata}
+
+"http://metadata.ukfederation.org.uk/ukfederation-metadata.xml"
+|> Source.new()
+|> Fetch.remote!()
+|> Metadata.stream_entities()
+|> Filter.idp()
+|> Stream.map(fn e -> e.uri end)
+|> Enum.to_list()
+
+```
+
+### Create a new metadata aggregate that only contains SPs
+
+This example is similar to the one above, but filters out IdPs and builds a new XML file only containing records for SPs.
+
+```elixir
+alias Smee.{Source, Fetch, Filter, Metadata, Publish}
+
+"http://metadata.ukfederation.org.uk/ukfederation-metadata.xml"
+|> Source.new()
+|> Fetch.remote!()
+|> Metadata.stream_entities()
+|> Filter.sp()
+|> Publish.xml()
+
+```
+
+### Munge XML with XSLT
+
+It's possible to process metadata using XSLT, either any XSLT stylesheet you have available, or by using various built-in functions. In this example metadata for an ADFS service has the Microsoft-specific parts removed, leaving only the more common parts used in education and research.
+
+```elixir
+alias Smee.{Source, Fetch, Transform, Metadata}
+
+## Using a builtin function
+
+new_xml = Source.new("adfs.xml")
+|> Fetch.local!()
+|> Transform.decruft_sp!()
+|> Metadata.xml()
+
+File.save!("adfs_new.xml", new_xml)
+
+## Or any XSLT stylesheet
+
+{:ok, updated_metadata} = Transform.transform(metadata, stylesheet, [exampleParam: "example value"])
+
+```
+
+## Disclaimer
+Smee is not endorsed by The Shibboleth Foundation or any of the NREN's that may have had their XSLT borrowed.
+The API will definitely change considerably in the first few releases after 0.1.0 - it is not yet stable!
