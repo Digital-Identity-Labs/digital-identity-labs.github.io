@@ -16,30 +16,30 @@ are interesting links, so it's hopefully not going to be much more effort to pos
 be useful to more people. Common themes will probably be Ruby, Elixir, identity management and systems administration.
 Let's see how it goes - here's the first big batch of things I found last week: 
 
-* [Wretch](https://github.com/elbywan/wretch) A friendly wrapper for Javascript's fetch (which I need, I loathe fetch)
-* [YouPlot](https://github.com/red-data-tools/YouPlot) Shell-based graphs
-* [I am not a supplier](https://www.softwaremaxims.com/blog/not-a-supplier) On companies making a new sort of unreasonable demand on open source authors
-* [SSH Server Hardening](https://ittavern.com/ssh-server-hardening/) Important to get this right
-* [PG Activity](https://github.com/dalibo/pg_activity) Monitor Postgres
-* [Typst](https://github.com/typst/typst) Yet another markup format, but with strong science and maths features (Rust)
-* [Miller](https://github.com/johnkerl/miller) "Miller is like awk, sed, cut, join, and sort for data formats such as CSV, TSV, JSON, JSON Lines"
+* [Wretch](https://github.com/elbywan/wretch) - A friendly wrapper for Javascript's fetch (which I need, I loathe fetch)
+* [Elixir for humans who know Python](https://hibox.live/elixir-for-humans-who-know-python) - I love Elixir but it can be surprising. Python is used a lot in HE.
+* [YouPlot](https://github.com/red-data-tools/YouPlot) - Shell-based graphs
+* [I am not a supplier](https://www.softwaremaxims.com/blog/not-a-supplier) - On companies making a new sort of unreasonable demand on open source authors
+* [SSH Server Hardening](https://ittavern.com/ssh-server-hardening/) - Important to get this right
+* [PG Activity](https://github.com/dalibo/pg_activity) - Monitor Postgres
+* [Typst](https://github.com/typst/typst) - Yet another markup format, but with strong science and maths features (Rust)
+* [Miller](https://github.com/johnkerl/miller) - "Miller is like awk, sed, cut, join, and sort for data formats such as CSV, TSV, JSON, JSON Lines"
 * [Adopting PGCat, A Nextgen Postgres proxy](https://tech.instacart.com/adopting-pgcat-a-nextgen-postgres-proxy-3cf284e68c2f) 
-* [Elixir for humans who know Python](https://hibox.live/elixir-for-humans-who-know-python) I love Elixir but it can be surprising. Python is used a lot in HE.
 * [SMTP Server](https://github.com/stalwartlabs/smtp-server) A fresh, modern SMTP server (at least as much as SMTP can be fresh and modern)
 * [Ruby GraphQL field notes](https://ryanbigg.com/2023/01/ruby-graphql-field-notes) GraphQL and Ruby
-* [MapKick](https://chartkick.com/mapkick) Javascript library for mapping
-* [GitHub - nhosoya/omniauth-apple: OmniAuth strategy for Sign In with Apple](https://github.com/nhosoya/omniauth-apple)
-* [From Ruby to Node: Overhauling Shopify’s CLI for a Better Developer Experience (2023)](https://shopify.engineering/overhauling-shopify-cli-for-a-better-developer-experience) I usually use Ruby for CLI tools, but NodeJS is worth considering
-* [GitHub - teamhanko/hanko: The authentication solution for the passkey era.](https://github.com/teamhanko/hanko) IdP using modern Passkey and FIDO protocols
-* [The Zen of Proverbs | Lane's Blog](https://wagslane.dev/posts/zen-of-proverbs/) Software development advice
+* [MapKick](https://chartkick.com/mapkick) Javascript library for mapping 
+* [A gentle introduction to Domain Driven Design](https://blog.thelonearchitect.com/a-gentle-introduction-to-domain-driven-design-dc7cc169b1d) Introduction to Domain Driven Design
+* [Omniauth-apple](https://github.com/nhosoya/omniauth-apple)
+* [From Ruby to Node](https://shopify.engineering/overhauling-shopify-cli-for-a-better-developer-experience) I usually use Ruby for CLI tools, but NodeJS is worth considering
+* [Hanko](https://github.com/teamhanko/hanko) IdP using modern Passkey and FIDO protocols
+* [The Zen of Proverbs](https://wagslane.dev/posts/zen-of-proverbs/) Software development advice
 * [What’s so great about functional programming anyway?](https://jrsinclair.com/articles/2022/whats-so-great-about-functional-programming-anyway/) I'm a fan now (with reservations)
-* [A gentle introduction to Domain Driven Design | by The Lone Architect | Medium](https://blog.thelonearchitect.com/a-gentle-introduction-to-domain-driven-design-dc7cc169b1d) Introduction to Domain Driven Design
-* [LISP — Mecrisp Stellaris Unofficial 1.0 documentation](https://mecrisp-stellaris-folkdoc.sourceforge.io/lisp.html?utm_source=programmingdigest&utm_medium&utm_campaign=1500) History 
-* [Terraform — The Awesome Value Type “any” and Loops | by Hector | AWS Tip](https://awstip.com/terraform-the-awesome-value-type-any-and-loops-a6be039b1ce5) I've been considering using HCI
-* [GitHub - scribe-public/gitgat: Evaluate source control (GitHub) security posture](https://github.com/scribe-public/gitgat) Git repo security checks
-* [GitHub - dexidp/dex: OpenID Connect (OIDC) identity and OAuth 2.0 provider with pluggable connectors](https://github.com/dexidp/dex) an OIDC IdP (not new, but I need to take another look)
+* [Gitgat](https://github.com/scribe-public/gitgat) Git repo security checks
+* [Terraform - The Awesome Value Type "any" and Loops](https://awstip.com/terraform-the-awesome-value-type-any-and-loops-a6be039b1ce5) I've been considering using HCI
+* [Dex](https://github.com/dexidp/dex) an OIDC IdP (not new, but I need to take another look)
 * [Go Read](https://github.com/TypicalAM/goread) A shell based RSS reader
-* [GitHub - aleixrodriala/wa-tunnel: Tunneling Internet traffic over Whatsapp](https://github.com/aleixrodriala/wa-tunnel) Desperate measure and/or silly thing
-* [GitHub - mark-summerfield/uxf: Uniform eXchange Format (uxf)](https://github.com/mark-summerfield/uxf) A new data format
+* [Wa-tunnel](https://github.com/aleixrodriala/wa-tunnel) Send network traffic over Whatsapp. A desperate measure and/or a very silly thing
+* [UXF](https://github.com/mark-summerfield/uxf) A new data format
+* [LISP — Mecrisp Stellaris Unofficial 1.0 documentation](https://mecrisp-stellaris-folkdoc.sourceforge.io/lisp.html?utm_source=programmingdigest&utm_medium&utm_campaign=1500) History
 * [Wren](https://wren.io/) "Think Smalltalk in a Lua-sized package with a dash of Erlang and wrapped up in a familiar, modern syntax" OH YES. 
 * [Cram](https://arrdem.com/2022/08/31/dotfiles/) Cram, a dotfile and tool manager
