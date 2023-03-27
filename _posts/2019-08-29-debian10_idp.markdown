@@ -3,7 +3,7 @@ layout: post
 title:  "Ishagaki Update: 0.4.6 - time for Debian 10"
 date:   2019-08-29 10:55:00
 categories: software
-xheader_image: clock.jpg
+header_image: 39371663884_c29cf054ae_w.jpg
 author: Pete Birkinshaw
 tags:
   - docker
@@ -22,4 +22,3 @@ We've also updated the base OS for the container: Ishigaki now runs on
 
   * [Ishigaki source code and docs](https://github.com/Digital-Identity-Labs/ishigaki)
   * [Ishigaki Docker image](https://cloud.docker.com/u/digitalidentity/repository/docker/digitalidentity/ishigaki)
-    

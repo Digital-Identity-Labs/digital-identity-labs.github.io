@@ -3,7 +3,7 @@ layout: post
 title:  "Ishagaki Update: 0.4.8 - Shibboleth IdP 3.4.6"
 date:   2019-10-07 17:50:00
 categories: software
-xheader_image: clock.jpg
+header_image: 39371663884_c29cf054ae_w.jpg
 author: Pete Birkinshaw
 tags:
   - docker
@@ -20,4 +20,3 @@ Ishigaki is now using [Shibboleth IdP 3.4.6](https://wiki.shibboleth.net/conflue
 
   * [Ishigaki source code and docs](https://github.com/Digital-Identity-Labs/ishigaki)
   * [Ishigaki Docker image](https://cloud.docker.com/u/digitalidentity/repository/docker/digitalidentity/ishigaki)
-    

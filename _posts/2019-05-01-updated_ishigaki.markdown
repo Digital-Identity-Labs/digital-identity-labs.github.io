@@ -3,7 +3,7 @@ layout: post
 title:  "Ishagaki Update: 0.4.5"
 date:   2019-05-01 21:20:00
 categories: software
-xheader_image: clock.jpg
+header_image: 39371663884_c29cf054ae_w.jpg
 author: Pete Birkinshaw
 tags:
   - docker
@@ -23,4 +23,3 @@ versions of Java.
 
   * [Ishigaki source code and docs](https://github.com/Digital-Identity-Labs/ishigaki)
   * [Ishigaki Docker image](https://cloud.docker.com/u/digitalidentity/repository/docker/digitalidentity/ishigaki)
-    
