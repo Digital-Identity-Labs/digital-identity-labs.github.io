@@ -4,6 +4,8 @@ title:  "A Cup Of Matcha 1"
 date:   2023-03-27 13:00:00
 categories: software
 author: Pete Birkinshaw
+header_image: phuong-nguyen-DgW9B48pRb4-unsplash.jpg
+header_credit: Photo by Phuong Nguyen at Unsplash
 ---
 
 I used to enjoy reading a regular link blog called A Fresh Cup until the 
