@@ -19,7 +19,7 @@ be useful to more people. Common themes will probably be Ruby, Elixir, identity 
 Let's see how it goes - here's the first big batch of things I found last week: 
 
 * [Wretch](https://github.com/elbywan/wretch) - A friendly wrapper for Javascript's fetch (which I need, I loathe fetch)
-* [Elixir for humans who know Python](https://hibox.live/elixir-for-humans-who-know-python) - I love Elixir but it can be surprising. Python is used a lot in HE.
+* [Elixir for humans who know Python](https://hibox.live/elixir-for-humans-who-know-python) - I love Elixir but it can be surprising for new users. Python is used a lot in HE.
 * [YouPlot](https://github.com/red-data-tools/YouPlot) - Shell-based graphs
 * [I am not a supplier](https://www.softwaremaxims.com/blog/not-a-supplier) - On companies making a new sort of unreasonable demand on open source authors
 * [SSH Server Hardening](https://ittavern.com/ssh-server-hardening/) - Important to get this right

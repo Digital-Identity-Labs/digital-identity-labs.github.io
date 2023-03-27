@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "SmeeFeds, an unplanned federation-wrangling add-on for Smee"
+date:   2023-03-27 16:00:00
+categories: software
+header_image: smee.png
+author: Pete Birkinshaw
+---
+[SmeeFeds](https://github.com/Digital-Identity-Labs/smee_feds) is a small federation management extension to [Smee](https://github.com/Digital-Identity-Labs/smee) for use in research, testing and development.
+
+The main reason SmeeFeds was hurriedly put together on a Sunday afternoon is that I needed to test Smee with a variety of NREN federations and my various scattered notes and comments and tests with URLs and certificate fingerprints were becoming a nuisance.
+
+Smee has tools for handling the sources of SAML metadata but nothing to represent the publishers of metadata. SmeeFeds adds a few tools for handling federations and includes a large collection of information about research and education federations.
+
+At the moment the data still needs a lot of work but it's still allowed me to test Smee with almost 70 different sources of metadata and find a few bugs in the process.
+
+It's possibly an over-engineered solution to that problem but it was fun.
