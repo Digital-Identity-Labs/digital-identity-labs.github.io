@@ -6,6 +6,7 @@ categories: software
 author: Pete Birkinshaw
 header_image: phuong-nguyen-DgW9B48pRb4-unsplash.jpg
 header_credit: Photo by Phuong Nguyen at Unsplash
+published: true
 ---
 
 A big list of links this week because I've been working through a backlog

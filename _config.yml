@@ -42,3 +42,4 @@ exclude:
   - README.md
   - .idea
 permalink: /blog/:year:month:day-:slug
+future: true
