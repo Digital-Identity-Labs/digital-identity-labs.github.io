@@ -1,0 +1,52 @@
+---
+layout: post
+title:  "A Cup Of Matcha 2"
+date:   2023-04-03 08:50:00
+categories: software
+author: Pete Birkinshaw
+header_image: phuong-nguyen-DgW9B48pRb4-unsplash.jpg
+header_credit: Photo by Phuong Nguyen at Unsplash
+---
+
+A big list of links this week because I've been working through a backlog
+of messages from mailing lists that built up while I was ill late last year.
+Plus a few things from last week.
+
+* [A Visual Guide to SSH Tunnels](https://iximiuz.com/en/posts/ssh-tunnels) I've been doing this for decades and still keep forgetting things
+* [Authentication between microservices](https://medium.com/google-cloud/authentication-between-microservices-is-it-really-that-hard-b73785510db4) 
+* [Beatiful CLI Programs](https://blog.devgenius.io/writing-beautiful-cli-programs-6fc3e3728c8b) Escape codes, so many escape codes
+* [Between the Ctrl-C's](https://blog.sequin.io/between-the-ctrl-cs/) The options that appear when ctr-c-ing an Elixir app
+* [Bunny Fonts](https://fonts.bunny.net/) Like Google Fonts, but without Google's GDPR problems
+* [CodeCaptcha.io](https://www.codecaptcha.io/) This is a terrible idea but
+* [Confetti🎊](https://www.kirilv.com/canvas-confetti/) Add some sparkly joy to a webpage
+* [Create a Business Language for a Rails Application](https://blog.appsignal.com/2023/01/11/create-a-business-language-for-a-rails-application.html) I need to write something like this eventually
+* [Elixir Contexts in Action](https://readyforproduction.dev/blog/elixir-contexts-in-action) Phoenix contexts are a good idea but implementing them confuses me
+* [How Passwordless Works](https://goteleport.com/blog/how-passwordless-works) There are now too many meanings for "passwordless"
+* [How to Favicon in 2023](https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs) Fancy Favicons
+* [Introducing passkeys in Chrome](https://blog.chromium.org/2022/12/introducing-passkeys-in-chrome.html) Passkey support growing, maybe now it can be used
+* [Is your Postgres ready for production?](https://www.crunchydata.com/blog/is-your-postgres-ready-for-production) Postgres security and tuning
+* [It’s about time CAPTCHAS become accessible](https://uxdesign.cc/its-about-time-captchas-are-accessible-676fa293a47c) It is.
+* [Acid Grandads](https://www.mixcloud.com/acidgrandads/) Acid Grandads: "Where Oldschool meets Old Age"
+* [New in Ruby 3.2 - Data.define](https://dev.to/baweaver/new-in-ruby-32-datadefine-2819) Useful for more functional Ruby
+* [Pixel-Accurate Atkinson Dithered Images](https://sheep.horse/2023/1/improved_web_component_for_pixel-accurate_atkinson.html) I'm feeling some nostalgia for ancient Macs and Atari STs
+* [Random User Generator](https://randomuser.me/) A useful free service to generate fake user profiles
+* [Ruby adds a new core class called Data](https://blog.saeloun.com/2022/11/22/data-immutable-object) I clearly like this new object type
+* [Shorthand Elixir Anonymous Functions](https://til.hashrocket.com/posts/ogfnwe4feu-shorthand-elixir-anonymous-functions) I feel like I need to use these more, but at the same time clarity is possibly more useful than brevity
+* [SoBelow](https://github.com/nccgroup/sobelow) Find security issues in Phoenix apps
+* [Sym](https://symops.com/) ACLs as a service
+* [Terraform in Real Life: Writing Modules](https://medium.com/version-1/terraform-in-real-life-writing-modules-c0b6b5335218) Tempted to try this myself...
+* [The SaaS Agreement Toolkit](https://commonpaper.com/resources/saas-agreement-toolkit) Off-the-shelf legal docs for SaaS
+* [Upgrading to Phoenix 1.7](https://elixircasts.io/upgrading-to-phoenix-1.7) I have so many apps to upgrade
+* [Using Github Actions to create Debian (DEB) and RedHat (RPM) Packages and Repositories](https://jon.sprig.gs/blog/post/2835) Wondering about distributing CLI tools
+* [What's new in Livebook 0.8](https://news.livebook.dev/whats-new-in-livebook-0.8-4gQiEE) LiveBook is clever, I'm not sure how *useful* it is yet
+* [bypass](https://github.com/PSPDFKit-labs/bypass) I need a new way to mock HTTP in Elixir after moving to Req, this might be it
+* [chatwoot](https://github.com/chatwoot/chatwoot) Chat and support app, in Ruby, possibly a Zammad rival
+* [ex_check](https://github.com/karolsluszniak/ex_check) Bundles various Elixir code checks together
+* [hypershield](https://github.com/ankane/hypershield) Hide sensitive data in views in Postgresql
+* [jage](https://github.com/paulmillr/jage) Age encryption, in Javascript
+* [livesecret](https://github.com/JesseStimpson/livesecret) Phoenix app to share secrets
+* [mix_audit](https://github.com/mirego/mix_audit) Audit Elixir dependencies for problems
+* [passkit](https://github.com/coorasse/passkit) Apple Wallet passes in Ruby
+* [pg_graphql](https://github.com/supabase/pg_graphql) Embed GraphQL directly in PostgresQL
+* [traveling-ruby](https://github.com/phusion/traveling-ruby) Package Ruby apps as binaries
+* [typewriter.vim](https://github.com/AndrewRadev/typewriter.vim) Typewriter noises for VIM!
