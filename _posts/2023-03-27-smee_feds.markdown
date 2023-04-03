@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "SmeeFeds, an unplanned federation add-on for Smee"
-date:   2023-03-27 16:00:00
+title: "SmeeFeds, an unplanned federation add-on for Smee"
+date: 2023-03-27 16:00:00
 categories: software
 header_image: smee.png
 author: Pete Birkinshaw
