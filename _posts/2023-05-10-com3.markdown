@@ -1,0 +1,43 @@
+---
+layout: post
+title: "A Cup Of Matcha 3"
+date: 2023-05-10 08:50:00
+categories: software
+author: Pete Birkinshaw
+header_image: phuong-nguyen-DgW9B48pRb4-unsplash.jpg
+header_credit: Photo by Phuong Nguyen at Unsplash
+published: true
+---
+
+Passkeys have been a recurrent interesting topic over the last week. I wasn't looking for information on Passkeys but
+it found me:
+
+* [Vittorio on the vagueness of "Passkey" (Twitter)](https://twitter.com/vibronet/status/1617997170023739394?s=46&t=13ICGHlRoKgqDRVOmPzx7w) What people describe as "Passkeys"
+* [Passkeys.directory](https://passkeys.directory/) A list of sites using Passkeys
+* [Yubico / Passkeys](https://resources.yubico.com/53ZDUYE6/at/4q6xspxfwgns6mw3b5f5qp8n/ESG-Showcase-Yubico-Passkeys-November-2022.pdf) Yubico's paper on Passkeys
+
+I've been sharing an introduction to Elixir for Python devs so here are two intros for Ruby devs I spotted last week:
+
+* [The Rubyist's Survival Guide to Elixir and Phoenix (video)](https://www.youtube.com/watch?v=uPWMBDTPMkQ) Updated for 2023
+* [Intro to Elixir for Ruby Developers](https://richardsondx.medium.com/the-role-of-functional-programming-in-web-development-for-ruby-developers-82eee9570cf8) "Why you should learn Elixir if you’re a Ruby developer"
+
+Microservices - I'm a fan but I can also see (and remember) lots of potential problems:
+
+* [Top 10 Microservices Design Principles and Best Practices](https://medium.com/javarevisited/10-microservices-design-principles-every-developer-should-know-44f2f69e960f)
+* [Architecture Patterns for Microservices](https://blog.openreplay.com/architecture-patterns-for-microservices)
+* [Starting With Microfrontends](https://semaphoreci.com/blog/adopt-microfrontends) 
+
+Some general identity and (shudder) cybersecurity links:
+
+* [NSA & CISA 'Identity and Access Management: Recommended Best Practices for Administrators'](https://media.defense.gov/2023/Mar/21/2003183448/-1/-1/0/ESF%20IDENTITY%20AND%20ACCESS%20MANAGEMENT%20RECOMMENDED%20BEST%20PRACTICES%20FOR%20ADMINISTRATORS%20PP-23-0248_508C.PDF) (PDF)
+* [What is Identity Threat Detection and Response (ITDR)?](https://www.lepide.com/blog/what-is-identity-threat-detection-and-response-itdr/)
+* [List of Identity and Related Conferences 2023](https://github.com/fedidcg/meetings/wiki/List-of-Identity-and-Related-Conferences---2023)
+* [SSO Gadgets: Escalate (Self-)XSS to ATO](https://security.lauritz-holtmann.de/post/xss-ato-gadgets/)
+
+And finally some neat software:
+
+* [plrust](https://github.com/tcdi/plrust/releases/tag/v1.0.0) Write Postgresql procedures in safe Rust
+* [Spin](https://github.com/fermyon/spin) Build microservices with Web assembly (WASM)
+* [Orbstack:](https://github.com/orbstack/orbstack) An alternative to Docker Desktop for Macs
+* [Make Your CLI Demos a Breeze with Zero Stress and Zero Mistakes](https://martinheinz.dev/blog/94) Scripting and recording CLI demos
+* [Tart](https://github.com/cirruslabs/tart) Automate Mac OS VMs for testing
