@@ -16,7 +16,7 @@ it found me:
 * [Passkeys.directory](https://passkeys.directory/) A list of sites using Passkeys
 * [Yubico / Passkeys](https://resources.yubico.com/53ZDUYE6/at/4q6xspxfwgns6mw3b5f5qp8n/ESG-Showcase-Yubico-Passkeys-November-2022.pdf) Yubico's paper on Passkeys
 
-I've been sharing an introduction to Elixir for Python devs so here are two intros for Ruby devs I spotted last week:
+I've been sharing an introduction to Elixir for Python devs in project docs so here are two intros for Ruby devs I spotted last week:
 
 * [The Rubyist's Survival Guide to Elixir and Phoenix (video)](https://www.youtube.com/watch?v=uPWMBDTPMkQ) Updated for 2023
 * [Intro to Elixir for Ruby Developers](https://richardsondx.medium.com/the-role-of-functional-programming-in-web-development-for-ruby-developers-82eee9570cf8) "Why you should learn Elixir if you’re a Ruby developer"
