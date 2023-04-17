@@ -9,7 +9,7 @@ header_credit: Photo by Phuong Nguyen at Unsplash
 published: true
 ---
 
-There was a strong Postgresql theme this week:
+There was a strong Postgresql theme last week:
 
 * [Postgres: The Graph Database You Didn't Know You Had](https://www.dylanpaulus.com/posts/postgres-is-a-graph-database/) Using Postgresql graph data
 * [SQL Maxis: Why We Ditched RabbitMQ And Replaced It With A Postgres Queue](https://www.prequel.co/blog/sql-maxis-why-we-ditched-rabbitmq-and-replaced-it-with-a-postgres-queue) RabbitMQ is great but it does seem to be overkill for simpler apps.
@@ -18,7 +18,7 @@ There was a strong Postgresql theme this week:
 * [PostgreSQL: credcheck](https://www.postgresql.org/about/news/credcheck-v10-released-2619/) Extensions to manage passwords for PG users
 * [PL/Rust Just Shipped: Easy Way to Try It Out](https://yrashk.com/blog/2023/04/05/plrust-just-shipped-easy-way-to-try-it-out/) Try the new Rust add-on for PG
 * [PostgreSQL: Documentation: 15: MERGE](https://www.postgresql.org/docs/current/sql-merge.html) I had no idea MERGE existed
-* [GitHub - ZennerIoT/merge_into_polyfill: DSL and polyfill to express MERGE queries using ecto (postgres adapter only)](https://github.com/ZennerIoT/merge_into_polyfill) Adding PG MERGE to Ecto
+* [merge_into_polyfill](https://github.com/ZennerIoT/merge_into_polyfill) Adding PG MERGE to Ecto
 * [Supavisor](https://github.com/supabase/supavisor) Another useful PG connection pooler, but written in Elixir!
 
 Webassembly (WASM) seems to be maturing enough to be very useful now, but last week I found saying "WASM" in public was

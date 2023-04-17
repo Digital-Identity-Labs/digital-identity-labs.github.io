@@ -29,7 +29,7 @@ We've included a simple Livebook so you can easily try Shin with your own Shibbo
 
 ## A Few Examples
 
-### Listing a user's attribute data released to an SP
+Listing a user's attribute data as released to an SP - this is similar to the `aacli.sh` script
 
 ```elixir
 {:ok, attr_data} = Shin.attributes(idp, "https://test.ukfederation.org.uk/entity", "pete")
@@ -40,13 +40,13 @@ Shin.Attributes.names(attr_data)
 # "eduPersonUniqueID", "o"]
 ```
 
-### Viewing a simulated SAML2 assertion containing user attributes
+Viewing a simulated SAML2 assertion containing user attributes
 
 ```elixir
 {:ok, saml_assertion_xml} = Shin.assertion(idp, "https://test.ukfederation.org.uk/entity", "pete")
 ```
 
-### Fetching an SP's metadata
+Fetching an SP's metadata (as with `mdquery.sh`)
 
 ```elixir
 {:ok, metadata_xml} = Shin.metadata(idp, "https://test.ukfederation.org.uk/entity")
