@@ -1,0 +1,49 @@
+---
+layout: post
+title: "A Cup Of Matcha 4"
+date: 2023-04-17 11:30:00
+categories: software
+author: Pete Birkinshaw
+header_image: phuong-nguyen-DgW9B48pRb4-unsplash.jpg
+header_credit: Photo by Phuong Nguyen at Unsplash
+published: true
+---
+
+There was a strong Postgresql theme this week:
+
+* [Postgres: The Graph Database You Didn't Know You Had](https://www.dylanpaulus.com/posts/postgres-is-a-graph-database/) Using Postgresql graph data
+* [SQL Maxis: Why We Ditched RabbitMQ And Replaced It With A Postgres Queue](https://www.prequel.co/blog/sql-maxis-why-we-ditched-rabbitmq-and-replaced-it-with-a-postgres-queue) RabbitMQ is great but it does seem to be overkill for simpler apps.
+* [Announcing FerretDB 1.0 GA - a truly Open Source MongoDB alternative](https://blog.ferretdb.io/ferretdb-1-0-ga-opensource-mongodb-alternative/) I didn't like MongoDB, but much of that was due to the dev culture and decisions - maybe I'll like this clone?
+* [Setting Up PostgreSQL Failover and Failback, the Right Way!](https://www.highgo.ca/2023/04/10/setting-up-postgresql-failover-and-failback-the-right-way/) I'm very out of date on PG clustering and replication
+* [PostgreSQL: credcheck](https://www.postgresql.org/about/news/credcheck-v10-released-2619/) Extensions to manage passwords for PG users
+* [PL/Rust Just Shipped: Easy Way to Try It Out](https://yrashk.com/blog/2023/04/05/plrust-just-shipped-easy-way-to-try-it-out/) Try the new Rust add-on for PG
+* [PostgreSQL: Documentation: 15: MERGE](https://www.postgresql.org/docs/current/sql-merge.html) I had no idea MERGE existed
+* [GitHub - ZennerIoT/merge_into_polyfill: DSL and polyfill to express MERGE queries using ecto (postgres adapter only)](https://github.com/ZennerIoT/merge_into_polyfill) Adding PG MERGE to Ecto
+* [Supavisor](https://github.com/supabase/supavisor) Another useful PG connection pooler, but written in Elixir!
+
+Webassembly (WASM) seems to be maturing enough to be very useful now, but last week I found saying "WASM" in public was
+  embarrassing. 
+
+* [Wasm, WASI, Wagi: What are they?](https://www.fermyon.com/blog/wasm-wasi-wagi) They are all embarrassing to say
+* [Announcing WCGI: WebAssembly + CGI](https://wasmer.io/posts/announcing-wcgi) CGI is back!
+* [WAPM - WebAssembly Package Manager](https://wapm.dev/) A WASM package manager
+
+And various other interesting things:
+
+* [LiveSvelte](https://wout.space/notes/live-svelte) Integrating Svelte into Phoenix LiveViews
+* [Elixir Idioms for JavaScript Developers](https://pspdfkit.com/blog/2023/elixir-idioms-for-javascript-developers/) I've shared similar for Python and Ruby - this is an Elixir intro for JS devs
+* [Iconhunt](https://www.iconhunt.site/) Lots of icons
+* [An Introduction to Mocking Tools for Elixir](https://blog.appsignal.com/2023/04/11/an-introduction-to-mocking-tools-for-elixir.html) I've settled on using Bypass for HTTP mocking
+* [Fisk: A pure Ruby assembler](https://github.com/tenderlove/fisk) Tenderlove's latest - a Ruby x86 assembler
+* [Squib](http://squib.rocks/) Build and print card games with Ruby
+* [Introducing Security Device support on RubyGems’ CLI](https://blog.rubygems.org/2023/04/11/security-device-cli-support.html) FIDO2 reaches RubyGems
+* [8086 Emulator](https://yjdoc2.github.io/8086-emulator-web/) An online x86 compiler
+* [Tetris](https://tetris.com/tetris-e60/) *Almost* the original Tetris, playable online to promote the Apple film.
+* [Speaking Primal](http://speakingprimal.blogspot.com/) I was surprised to start playing Far Cry Primal and realise the invented language is properly constructed, and has speakers
+* [Ky](https://github.com/sindresorhus/ky) Another enhancement/replacement for Javascript's horrible Fetch
+* [CrabLang](https://crablang.org/) Rust has been forked, I don't know why.
+* [Bash string manipulation](https://levelup.gitconnected.com/5-bash-string-manipulation-methods-that-help-every-developer-49d4ee38b593) I need this for Docker projects
+* [Load Balancing](https://samwho.dev/load-balancing/) Load balancing strategies explained with neat animations
+* [University multilateral federation solution design](https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/multilateral-federation-introduction) For when a university manager announces Shibboleth isn't needed, again.
+* [Codeberg.org](https://codeberg.org/) A new alternative to Github
+* [Assistant by scite](https://scite.ai/assistant) An "AI" chatbot trained on academic journals.
