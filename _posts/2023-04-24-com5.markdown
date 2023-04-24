@@ -1,0 +1,58 @@
+---
+layout: post
+title: "A Cup Of Matcha 5"
+date: 2023-04-24 11:30:00
+categories: software
+author: Pete Birkinshaw
+header_image: phuong-nguyen-DgW9B48pRb4-unsplash.jpg
+header_credit: Photo by Phuong Nguyen at Unsplash
+published: true
+---
+
+A couple of identity management things:
+
+* [Boruta](https://github.com/malach-it/boruta-server) A neat new OpenID Connect IdP written in Elixir
+* [Passkeys: What the Heck and Why?](https://css-tricks.com/passkeys-what-the-heck-and-why/) Passkeys are still a hot topic - lots of talk, so hopefully implementations will blossom soon
+
+A few Postgresql things, of course:
+
+* [Dexter: The automatic indexer for Postgres](https://github.com/ankane/dexter) I like all software that shares my middle name
+* [Dbdev: PostgreSQL Package Manager](https://supabase.com/blog/dbdev) A new package manager, for Postgresql
+
+A few DevOps things:
+
+* [Devops-solutions-map](https://github.com/Wivik/devops-solutions-map) Visualise your stack of infra services
+* [Terraform 1.4](https://amitkumardube.medium.com/terraform-1-4-things-to-notice-ea107b0cda92) New Terraform, but thankfully few changes
+* [No one should ever write a single line of Terraform code](https://medium.com/@mike_tyson_cloud/no-one-should-ever-write-a-single-line-of-terrafom-code-5488d95211a8) Salespitch for a visual terraform builder
+
+Applications: 
+
+* [Typesense](https://typesense.org/) A new search engine - I'm interested in anything less needy and wobbly than ElasticSearch
+* [Qubes OS](https://www.qubes-os.org/intro/) I'd forgotten Qubes was still a thing. It's endorsement by Snowden is not as valuable as it once was.
+* [Cuttlefish](https://github.com/mlandauer/cuttlefish) "Transactional email server with a lovely web interface"
+
+Software society thing: 
+
+* [The Free Software Foundation is dying](https://drewdevault.com/2023/04/11/2023-04-11-The-FSF-is-dying.html) FSF needs to change greatly to survive
+
+Things I might find useful:
+
+* [Suggestions for Go project layout](https://gist.github.com/candlerb/3cb11576b2d73800b58f3b548dc2ba4a) I might be using Go more soon, for CLI tools. Maybe.
+* [How to reduce JVM docker image size by at least 60%](https://blog.devops.dev/how-to-reduce-jvm-docker-image-size-by-at-least-60-459ec87b95d8) I'm not sure if the benefits outweigh the risks but I'm a sucker for container size golfing 
+* [What is Jellyfish?](https://jellyfish-dev.github.io/jellyfish-docs/) I'm very interested in using RTSP, but not for video or audio...
+* [Feature Flags in Phoenix](https://dockyard.com/blog/2023/02/28/how-to-add-feature-flags-in-a-phoenix-application-using-fun_with_flags) I should do this.
+* [Ruby Faker](https://github.com/faker-ruby/faker/blob/main/CHANGELOG.md) Software that's *very* old, and now preventing fake email accidents by default
+* [Component driven development on Rails with Phlex](https://fly.io/ruby-dispatch/component-driven-development-on-rails-with-phlex/) I'm doing less development with Rails now, but Phlex's features (or maybe just novelty) are tempting
+* [KV.js](https://github.com/HeyPuter/kv.js) A key-value store in Javascript, something I take for granted in Elixir but sometimes, I need to use JS.
+* [oHash](https://github.com/unjs/ohash) Javascript hashing
+
+Interesting, fun or bizarre things:
+
+* [A Number System Invented by Inuit Schoolchildren Will Make Its Silicon Valley Debut](https://www.scientificamerican.com/article/a-number-system-invented-by-inuit-schoolchildren-will-make-its-silicon-valley-debut/) A new number system [reaches Unicode](https://www.adn.com/alaska-life/2022/11/06/numerals-invented-by-kaktovik-students-can-now-be-used-digitally/)
+* [The Hyperspace Story](https://cohost.org/cathoderaydude/post/1311259-hell-never-ends-on-x) HP did some mind-bogglingly wierd things to their PCs in the 1990s
+* [Smithsonian Open Access](https://www.si.edu/openaccess) Millions of open source images from The Smithsonian. Without spooky fingers or scary teeth. 
+* [Carbonyl](https://github.com/fathyb/carbonyl) a *technically*-text-only web browser that will show graphics, videos, even JS apps like Doom.
+* [Rust for m68k](https://iandouglasscott.com/2023/04/12/hello-world-in-rust-for-m68k-with-no-core-and-compiler-patches/) Compile m68k software with Rust. That's the CPU in Amigas and classic Macs.
+* [Lost at SQL - SQL learning game](https://lost-at-sql.therobinlord.com/) A game which teaches (or at least tests) basic SQL skills
+* [Semaphore](https://github.com/everythingishacked/Semaphore) Type on your computer by waving your arms
+* [RS232 Serial Wifi Modem](https://www.tindie.com/products/theoldnet/rs232-serial-wifi-modem-for-vintage-computers-v4/#specs) Emulate ancient modems on ancient computers, using Wifi. I might get one.
