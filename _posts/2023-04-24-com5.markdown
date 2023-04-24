@@ -9,6 +9,8 @@ header_credit: Photo by Phuong Nguyen at Unsplash
 published: true
 ---
 
+There's no dominant theme this week buts lots of things.
+
 A couple of identity management things:
 
 * [Boruta](https://github.com/malach-it/boruta-server) A neat new OpenID Connect IdP written in Elixir
