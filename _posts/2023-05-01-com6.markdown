@@ -29,7 +29,7 @@ Passkeys are still a hot topic
 
 Shell scripting with BASH 
 
-* [sh: A shell parser, formatter, and interpreter with bash support; includes shfmt](https://github.com/mvdan/sh) Bash formatter
+* [sh/shfmt](https://github.com/mvdan/sh) Bash formatter
 * [ShellCheck](https://www.shellcheck.net/) Bash linter with a great name
 * [Pure-sh-bible](https://github.com/dylanaraps/pure-sh-bible) A big cookbook of shell-only approaches to common problems
 
@@ -65,7 +65,7 @@ Web development
 
 * [CSS Blend Modes](https://garden.bradwoods.io/notes/css/blend-modes) I'm tempted to make my homepage retro-green using this.
 * [Wasp](https://wasp-lang.dev/)  Yet another framework (for a framework) for Javascript. Easier, Rails-like React
-* [Pico.css • Minimal CSS Framework for semantic HTML](https://picocss.com/) A tiny CSS kit
+* [Pico.css ](https://picocss.com/) A tiny CSS kit
 * [List.js](https://listjs.com/) Neat JS list display, sorting and filtering library
 * [ViewComponent](https://viewcomponent.org/) Another component library for Rails
 * [Rails 7, Bootstrap CSS + JavaScript with ESBuild](https://ryanbigg.com/2023/04/rails-7-bootstrap-css-javascript-with-esbuild) I can't keep up
