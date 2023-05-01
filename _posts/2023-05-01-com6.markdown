@@ -9,8 +9,9 @@ header_credit: Photo by Phuong Nguyen at Unsplash
 published: true
 ---
 
-I almost forgot to post this today - it's a Bank Holiday and I've spent the morning trying to spec a new bathroom. 
-Are rimless toilets a good idea? Mirrors have Bluetooth now. I don't know what I'm doing but hopefully the people I'm 
+I almost forgot to post this today - it's a Bank Holiday and I've spent the morning trying to spec a new bathroom.
+
+Even in bathrooms technology moves on - are rimless toilets a good idea? Mirrors have Bluetooth now! I don't know what I'm doing but hopefully the people I'm 
 paying do.
 
 BlueSky Social has been the big new thing this week. They appear to have provided The Big Benefit of Self Sovereign IDs
