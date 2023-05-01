@@ -19,7 +19,7 @@ without any of the blockchain garbage as a side-effect of making their new backe
 seamlessly change home servers.
 
 * [First impressions of Bluesky's AT Protocol](https://educatedguesswork.org/posts/atproto-firstlook/) Complicated but promising
-* [XRPC | AT Protocol](https://atproto.com/specs/xrpc) XRPC is possibly a new rival to GraphQL for simpler data structures?
+* [XRPC](https://atproto.com/specs/xrpc) XRPC is possibly a new rival to GraphQL for simpler data structures?
 
 Passkeys are still a hot topic
 
