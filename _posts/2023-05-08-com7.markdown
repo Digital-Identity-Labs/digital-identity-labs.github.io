@@ -9,7 +9,7 @@ header_credit: Photo by Phuong Nguyen at Unsplash
 published: true
 ---
 
-Quality over quantity this week **ahem**
+Quality over quantity this week.
 
 Interesting identity management links from last week:
 
