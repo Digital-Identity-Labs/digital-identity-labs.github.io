@@ -1,0 +1,43 @@
+---
+layout: post
+title: "A Cup Of Matcha 7"
+date: 2023-05-08 16:20:00
+categories: software
+author: Pete Birkinshaw
+header_image: phuong-nguyen-DgW9B48pRb4-unsplash.jpg
+header_credit: Photo by Phuong Nguyen at Unsplash
+published: true
+---
+
+Quality over quantity this week **ahem**
+
+Interesting identity management links from last week:
+
+* [Government issued digital credentials and the privacy landscape](https://openid.net/2023/05/04/announcing-the-final-draft-government-issued-digital-credentials-and-the-privacy-landscape/) "offers a balanced, global view of privacy concerns by exploring laws, implementations, gaps, and tradeoffs facing the people developing these new ecosystems"
+* [I outsourced all authentication headaches in 1 hour](https://medium.com/@justincloud/i-managed-to-outsource-all-authentication-headaches-in-1-hour-for-my-saas-17357357487) There are *always* headaches but I'm interested in this approach all the same
+* [Spid-sp-test](https://github.com/italia/spid-sp-test) A SAML SP test tool
+* [How to SSH Properly](https://goteleport.com/blog/how-to-ssh-properly/) SSH Best Practices (potentially skewed towards things Teleport can help with, but justifiably)
+* [SSH in Javascript](https://github.com/mscdex/ssh2) SSH in Javascript. Maybe useful for An Idea.
+
+Sysadmin and development links:
+
+* [CLI tricks every developer should know](https://github.blog/2023-04-26-cli-tricks-every-developer-should-know/) Github's intro to using the terminal
+* [ATProto](https://github.com/moomerman/atproto) The AT Protocol (used by Bluesky, etc) for Elixir
+* [Bullet Train](https://bullettrain.co/) A SaaS platform written in Ruby
+* [Exposing a Rust Library to Node with Napi-rs](https://johns.codes/blog/exposing-a-rust-library-to-node-with-napirs) Embedding Rust in Node
+* [Inquirer](https://github.com/SBoudrias/Inquirer.js) Commandline UI elements for interactive CLI app in Javascript
+* [WebContainers now run on Safari, iOS, and iPadOS](https://blog.stackblitz.com/posts/webcontainers-are-now-supported-on-safari/) You can now run Node, etc in browsers. Backend in the frontend.
+* [SoftServe](https://github.com/charmbracelet/soft-serve) A self-contained Git hosting service
+* [An Update on the Lock Icon](https://blog.chromium.org/2023/05/an-update-on-lock-icon.html) The browser padlock icon for TLS hasn't made much sense for awhile - Chrome is changing it to a generic site settings icon
+* [Badging for home screen web apps](https://webkit.org/blog/14112/badging-for-home-screen-web-apps/) Save a website as a desktop icon, now with little red number badges
+* [Browsr](https://github.com/juftin/browsr) A modern TUI file browser, grandchild of DOSShell and File Commander. 
+* [Service Mesh Landscape](https://layer5.io/service-mesh-landscape) I just want all my things to be able to talk to my other things
+* [Still](https://stillstatic.io/) A static website builder, written in Elixir
+* [Minisearch](https://github.com/lucaong/minisearch), [Lunr](https://github.com/olivernn/lunr.js),
+  [Flexsearch](https://github.com/nextapps-de/flexsearch) and [Fuse](https://github.com/krisk/fuse) Lots of JS search engines for static websites. I have had another Idea, I'm afraid.
+
+And finally, some odder items
+
+* [30th anniversary of licensing the Web](https://www.w3.org/blog/2023/04/30th-anniversary-of-licensing-the-web-for-general-use-and-at-no-cost/) 30 Years!
+* [Image Carbon](https://www.imagecarbon.com/) Check and fix the carbon impact of web images
+* [The Breakfast — Meet new people over breakfast](https://thebreakfast.app/#faq) It's a dating app for making friends, or just having an interesting chat
