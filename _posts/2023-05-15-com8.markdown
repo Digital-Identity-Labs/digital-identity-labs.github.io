@@ -20,7 +20,7 @@ First, identity management:
 * [Hackers stole passwords of Worldcoin Orb operators](https://techcrunch.com/2023/05/12/hackers-stole-passwords-of-worldcoin-orb-operators) The "crypto" world's incompetence continues
 * [Aliaste sulgemine](https://www.eesti.ee/et/aliaste-sulgemine/aliaste-sulgemine) Estonia is no longer going to give all citizens an email alias address, which is sad - but apparently they weren't being used.
 
-Amazon is open-sourcing its Cedar ACL policy language. There are already existing, well established alternatives (Permify and ORY) spring to mind
+Amazon is open-sourcing its Cedar ACL policy language. There are already existing, well established alternatives (Permify and Ory spring to mind)
   but Amazon's market dominance and use of Cedar for its own services make this A Big Deal - knowing how to use Cedar is going to
  be a key skill for cloud engineers. It's also rather impressive.
 
@@ -39,8 +39,8 @@ I'm considering starting my own Awesome list on IAM tech (skewed towards federat
 * [Generator](https://github.com/dar5hak/generator-awesome-list) this seems completely unnecessary
 * [The awesome manifesto](https://github.com/sindresorhus/awesome/blob/main/awesome.md) but this doesn't
 
-I *almost* used Cyrstal for something useful last week but it lacked a library ("shard") to do something I can't write myself.
- This is a shame - it looks like a great language and the standard library looks great - it even has good XML support built in. 
+I *almost* used Crystal for something useful last week but it lacked a library ("shard") to do something I can't write myself.
+ This is a shame - it looks like a great language and the standard library looks very good - it even has good XML support built in. 
  But sadly not XMLSec. 
 
 * [💎Crystal the language for humans💎 - by Diego Crespo](https://www.deusinmachina.net/p/a-look-at-the-crystal-programming)
@@ -49,16 +49,16 @@ I *almost* used Cyrstal for something useful last week but it lacked a library (
 The microservices vs monoliths debate continues. I actually tend to write backend services that at neither microservices or monoliths, just
   old fashioned middleware services.
 
-* [Monoliths are not dinosaurs | All Things Distributed](https://www.allthingsdistributed.com/2023/05/monoliths-are-not-dinosaurs.html)
-* [RabbitMQ in Microservice Architecture | by Kostya Stepanov | CodeX | Medium](https://medium.com/codex/rabbitmq-in-microservice-architecture-86704b27a269)
+* [Monoliths are not dinosaurs](https://www.allthingsdistributed.com/2023/05/monoliths-are-not-dinosaurs.html)
+* [RabbitMQ in Microservice Architecture](https://medium.com/codex/rabbitmq-in-microservice-architecture-86704b27a269)
 * [Monolith vs Microservices: With Elixir You Don't Need to Choose](https://lakret.net/blog/2023-05-08-elixir-vs-microservices)
-* [Implementing and Designing Microservices | Redis](https://redis.com/blog/implementing-designing-microservices/)
+* [Implementing and Designing Microservices](https://redis.com/blog/implementing-designing-microservices/)
 
 I am looking for a static website builder, and Bridgetown looks good:
 
-* [Bridgetown Cards: Share what you know. Build what you learn.](https://bridgetown.cards/)
-* [Bridgetown: Next-Generation Progressive Site Generator](https://www.bridgetownrb.com/)
-* [Let's make a blog with Bridgetown | Hanami Mastery](https://hanamimastery.com/episodes/44-bridgetown)
+* [Bridgetown](https://www.bridgetownrb.com/) Looks nicer than Jekyll
+* [Bridgetown Cards](https://bridgetown.cards/) I like this hint sharing site too
+* [Let's make a blog with Bridgetown](https://hanamimastery.com/episodes/44-bridgetown) Bridgetown tutoral
 
 Various other tech links from last week:
 
