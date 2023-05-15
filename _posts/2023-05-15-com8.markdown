@@ -1,0 +1,84 @@
+---
+layout: post
+title: "A Cup Of Matcha 8"
+date: 2023-05-15 10:27:00
+categories: software
+author: Pete Birkinshaw
+header_image: phuong-nguyen-DgW9B48pRb4-unsplash.jpg
+header_credit: Photo by Phuong Nguyen at Unsplash
+published: true
+---
+
+There's a thin line between research and procrastination. Or maybe a big grey area. Anyway, erm, lots of links this week.
+
+First, identity management:
+
+* [European Digital Identity Wallets: Commission publishes first technical Toolbox towards prototypes](https://digital-strategy.ec.europa.eu/en/news/european-digital-identity-wallets-commission-publishes-first-technical-toolbox-towards-prototypes) I still believe this is a dead end, but maybe I'm wrong.
+* [Avoiding an Identity Crisis: An Identity and Access Management Competency Model](https://www.proquest.com/docview/2811391554) PhD paper by ID Pro member Ken Myers
+* [Loud Men Talking Loudly](https://www.criticalinfralab.net/wp-content/uploads/2023/04/LoudMen-CorinneCath-CriticalInfraLab.pdf) IETF is the case study but this phenomena is still the norm
+* [Awesome IAM](https://github.com/kdeldycke/awesome-iam) Not quite the Awesome List I was after (it's mostly principles, policy and practices) but still awesome
+* [Hackers stole passwords of Worldcoin Orb operators](https://techcrunch.com/2023/05/12/hackers-stole-passwords-of-worldcoin-orb-operators) The "crypto" world's incompetence continues
+* [Aliaste sulgemine](https://www.eesti.ee/et/aliaste-sulgemine/aliaste-sulgemine) Estonia is no longer going to give all citizens an email alias address, which is sad - but apparently they weren't being used.
+
+Amazon is open-sourcing its Cedar ACL policy language. There are already existing, well established alternatives (Permify and ORY) spring to mind
+  but Amazon's market dominance and use of Cedar for its own services make this A Big Deal - knowing how to use Cedar is going to
+ be a key skill for cloud engineers. It's also rather impressive.
+
+* [Cedar Language](https://www.cedarpolicy.com/en) All about the Cedar policy language 
+* [edar-agent](https://github.com/permitio/cedar-agent) An open source service that uses Cedar
+* [Open Policy Agent](https://www.openpolicyagent.org/) Or you could use Rego instead
+* [Opal](https://github.com/permitio/opal) or Cedar *and* Rego
+* [Opal-fetcher-Postgres](https://github.com/permitio/opal-fetcher-postgres) and store policies in Postgresql
+* [Permify](https://github.com/Permify/permify) Or of course Permify/Zanzibar is already around
+* [Ory](https://www.ory.sh/what-is-the-ory-permission-language/) or Ory
+
+I'm considering starting my own Awesome list on IAM tech (skewed towards federation and HE)
+
+* [The Awesome Side of GitHub - Awesome Lists](https://dev.to/this-is-learning/the-awesome-side-of-github-awesome-lists-2a5h)
+* [Awesome](https://github.com/sindresorhus/awesome) an awesome list of awesome lists
+* [Generator](https://github.com/dar5hak/generator-awesome-list) this seems completely unnecessary
+* [The awesome manifesto](https://github.com/sindresorhus/awesome/blob/main/awesome.md) but this doesn't
+
+I *almost* used Cyrstal for something useful last week but it lacked a library ("shard") to do something I can't write myself.
+ This is a shame - it looks like a great language and the standard library looks great - it even has good XML support built in. 
+ But sadly not XMLSec. 
+
+* [💎Crystal the language for humans💎 - by Diego Crespo](https://www.deusinmachina.net/p/a-look-at-the-crystal-programming)
+* [Shardbox: A shards database](https://shardbox.org/)
+
+The microservices vs monoliths debate continues. I actually tend to write backend services that at neither microservices or monoliths, just
+  old fashioned middleware services.
+
+* [Monoliths are not dinosaurs | All Things Distributed](https://www.allthingsdistributed.com/2023/05/monoliths-are-not-dinosaurs.html)
+* [RabbitMQ in Microservice Architecture | by Kostya Stepanov | CodeX | Medium](https://medium.com/codex/rabbitmq-in-microservice-architecture-86704b27a269)
+* [Monolith vs Microservices: With Elixir You Don't Need to Choose](https://lakret.net/blog/2023-05-08-elixir-vs-microservices)
+* [Implementing and Designing Microservices | Redis](https://redis.com/blog/implementing-designing-microservices/)
+
+I am looking for a static website builder, and Bridgetown looks good:
+
+* [Bridgetown Cards: Share what you know. Build what you learn.](https://bridgetown.cards/)
+* [Bridgetown: Next-Generation Progressive Site Generator](https://www.bridgetownrb.com/)
+* [Let's make a blog with Bridgetown | Hanami Mastery](https://hanamimastery.com/episodes/44-bridgetown)
+
+Various other tech links from last week:
+
+* [Uptime Guarantees — A Pragmatic Perspective](https://world.hey.com/itzy/uptime-guarantees-a-pragmatic-perspective-736d7ea4) Nines.
+* [Cal](https://github.com/calcom/cal.com) "The open-source Calendly alternative"
+* [Cloud Storage for HE best practices](https://www.backblaze.com/blog/cloud-storage-for-higher-education-benefits-best-practices/)
+* [Why we used open-source software to build Cockpit](https://www.scaleway.com/en/blog/cockpit-scaleway-observability-product/) Free monitoring dashboard from Scaleway
+* [autocannon](https://github.com/mcollina/autocannon) Fast Node-based HTTP benchmarking/load testing
+* [ink-ui](https://github.com/vadimdemedes/ink-ui) Nice CLI UI (TUI) elements for JS
+* [The 2023 Developer Survey is now live!](https://stackoverflow.blog/2023/05/08/the-2023-developer-survey-is-now-live/) Doooo iiiiit
+* [Agentize](https://gist.github.com/roehst/1dd4ff9a2d75a7285b144ca9b7150748) Wrapping up data into agents in Elixir 
+* [Upload Encrypted Files to S3](https://www.peterullrich.com/upload-encrypted-files-to-s3) Nice way to encrypt user files on S3 / B2
+* [Build your own private WireGuard VPN with PiVPN](https://www.jeffgeerling.com/blog/2023/build-your-own-private-wireguard-vpn-pivpn) Wireguard on a Pi
+* [Quickwit](https://github.com/quickwit-oss/quickwit) Another new search engine
+* [How LinkedIn Adopted A GraphQL Architecture for Product Development](https://engineering.linkedin.com/blog/2023/how-linkedin-adopted-a-graphql-architecture-for-product-developm) GraphQL at LinkedIn
+* [How to manage your technical backlog](https://levelup.gitconnected.com/how-to-manage-your-technical-backlog-868415f8eea9) Alternatives to procrastination I suppose
+
+Finally a few odder things
+
+* [Warp AI](https://www.warp.dev/warp-ai) The Warp terminal for MacOS now has an AI assistant that, gods help me, is actually useful
+* [SubTLS](https://subtls.pages.dev/) Watch a page load itself over TLS, with all the technical bits visible and explained
+* [GoblinTools](https://goblin.tools/) AI-assisted tools for everyday things. 
+* [Hangul word of the day](https://chrome.google.com/webstore/detail/hangul/knkkmemihnkkehhkkdonlnfgajbjpadc) Korean reading and vocab extension for Chrome
