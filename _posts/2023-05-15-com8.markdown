@@ -46,7 +46,7 @@ I *almost* used Crystal for something useful last week but it lacked a library (
 * [💎Crystal the language for humans💎 - by Diego Crespo](https://www.deusinmachina.net/p/a-look-at-the-crystal-programming)
 * [Shardbox: A shards database](https://shardbox.org/)
 
-The microservices vs monoliths debate continues. I actually tend to write backend services that at neither microservices or monoliths, just
+The microservices vs monoliths debate continues. I actually tend to write backend services that are neither microservices or monoliths, just
   old fashioned middleware services.
 
 * [Monoliths are not dinosaurs](https://www.allthingsdistributed.com/2023/05/monoliths-are-not-dinosaurs.html)
@@ -73,7 +73,7 @@ Various other tech links from last week:
 * [Upload Encrypted Files to S3](https://www.peterullrich.com/upload-encrypted-files-to-s3) Nice way to encrypt user files on S3 / B2
 * [Build your own private WireGuard VPN with PiVPN](https://www.jeffgeerling.com/blog/2023/build-your-own-private-wireguard-vpn-pivpn) Wireguard on a Pi
 * [Quickwit](https://github.com/quickwit-oss/quickwit) Another new search engine
-* [How LinkedIn Adopted A GraphQL Architecture for Product Development](https://engineering.linkedin.com/blog/2023/how-linkedin-adopted-a-graphql-architecture-for-product-developm) GraphQL at LinkedIn
+* [How LinkedIn Adopted A GraphQL Architecture](https://engineering.linkedin.com/blog/2023/how-linkedin-adopted-a-graphql-architecture-for-product-developm) GraphQL at LinkedIn
 * [How to manage your technical backlog](https://levelup.gitconnected.com/how-to-manage-your-technical-backlog-868415f8eea9) Alternatives to procrastination I suppose
 
 Finally a few odder things
