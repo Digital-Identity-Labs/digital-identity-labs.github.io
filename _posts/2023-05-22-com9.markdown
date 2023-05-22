@@ -1,0 +1,65 @@
+---
+layout: post
+title: "A Cup Of Matcha 8"
+date: 2023-05-22 11:47:00
+categories: software
+author: Pete Birkinshaw
+header_image: phuong-nguyen-DgW9B48pRb4-unsplash.jpg
+header_credit: Photo by Phuong Nguyen at Unsplash
+published: true
+---
+
+This week I mostly learned that if you use macros and other tricks to quickly and easily create a very large library of modules and
+  functions, you'll reach a point where you realise there's no way to avoid the enormous amount of documentation and tests
+  you now need. But I also found these interesting links.
+
+Identity management links first: the theme is once again Passkeys.
+
+* [Features – privacyID3A](https://www.privacyidea.org/about/features/) A few projects are basing their Passkey implementations using IDEA as a backend. I'm not sure about it.
+* [Passkey - GN5-1 WP5](https://wiki.geant.org/display/GWP5/Passkey?preview=/589070371/633276338/Introduction%20to%20Passkeys%20Usage%20and%20Implementation.pdf) "Introduction to Passkeys Usage and Implementation" presentation (via Geant)
+* [Passkeys.org](https://passkey.org/) An absolutely superb passkey demonstration/test page
+* [Spotlight on: Passkeys](https://developer.apple.com/news/?id=mgdnfp8w) Apple article on Passkeys from last week
+* [Understanding Passkeys](https://michal.sapka.me/2023/passkeys/) A cleat technical overview of Passkeys
+* [Passage](https://passage.1password.com/) 1Password have two new Passkey authenticator products
+* [Passkey Complete](https://passage.1password.com/product/passkey-complete) 1Password's Passkey IdP (JWT only, no SAML or OIDC)
+* [Passkey Flex](https://passage.1password.com/product/passkey-flex) 1Password's Passkey auth add-on for integrating with other IdPs
+* [How to implement passkeys with form autofill in a web app](https://www.youtube.com/watch?v=_qSCYiU_Yr4) A Google tutorial
+* [Examples of Dark Patterns in Privacy](https://luiza.medium.com/examples-of-dark-patterns-in-privacy-3c2baa865378) Anti-privacy tricks
+* [Kenny Log-Ins](https://www.kennylog-in.com/) *groan* NO
+
+I was wondering if these Cup Of Matcha blog posts would work as a mailing list
+
+* [TinyLetter, smaller images](https://www.jscarlton.net/tinyletter-smaller-images/) Mailchimp's free service doesn't support Markdown or image processing, so this scripts tries to fix that
+* [ButtonDown](https://buttondown.email) A commercial alternative to TinyLetter
+
+Systems administration things
+
+* [Distrobox](https://github.com/89luca89/distrobox) Use an Linux distro in a shell. Bit like WSL for Linux 
+* [Syncthing](https://syncthing.net/) Sync things (not really needed if you are inside Apple's ecosystem)
+* [So many bad takes](https://adrianco.medium.com/so-many-bad-takes-what-is-there-to-learn-from-the-prime-video-microservices-to-monolith-story-4bd0970423d4) About the Amazon "monolith" story 
+* [Noti](https://github.com/variadico/noti) Alerts when scripts finish
+* [Docker Swarm vs. Kubernetes](https://semaphoreci.com/blog/docker-swarm-kubernetes) Why I'm not using K8s, more or less
+* [rsync-time-machine.py](https://github.com/basnijholt/rsync-time-machine.py) Time Machine in Python
+* [Warden](https://medium.com/pinterest-engineering/warden-real-time-anomaly-detection-at-pinterest-210c122f6afa) This sort of thing would be useful in an IdP
+* [Building Customer-Facing Real-Time Dashboards with Postgres](https://www.crunchydata.com/blog/building-customer-facing-real-time-dashboards-with-postgres) Postgresql link is required
+* [Hypermodern Terminal Toolbox](https://levelup.gitconnected.com/hypermodern-terminal-toolbox-7a00bfec8315) Modern shell tools and best practices
+* [sniffnet](https://github.com/GyulyVGC/sniffnet) Nice looking network traffic graphs
+* [Task](https://taskfile.dev/) Another alternative to Make/Rake/etc, this time using lots of YAML.
+* [Automate a self-hosted HTTPS tunnel](https://inlets.dev/blog/2022/11/16/automate-a-self-hosted-https-tunnel.html) Inlets looks great.
+* [A Beginner’s Guide to tmux](https://medium.com/pragmatic-programmers/a-beginners-guide-to-tmux-7e6daa5c0154) I am not a beginner to Tmux but I am very forgetful
+
+Programming things
+
+* [Introducing Baseline](https://developer.mozilla.org/en-US/blog/baseline-unified-view-stable-web-features/) Web Browser specs
+* [There are macros and there are macros](https://ash-hq.org/blog/there-are-macros) Elixir macro advice. 
+* [From Ruby to Crystal? Writing and distributing a CLI tool](https://evilmartians.com/chronicles/from-ruby-to-crystal-writing-and-distributing-a-cli-tool) I'm still hoping to use Crystal for a CLI app
+* [Build a grep CLI app in Rust](https://developerlife.com/2022/03/02/rust-grep-cli-app/) Of course Rust is also looking good for CLI apps
+* [Starry-night](https://github.com/wooorm/starry-night) WASM-based syntax highlighting in JS
+* [What should I charge for my product?](https://thoughtbot.com/blog/what-should-i-charge-for-my-product) I am terrible at this. Terrible
+* [contexted](https://github.com/curiosum-dev/contexted) Elixir package for managing complex Phoenix contexts
+
+And finally, unusual things
+
+* [This page is hosted on my Android phone](https://androidblog.a.pinggy.io/) It's on a phone.
+* [First look at new images and UI of the Access controller for PS5](https://blog.playstation.com/2023/05/18/first-look-at-new-images-and-ui-of-the-access-controller-for-ps5-an-all-new-accessibility-controller-kit/) This is both cool and worthwhile (and has a wider application than just games on a PS5)
+* [Early Computer Art in the 50’s & 60’s](https://www.amygoodchild.com/blog/computer-art-50s-and-60s) Art from the first days of computing
