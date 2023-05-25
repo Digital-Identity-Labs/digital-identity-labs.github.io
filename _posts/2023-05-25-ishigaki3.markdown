@@ -5,9 +5,9 @@ date: 2023-05-25 15:02:00
 categories: software
 author: Pete Birkinshaw
 header_image: 39371663884_c29cf054ae_w.jpg
-header_credit: -
 published: true
 ---
+
 A major new version of [Ishigaki](https://github.com/Digital-Identity-Labs/ishigaki) is now available on
   [Github](https://github.com/Digital-Identity-Labs/ishigaki/pkgs/container/ishigaki) and 
   [Docker Hub](https://hub.docker.com/r/digitalidentity/ishigaki). Ishigaki is probably the best Shibboleth IdP
