@@ -1,0 +1,32 @@
+---
+layout: post
+title: "Ishigaki 3.0.0 released"
+date: 2023-05-25 15:02:00
+categories: software
+author: Pete Birkinshaw
+header_image: 39371663884_c29cf054ae_w.jpg
+header_credit: -
+published: true
+---
+A major new version of [Ishigaki](https://github.com/Digital-Identity-Labs/ishigaki) is now available on
+  [Github](https://github.com/Digital-Identity-Labs/ishigaki/pkgs/container/ishigaki) and 
+  [Docker Hub](https://hub.docker.com/r/digitalidentity/ishigaki). Ishigaki is probably the best Shibboleth IdP
+  base container for use with Docker, Kubernetes and other container services, and is available for both AMD64 and 
+  ARM64 platforms.
+
+This release contains the latest stable Shibboleth IdP release 4.3.1, Jetty 10, Debian 11 and Corretto Java 17.
+  If you've been customising Jetty 9 with previous versions of Ishigaki you'll need to update, replace or remove 
+  your changes so they work with the new default configuration. IdP configurations for Ishigaki v2 (using IdP v4.n) 
+  should continue to work but it may be a good idea to check or upgrade them.
+
+It's now possible to install the latest versions of official plugins from the Dockerfile by adding their IDs to the
+new `PLUGIN_IDS` environment variable.
+
+Jetty now logs requests to STDOUT by default and no longer forks on startup, saving a tiny amount of time and a 
+  significant amount of RAM.
+
+Static web assets are now stored in `/opt/jetty-shib/static` and the defaults include a replacement for Jetty's default favicon.
+
+The associated tests have been tweaked and now use Cinc Auditor.
+
+You can read about other minor changes in the [Changelog](https://github.com/Digital-Identity-Labs/ishigaki/blob/master/CHANGELOG.md) on Github.	
