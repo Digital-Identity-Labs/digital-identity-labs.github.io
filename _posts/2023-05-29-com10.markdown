@@ -1,0 +1,80 @@
+---
+layout: post
+title: "A Cup Of Matcha 10"
+date: 2023-05-29 18:20:00
+categories: software
+author: Pete Birkinshaw
+header_image: phuong-nguyen-DgW9B48pRb4-unsplash.jpg
+header_credit: Photo by Phuong Nguyen at Unsplash
+published: true
+---
+
+Two possible projects have interested me this week - even if they eventually go nowhere I've enjoyed looking into new
+  topics. 
+
+Starting with the last week's identity management links, as usual:
+
+* [Touchstones Along My Identity Journey](https://self-issued.info/?p=2345) Mike Jones' recent keynote talk
+* [simhospital](https://github.com/google/simhospital) Not directly relevant to IAM but I want something similar to this for FE/HE organisations
+* [SSI wallet for education and research A technical exploration](https://www.surf.nl/files/2023-05/technical-exploration-ssi-wallet-for-education-and-research.pdf) A good, interesting report but it doesn't ask *why* enough
+* [11 HTML best practices for login & sign-up forms](https://evilmartians.com/chronicles/html-best-practices-for-login-and-signup-forms) Nothing radical but always worth reviewing
+* [A Well Known URL For Your Personal Avatar](https://blog.jim-nielsen.com/2023/well-known-avatar/) If Bluesky/AT leads to a growth in personal domains I can see this being useful
+* [Packaging Open Policy Agent policies with Nix](https://determinate.systems/posts/open-policy-agent) Packaging ACLs like this is new to me
+* [Kestra](https://kestra.io/features) A data processing workflow framework
+* [Giving Back: How to Contribute Your IAM Knowledge to the World](https://www.youtube.com/watch?v=YBP8ffezycY) Heather Flanagan talks about how different organisations build and publish documentation, policies and standards 
+
+Erlang can cluster applications, and it's possible to link services written in other languages into the cluster... How 
+feasible is it to access Java OpenSAML libraries using JInterface? Is it worth accessing C and Rust code this way instead
+of embedding it? I still don't know but I read these pages.
+
+* [How to link your Java application to Elixir/Erlang](http://nsomar.io/java-elixir/) Nice tutorial and overview
+* [Erl_Interface User's Guide](https://www.erlang.org/doc/apps/erl_interface/ei_users_guide.html) Official Erlang docs on integrating with C apps
+* [Getting started with OpenSAML 4](https://blog.samlsecurity.com/post/getting-started-opensaml-v4/) A friendly tutorial on using OpenSAML4
+* [nodex](https://github.com/Overbryd/nodex) Elixir helper modules for working with C cluster components
+* [Erlang erpc](https://www.erlang.org/doc/man/erpc.html) Erlang's own RPC protocol
+* [ErlRPC](https://github.com/sile/erl_rpc) An Erlang RPC client for Rust
+* [ErlDist](https://github.com/sile/erl_dist) Clustering Rust applications with Erlang
+
+While I'm no fan of saying "AI" enthusiastically, or even unironically, I'm wondering if I could use machine-learning for detecting compromised or
+  abusive user accounts in a private-by-default manner.
+
+* [postgresml](https://github.com/postgresml/postgresml) Lots and lots of ML functionality in a Postgresql extension
+* [Neighbor](https://github.com/ankane/neighbor) Nearest neighbor search for Rails and Postgresql 
+* [What is User Entity and Behavior Analytics (UEBA)?](https://www.fortinet.com/resources/cyberglossary/what-is-ueba) UEBA is... this
+* [Augmenting Traditional UEBA with ML and Deep Learning](https://www.hawk-eye.io/2022/09/augmenting-traditional-ueba-with-ml-and-deep-learning/) My idea isn't new
+
+General coding and system administration links:
+ 
+* [AmazingPring](https://github.com/amazing-print/amazing_print) A modern replacement for AwesomePrint
+* [DSL Factory](https://github.com/motine/dsl_factory) A Ruby DSL for building DSLs
+* [Auditor](https://cinc.sh/start/auditor/) CINC's Auditor is an open source fork of Chef's Inspec system testing software.
+* [Take your BASH scripting seriously](https://medium.com/@jesse_62134/take-your-bash-scripting-seriously-198778c68ba5) More scripting advice
+* [sider](https://github.com/jonaslu/sider) Database data version control
+* [Mojo🔥](https://docs.modular.com/mojo/) A new compiled language heavily inspired by Python (I don't actually like Python, this might be more likeable...)
+* [snips.sh](https://snips.sh/) Another fancy pastebin clone. I've always wanted to write one but with great ones like this around I really shouldn't
+* [How to start a Go project in 2023](https://boyter.org/posts/how-to-start-go-project-2023/) Advice on starting a modern Go project
+* [The Starbucks Test. A cup of coffee could be the fastest… ](https://mbrandolph.medium.com/the-starbucks-test-38ae91d7c1) I'm doubtful that bribing random people with coffee for market research would work well in the UK
+* [Tags and Postgres Arrays, a Purrrfect Combination](https://www.crunchydata.com/blog/tags-aand-postgres-arrays-a-purrfect-combination) Advantages of using arrays in Postgresql
+* [The New dialog HTML Element Changes Modals Forever](https://www.youtube.com/watch?v=ywtkJkxJsdg) A video about modern approaches to web popups and modal dialog boxes
+* [Docusaurus](https://docusaurus.io/) I'm still looking into static website builders, and this one looks very, very good
+* [Markdown for the component era | MDX](https://mdxjs.com/) it uses this for embedding JS in Markdown
+* [Introducing the popover API](https://developer.chrome.com/blog/introducing-popover-api/) A new way to generate web "popovers"
+* [rio](https://github.com/raphamorim/rio) GPU-accelerated terminal for Linux
+* [Tackling Performance Issues in Ecto Applications](https://blog.appsignal.com/2023/05/23/tackling-performance-issues-in-ecto-applications.html) I'm going to need this
+* [rails-brotli-cache](https://github.com/pawurb/rails-brotli-cache) A faster compressed session cache for Rails
+* [javy](https://github.com/bytecodealliance/javy?ck_subscriber_id=887809557) Javascript into WASM
+* [A Web Component Intro with Example](https://blog.rasvi.io/2023-05-21-webcomponent-intro-with-example) I've still never used web components, should I?
+* [12 Microservices Patterns I Wish I Knew Before the System Design Interview](https://levelup.gitconnected.com/12-microservices-pattern-i-wish-i-knew-before-the-system-design-interview-5c35919f16a2) Microservice advice
+* [fly-tailscale-exit:](https://github.com/patte/fly-tailscale-exit) Tunneling local apps to the world
+* [with-friends.ts](https://github.com/bluesky-social/atproto/blob/main/packages/pds/src/feed-gen/with-friends.ts) Bluesky lets people host their own feed algorithms written in Typescript - this is an example
+* [bluesky-social/feed-generator](https://github.com/bluesky-social/feed-generator) This is the service that accesses them
+* [interfaces](https://github.com/raunofreiberg/interfaces) Web interface design advice
+* [Introducing "Implement DNS in a Weekend"](https://jvns.ca/blog/2023/05/12/introducing-implement-dns-in-a-weekend/) Oh no, this is tempting me
+
+Finally a few unusual things
+
+* [Fractional Reserve Crypto-Banking](https://blog.dshr.org/2023/05/fractional-reserve-crypto-banking.html) Changing justifications for Bitcoin, increasing instability 
+* [Infinite Mac](https://infinitemac.org/) Lots of classic Mac emulators
+* [Retro Computer Museum](https://retrocomputermuseum.co.uk/) There's a little retro computing museum in Leicester
+* [Beepberry](https://beepberry.sqfmi.com/) Tiny Blackberry like Pi case and keyboard. SMS from Bash
+* [shlinkedin.com](https://github.com/cbh123/shlinked) A surprisingly functional, open source spoof of LinkedIn
