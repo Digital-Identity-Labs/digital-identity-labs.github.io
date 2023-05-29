@@ -25,7 +25,7 @@ Starting with the last week's identity management links, as usual:
 
 Erlang can cluster applications, and it's possible to link services written in other languages into the cluster... How 
 feasible is it to access Java OpenSAML libraries using JInterface? Is it worth accessing C and Rust code this way instead
-of embedding it? I still don't know but I read these pages.
+of embedding it? I still don't know but I read these pages last week.
 
 * [How to link your Java application to Elixir/Erlang](http://nsomar.io/java-elixir/) Nice tutorial and overview
 * [Erl_Interface User's Guide](https://www.erlang.org/doc/apps/erl_interface/ei_users_guide.html) Official Erlang docs on integrating with C apps
@@ -35,7 +35,7 @@ of embedding it? I still don't know but I read these pages.
 * [ErlRPC](https://github.com/sile/erl_rpc) An Erlang RPC client for Rust
 * [ErlDist](https://github.com/sile/erl_dist) Clustering Rust applications with Erlang
 
-While I'm no fan of saying "AI" enthusiastically, or even unironically, I'm wondering if I could use machine-learning for detecting compromised or
+While I'm no fan of saying "AI" enthusiastically, or even unironically, I'm wondering if I could use machine learning for detecting compromised or
   abusive user accounts in a private-by-default manner.
 
 * [postgresml](https://github.com/postgresml/postgresml) Lots and lots of ML functionality in a Postgresql extension
@@ -45,9 +45,9 @@ While I'm no fan of saying "AI" enthusiastically, or even unironically, I'm wond
 
 General coding and system administration links:
  
-* [AmazingPring](https://github.com/amazing-print/amazing_print) A modern replacement for AwesomePrint
+* [AmazingPrint](https://github.com/amazing-print/amazing_print) A modern replacement for AwesomePrint
 * [DSL Factory](https://github.com/motine/dsl_factory) A Ruby DSL for building DSLs
-* [Auditor](https://cinc.sh/start/auditor/) CINC's Auditor is an open source fork of Chef's Inspec system testing software.
+* [Auditor](https://cinc.sh/start/auditor/) CINC's Auditor is an open source fork of Chef's Inspec system testing software. I'm VERY happy about this.
 * [Take your BASH scripting seriously](https://medium.com/@jesse_62134/take-your-bash-scripting-seriously-198778c68ba5) More scripting advice
 * [sider](https://github.com/jonaslu/sider) Database data version control
 * [Mojo🔥](https://docs.modular.com/mojo/) A new compiled language heavily inspired by Python (I don't actually like Python, this might be more likeable...)
@@ -57,10 +57,10 @@ General coding and system administration links:
 * [Tags and Postgres Arrays, a Purrrfect Combination](https://www.crunchydata.com/blog/tags-aand-postgres-arrays-a-purrfect-combination) Advantages of using arrays in Postgresql
 * [The New dialog HTML Element Changes Modals Forever](https://www.youtube.com/watch?v=ywtkJkxJsdg) A video about modern approaches to web popups and modal dialog boxes
 * [Docusaurus](https://docusaurus.io/) I'm still looking into static website builders, and this one looks very, very good
-* [Markdown for the component era | MDX](https://mdxjs.com/) it uses this for embedding JS in Markdown
+* [Markdown for the component era](https://mdxjs.com/) it uses this for embedding JS in Markdown
 * [Introducing the popover API](https://developer.chrome.com/blog/introducing-popover-api/) A new way to generate web "popovers"
 * [rio](https://github.com/raphamorim/rio) GPU-accelerated terminal for Linux
-* [Tackling Performance Issues in Ecto Applications](https://blog.appsignal.com/2023/05/23/tackling-performance-issues-in-ecto-applications.html) I'm going to need this
+* [Tackling Performance Issues in Ecto Applications](https://blog.appsignal.com/2023/05/23/tackling-performance-issues-in-ecto-applications.html) I've not needed this yet but
 * [rails-brotli-cache](https://github.com/pawurb/rails-brotli-cache) A faster compressed session cache for Rails
 * [javy](https://github.com/bytecodealliance/javy?ck_subscriber_id=887809557) Javascript into WASM
 * [A Web Component Intro with Example](https://blog.rasvi.io/2023-05-21-webcomponent-intro-with-example) I've still never used web components, should I?
