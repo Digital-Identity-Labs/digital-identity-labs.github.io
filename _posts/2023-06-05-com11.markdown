@@ -1,0 +1,91 @@
+---
+layout: post
+title: "A Cup Of Matcha 11"
+date: 2023-06-05 13:15:00
+categories: software
+author: Pete Birkinshaw
+header_image: phuong-nguyen-DgW9B48pRb4-unsplash.jpg
+header_credit: Photo by Phuong Nguyen at Unsplash
+published: true
+---
+
+I feel like I've had a productive week, but trying to finish existing projects has overlapped with fascinating new things
+ that *I don't have time to look at* yet. 
+
+Identity management things first:
+
+* [Unlock 1Password with SSO using OpenID Connect](https://support.1password.com/cs/sso-configure-generic/) 1Passwords SSO feature now works with generic OpenID Connect
+* [Email addresses are not primary user identities](https://ntietz.com/blog/email-address-not-identifier/) Problems with using email addresses as user names
+* [I still don’t really get “hash shucking”](https://neilmadden.blog/2023/04/27/i-still-dont-really-get-hash-shucking/) Hash "shucking" is new to me too
+* [eID Easy](https://eideasy.com/) Offers an OAuth2 bridge to national ID services
+* [RFC 9399](https://www.rfc-editor.org/info/rfc9399) RFC proposal for embedding logos and avatars in x509 certificates!
+* [Safari allows to configure password autofilling](https://www.stefanjudis.com/today-i-learned/safari-allows-to-configure-password-autofilling/) Harm reduction I suppose
+* [Please don't use GPT for Security Guidance](https://decodebytes.substack.com/p/please-dont-use-gpt-for-security) The stochastic parrots don't understand risk. Or anything really.
+
+I've seen so many apparently good IAM products and protocols fail that I now tend to limit my enthusiasm for new things until people are actually
+  using them. Verifiable Credentials seem to be passing over the line from neat idea to practical tool (I'm not counting any of their
+  use by "crypto" and Web3 scams, for obvious reasons). The general idea is that rather than sign an entire assertion containing many attributes, 
+attributes are signed individually, and confusingly referred to as "credentials" which to most of us means authentication values, not user data.
+
+* [Verifiable credentials](https://en.wikipedia.org/wiki/Verifiable_credentials) Wikipedia's summary
+* [OpenID for Verifiable Credentials](https://openid.net/wordpress-content/uploads/2022/06/OIDF-Whitepaper_OpenID-for-Verifiable-Credentials-V2_2022-06-23.pdf) Combining VCs with OpenID Connect seems viable
+* [verifiable credentials implementations](https://github.com/w3c/verifiable-credentials/blob/main/implementations.md) I'm trying to avoid any library written for Web3
+* [Verifiable Credentials Data Model v1.1](https://www.w3.org/TR/vc-data-model/) This would all be nicer in XML you know
+* [vc](https://rubygems.org/gems/vc) A Ruby gem package for Verifiable Credentials but the source code has vanished
+* [vc](https://github.com/digitalbazaar/vc) A Javascript package for Verifiable Credentials
+* [Let’s (actually) Share Our Verifiable Credentials](https://medium.com/workday-engineering/lets-actually-share-our-verifiable-credentials-7ab1b4c73079) "A specification profile outlines the way in which multiple parties agree to implement a given set of specifications"
+* [UK digital identity and attributes trust framework](https://www.gov.uk/government/publications/uk-digital-identity-and-attributes-trust-framework-beta-version) UK Gov is trying the ID thing again, this time with OpenID Connect and VCs. The tech, though, was never the problem.
+
+Shocking but not surprising news that naive web developers have implemented almost worst-case privacy leaks by using Facebook
+  integration. Never integrate with Facebook if you value privacy. Management however need a serious kick up the arse - 
+ it's understandable that young web developers make mistakes, it's not acceptable that NHS security audits missed this.
+
+* [NHS data breach: trusts shared patient details with Facebook without consent](https://www.theguardian.com/society/2023/may/27/nhs-data-breach-trusts-shared-patient-details-with-facebook-meta-without-consent) NHS should have caught this
+* [UK mental health charities handed sensitive data to Facebook for targeted ads](https://www.theguardian.com/society/2023/jun/03/uk-mental-health-charities-handed-sensitive-data-to-facebook-for-targeted-ads) but I've got a little more sympathy for charities missing it
+
+I'm still very bad at sales and marketing
+
+* [5 Common Pitfalls of Founder-led Sales](https://www.forumvc.com/blog/5-common-pitfalls-of-founder-led-sales)
+* [Email Marketing for SaaS](https://loops.so/email-marketing-for-saas)
+
+General web development and sysadmin things:
+
+* [jarbler](https://github.com/rammpeter/jarbler) Another way to pack Ruby into Java .jar packages
+* [Molly White Tracks Crypto Scams](https://www.wired.co.uk/article/molly-white-crypto-scams) Molly White is doing a great job on this
+* [plane](https://github.com/makeplane/plane) An open source alternative to Jira, etc.
+* [requests](https://github.com/carlmjohnson/requests) HTTP library for Go
+* [color-names](https://github.com/meodai/color-names) Vast collection of colours, each named
+* [Database CI/CD](https://www.bytebase.com/) More database version control and management
+* [Bootstrap 5.3.0](https://blog.getbootstrap.com/2023/05/30/bootstrap-5-3-0/) Another Bootstrap release!
+* [Error-Message Guidelines](https://www.nngroup.com/articles/error-message-guidelines/) An often neglected aspect of UX
+* [Mastering CSS Blend Modes](https://www.kodingkitty.com/blog/blend-modes/) I keep meaning to use CSS blending for corny retro effects
+* [Web Share API](https://www.w3.org/TR/2023/REC-web-share-20230530/) A browser API for "Share" button functionality
+* [Pogo](https://szajbus.dev/elixir/2023/05/22/pogo-distributed-supervisor-for-elixir.html) Elixir clusters itself easily, this manages processes across clusters
+* [Phoenix LiveView 0.19 released](https://phoenixframework.org/blog/phoenix-liveview-0.19-released) New LiveView - new Phoenix soon?
+* [Dynamic forms with LiveView Streams](https://fly.io/phoenix-files/dynamic-forms-with-streams/) I want to try this out, have not had a chance yet
+* [Context maintainability & guidelines in Elixir & Phoenix](https://curiosum.com/blog/elixir-phoenix-context-maintainability-guildelines) Code organisation advice
+* [dys2p](https://dys2p.com/en/2023-05-luks-security.html#conclusion) Linux file encryption report: make sure you use good passwords
+* [Why I left Rust](https://www.jntrnr.com/why-i-left-rust/?s=33) and [I Am No Longer Speaking at RustConf 2023 | The Pasture](https://thephd.dev/i-am-no-longer-speaking-at-rustconf-2023) Rust community has some dysfunction going on recently
+* [RubyKaigi 2023](https://fly.io/ruby-dispatch/ruby-kaigi-2023/) In Ruby, Matz is nice so everyone is nice - report from a recent conference
+* [Quick Tricks with the .iex.exs file](https://www.youtube.com/watch?v=KNqcfLUuPVc) Customising the Elixir REPL
+* [docbase](https://github.com/alanagoyal/docbase) Another open source document sharing app
+* [dittofeed](https://github.com/dittofeed/dittofeed) I've made something similar so I mean to poke at this one to see how they've managed it
+* [The HTTP QUERY Method](https://httpwg.org/http-extensions/draft-ietf-httpbis-safe-method-w-body.html) A new HTTP method! QUERY improves over POST for searches
+* [Perspective](https://perspective.finos.org/) Fancy, fast and interactive graphs 
+* [Javet](https://github.com/caoccao/Javet) Embed Node.JS into Java (I'm wondering if this can be combined with the jInterface Erlang feature I mentioned last week)
+* [orama](https://github.com/oramasearch/orama) Another "static" web search engine
+* [Private Beta Update & Roadmap](https://blueskyweb.xyz/blog/6-02-2023-beta-update) Bluesky continues to improve, with some neat tech. Social problems tend to be the real challenge
+* [There's a new Ubuntu Linux desktop on its way](https://www.zdnet.com/article/theres-a-new-ubuntu-linux-desktop-on-its-way/) Read-only OS layers, like MacOS's, come to Ubuntu
+* [The Best Strategies to Slim Docker Images](https://semaphoreci.medium.com/the-best-strategies-to-slim-docker-images-how-to-reduce-docker-image-size-4cc5be4b015f) I'm a keen image-golfer, but I've nto tried some of these
+* [Announcing WASIX](https://wasmer.io/posts/announcing-wasix) POSIX for WASM! This could have massive implications. I'm still embarrassed by the word WASM though
+* [Why I prefer trunk-based development](https://trishagee.com/2023/05/29/why-i-prefer-trunk-based-development/) I'm open to this but it's very context-driven
+* [Passenger 6 - Polyglot enterprise grade web app server](https://www.phusionpassenger.com/passenger6) I had no idea Passenger could glue any web apps into Apache now
+* [legitify](https://github.com/Legit-Labs/legitify) Check the security and configuration of Github organisations
+* [Icon Horse](https://icon.horse/) Extract icons from websites
+
+And finally:
+
+* [awfice](https://github.com/zserge/awfice) Absolutely tiny but (barely) functional office apps *inside URLs*
+* [wilding.radio](https://wilding.radio/) Mix live sounds from rivers and woodland
+* [Flowers for Turing](https://equalitytime.github.io/FlowersForTuring/) Fundraiser and tribute to Turing
+* [doom-teletext](https://github.com/lukneu/doom-teletext) Playing Doom over Teletext
