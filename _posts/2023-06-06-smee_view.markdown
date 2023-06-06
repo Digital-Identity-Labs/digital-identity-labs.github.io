@@ -1,0 +1,113 @@
+---
+layout: post
+title: "SmeeView, a SAML metadata parser for Smee"
+date: 2023-06-06 20:00:00
+categories: software
+header_image: smee.png
+author: Pete Birkinshaw
+---
+[SmeeView](https://github.com/Digital-Identity-Labs/smee_view) is a new SAML metadata (XML) parsing extension 
+to [Smee](https://github.com/Digital-Identity-Labs/smee). SmeeView provides
+easy to use functions for extracting lists of information from SAML metadata as Elixir structs.
+
+[Smee](https://github.com/Digital-Identity-Labs/smee) provides access to entity metadata XML as both strings and parsed
+`xmerl` records but leaves the user to find and extract the information they need. SmeeView aims to fill this gap by
+providing tools for working with the most commonly used information in SAML metadata.
+
+SmeeView was extracted from the "Digestor" component of an app we've been using for a few years, and is going to be used,
+eventually, in a rebuilt version of that app. It doesn't have the database features of Digestor but it isn't hard to use it
+alongside Ecto.
+
+SmeeView is *loosely* based on the concept of functional data access "lenses".
+
+## Examples
+
+You can run all of these examples in [LiveBook](https://livebook.dev/) if you have it installed.
+
+[![Run in Livebook](https://livebook.dev/badge/v1/blue.svg)](https://livebook.dev/run?url=https%3A%2F%2Fraw.githubusercontent.com%2FDigital-Identity-Labs%2Fsmee_view%2Fmain%2Fsmee_view_notebook.livemd)
+
+### First let's get one entity via MDQ
+
+We'll reuse this entity data a few times later
+
+```elixir
+
+entity = Smee.MDQ.source("http://mdq.ukfederation.org.uk/")
+         |> Smee.MDQ.lookup!("https://cern.ch/login")
+
+```
+
+### Extracting all data for an entity
+
+The top-level `view_one/2` function will return one entity "aspect" struct. You can see how the data in a
+`SmeeView.Aspects.Entity` struct is very different to the `Smee.Entity` struct - it has much more detail in an easier
+format.
+
+```elixir
+
+SmeeView.view_one(entity)
+
+```
+
+### Viewing all logos in an entire federation
+
+You can view all logos as a list...
+
+```elixir
+Smee.source("http://metadata.ukfederation.org.uk/ukfederation-metadata.xml")
+|> Smee.fetch!()
+|> SmeeView.Logos.view()
+
+```
+
+... but it might be more useful to have a list of all logos for each entity:
+
+```elixir
+Smee.source("http://metadata.ukfederation.org.uk/ukfederation-metadata.xml")
+|> Smee.fetch!()
+|> SmeeView.Logos.prism()
+
+```
+
+### Selecting the most appropriate service displayname
+
+Entity metadata often contains information in various languages so that UIs can be localised.
+
+```elixir
+entity
+|> SmeeView.Displaynames.view()
+|> SmeeView.Displaynames.pick("en")
+|> SmeeView.Aspects.Displayname.text()
+```
+
+### Find all the tiny square logos for IdPs in PNG format in German
+
+(It's a very contrived example)
+
+```elixir
+Smee.source("http://metadata.ukfederation.org.uk/ukfederation-metadata.xml")
+|> Smee.fetch!()
+|> SmeeView.Logos.view(:idp)
+|> Enum.filter(
+     fn logo ->
+       SmeeView.Aspects.Logo.size(logo) == :tiny &&
+         SmeeView.Aspects.Logo.shape(logo) == :square &&
+         SmeeView.Aspects.Logo.format(logo) == :png &&
+         SmeeView.Aspects.Logo.lang(logo) == "de"
+     end
+   )
+
+```
+There might not actually be any of course.
+
+### Extract the assurance certifications of each entity in a federation
+
+This demonstrates the usefulness of prism views. A map of entityID => assurance certifications is returned.
+
+```elixir
+certifications = Smee.source("http://metadata.ukfederation.org.uk/ukfederation-metadata.xml")
+                 |> Smee.fetch!()
+                 |> SmeeView.EntityAttributes.prism()
+                 |> SmeeView.EntityAttributes.assurance_certifications()
+
+```
