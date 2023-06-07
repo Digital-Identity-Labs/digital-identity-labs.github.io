@@ -1,0 +1,34 @@
+---
+layout: post
+title: "SmeeLive - making it easier to run Smee packages in LiveBook"
+date: 2023-06-07 10:20:00
+categories: software
+header_image: smee.png
+author: Pete Birkinshaw
+---
+SAML metadata parsing tool [SmeeView](https://github.com/Digital-Identity-Labs/smee_view) was released yesterday,
+joining
+[Smee](https://github.com/Digital-Identity-Labs/smee) and [SmeeFeds](https://github.com/Digital-Identity-Labs/smee_feds),
+and like the others it has a LiveBook notebook of examples - there's a blue button in the readme to open it.
+[LiveBook](https://livebook.dev/) is a web application that's a bit like a wiki but has interactive notebooks that can
+run Elixir code.
+
+Today I've released [SmeeLive](https://github.com/Digital-Identity-Labs/smee_live), a customised Docker container
+running LiveBook, with all the extra software needed by Smee already installed, and a set of demonstration notebooks that
+hopefully show off various features of Smee. If you're idly curious about what the heck Smee is you can now get a working
+environment in just a few seconds and run some of the examples.
+
+1. You need to have Docker installed and running
+2. `docker run -p 127.0.0.1:8080:8080 -p 127.0.0.1:8081:8081 --pull always ghcr.io/digital-identity-labs/smee_live`
+3. You should see a URL printed to the shell: open this in your browser to view Livebook.
+4. Click on the 'Open' button and select 'index.livemd' to open the overview notebook.
+5. Each block of code in the notebook can be run by clicking on the the little play button above it.
+
+All the normal features of LiveBook are still there, so you can write any Elixir code and play with machine learning too.
+
+SmeeLive is available at DockerHub too, so it can also be run with:
+
+`docker run -p 127.0.0.1:8080:8080 -p 127.0.0.1:8081:8081 --pull always digitalidentity/smee_live`
+
+
+I aim to add more demos and libraries to SmeeLive in the future. Possibly even *useful things*.
