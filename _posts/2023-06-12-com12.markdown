@@ -19,7 +19,7 @@ Identity management things first:
 
 * [FastFed Working Group - OpenID Foundation](https://openid.net/wg/fastfed/) I was vaguely aware of FastFed for OpenID 
 * [FastFed Basic SAML Profile 1.0 - draft 02](https://openid.net/specs/fastfed-saml-1_0-02.html) but not that it could work with SAML!
-* [SESSIONS - TNC23](https://tnc23.geant.org/sessions/#s272) Videos of sessions at TNC, some of which are identity and OSS related
+* [SESSIONS - TNC23](https://tnc23.geant.org/sessions/#s272) Videos of sessions at TNC, some of which are identity and OSS related. Also [REFEDs Meeting](https://refeds.org/meetings/46th)
 * [Open Source Principles for NRENs](https://wiki.geant.org/display/GREEN/Open+Source+Principles+for+NRENs) Geant is building a principles/BP doc for NRENs working with open source
 * [Netflix's password-sharing crackdowns prompts an increase in subscriptions](https://qz.com/netflix-password-sharing-crackdown-more-subscriptions-1850522985) Better authentication, more income
 * [regal](https://github.com/StyraInc/regal) A linter for the Rego authorisation language
