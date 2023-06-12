@@ -1,0 +1,71 @@
+---
+layout: post
+title: "A Cup Of Matcha 12"
+date: 2023-06-12 11:40:00
+categories: software
+author: Pete Birkinshaw
+header_image: phuong-nguyen-DgW9B48pRb4-unsplash.jpg
+header_credit: Photo by Phuong Nguyen at Unsplash
+published: true
+---
+
+I managed to release a couple of things as open source last week and start a couple more, and the old, messy app that
+Smee is based on is now being rewritten with it. So far the rewrite has definitely paid off. 
+
+The Apple Vision Pro looks amazing, I want one, but I have nothing much to add to the excitement except to note that that
+its built-in authentication (eye scanning) is rather interesting.
+
+Identity management things first:
+
+* [FastFed Working Group - OpenID Foundation](https://openid.net/wg/fastfed/) I was vaguely aware of FastFed for OpenID 
+* [FastFed Basic SAML Profile 1.0 - draft 02](https://openid.net/specs/fastfed-saml-1_0-02.html) but not that it could work with SAML!
+* [SESSIONS - TNC23](https://tnc23.geant.org/sessions/#s272) Videos of sessions at TNC, some of which are identity and OSS related
+* [Open Source Principles for NRENs](https://wiki.geant.org/display/GREEN/Open+Source+Principles+for+NRENs) Geant is building a principles/BP doc for NRENs working with open source
+* [Netflix's password-sharing crackdowns prompts an increase in subscriptions](https://qz.com/netflix-password-sharing-crackdown-more-subscriptions-1850522985) Better authentication, more income
+* [regal](https://github.com/StyraInc/regal) A linter for the Rego authorisation language
+* [Managing risks in Internationalisation](https://www.universitiesuk.ac.uk/what-we-do/policy-and-research/publications/managing-risks-internationalisation) Potential security risks from offering courses to international students
+
+A bunch of Rust links this week:
+
+* [single-file packages ("cargo script") integration](https://github.com/rust-lang/rfcs/pull/3424) Proposal to have Elixir-like self contained scripts in Rust
+* [The Rust I Wanted Had No Future](https://graydon2.dreamwidth.org/307291.html) More commentary on the direction of Rust
+* [Announcing Rust 1.70.0](https://blog.rust-lang.org/2023/06/01/Rust-1.70.0.html) There's a new version of Rust
+* [openobserve](https://github.com/openobserve/openobserve) A Rust-based alternative to the rather needy, demanding, ElasticSearch
+
+I'm supposed to wear some other hats...
+
+* [Engineering Levels](https://newsletter.engineering.land/p/engineering-levels-a-simple-framework) A model for engineering levels at startups. 
+* [Some blogging myths](https://jvns.ca/blog/2023/06/05/some-blogging-myths/) Blogging myths
+
+"AI" is inescapable
+
+* [How ChatGPT improved my Elixir code](https://www.erlang-solutions.com/blog/how-chatgpt-improved-my-elixir-code-some-hacks-are-included/) Good? 
+* [Today's "AI" is unreasonable](https://www.anildash.com/2023/06/08/ai-is-unreasonable/) Bad
+* [Can you trust ChatGPT’s package recommendations?](https://vulcan.io/blog/ai-hallucinations-package-risk) Weird
+
+General web and software development things
+
+* [Create a swink - swink](http://robko.ch/qr-designer/) QRCodes with images *without using the error correction trick*
+* [JSON Meta Application Protocol Specification (JMAP)](https://jmap.io/) JMAP, an alternative to IMAP from Fastmail, is now an IETF standard!
+* [Build your own lazy operation evaluator in Elixir](https://www.germanvelasco.com/blog/build-your-own-lazy-operation-evaluator-in-elixir) This is a useful trick
+* [exploit_guard](https://github.com/paraxialio/exploit_guard) Detect the injection of new functions in your Elixir app
+* [FerretDB](https://github.com/FerretDB/FerretDB) I think I've linked to this before, but a MongoDB without MongoDB seems like an improvement over MongoDB
+* [High-compression Metrics Storage with Postgres Hyperloglog](https://www.crunchydata.com/blog/high-compression-metrics-stograge-with-postgres-hyperloglog) metric storage technique that I might be using soon
+* [Migrating to Verified Routes](https://fly.io/phoenix-files/migrating-to-verified-routes/) Pheonix 1.7 has a new, nicer routing config
+* [Elixir NIFs](https://thestackcanary.com/supercharge-your-elixir-with-nifs/) Embedding other binary libraries in Elixir
+* [Absinthe for Large Elixir Applications](https://blog.appsignal.com/2023/06/06/absinthe-for-large-elixir-applications.html) Not sure if mine count
+* [Liquid template language](https://shopify.github.io/liquid/) I've been using a version of Liquid templates with Elixir, I'd forgotten much of how it despite it being in this website!
+* [SchemaSpy](https://github.com/schemaspy/schemaspy) Generate diagrams of your database structure
+* [WebKit Features in Safari 17 beta](https://webkit.org/blog/14205/news-from-wwdc23-webkit-features-in-safari-17-beta/) A few interesting improvements to Safari
+* [Faker.js UI](https://app.fakerjsui.com/#/) A website that generates fake data using the javascript Faker package
+* [Materialize](https://materializeweb.com/) An actively maintained fork of the old MaterializeCSS project. Googly style for websites.
+* [autocomplete](https://github.com/algolia/autocomplete#readme) A Javascript autocomplete tool
+* [Extending Platforms with WebAssembly](https://www.salaboy.com/2023/04/15/extending-platforms-with-webassembly/) WASM and Dapr
+
+Finally the less 
+
+* [DreamBerd](https://github.com/TodePond/DreamBerd) A terrible new programming language that's almost believable
+* [THE ANALOG THING](https://the-analog-thing.org/) Own a small analogue computer!
+* [Dumb Cuneiform](https://dumbcuneiform.com/) Send messages in cuneiform on clay tablets
+* [Shapecatcher](https://shapecatcher.com/) Draw a unicode character and it will try to find it. Ignores my attempts at Hangul
+* [Turtle Taxi](https://defector.com/when-a-turtle-is-a-taxi-for-shrimp) Turtles spread shrimp around deserts
