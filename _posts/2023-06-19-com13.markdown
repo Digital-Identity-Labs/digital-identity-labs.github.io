@@ -87,7 +87,7 @@ A big list of general web and dev links
 * [Phoenix Liveview Error Pages](https://smartlogic.io/blog/phoenix-liveview-error-html-pages/) Rather specific but I found it useful
 * [he many states of Elixir](https://underjord.io/the-many-states-of-elixir.html) State in Elixir - lots of details, I learned a lot despite using it for years
 * [Prefixed base62 UUIDv7 Object IDs with Ecto](https://danschultzer.com/posts/prefixed-base62-uuidv7-object-ids-with-ecto) UUIDv7, with prefixes - I've [written a library](https://github.com/Digital-Identity-Labs/prefixed_api_key) for similar use cases, this is more generic
-* [Accessibility and i tags](https://blog.fontawesome.com/accessibility-and-i-tags/) This was published at almost the same there was an discussion on a local Manchester tech forum on this very topic
+* [Accessibility and i tags](https://blog.fontawesome.com/accessibility-and-i-tags/) This was stumbled across at almost the same there was an discussion on a local Manchester tech forum on this very topic
 * [Scripting with Elixir](https://underjord.io/scripting-with-elixir.html) Useful because I struggle with Elixir scripts
 * [Migrating Netflix to GraphQL safely](https://netflixtechblog.com/migrating-netflix-to-graphql-safely-8e1e4d4f1e72) Real world, large scale GraphQL
 * [I Don't Need Your Query Language](https://antonz.org/fancy-ql/) A very interesting and startling defense of good old SQL
