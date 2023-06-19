@@ -1,0 +1,104 @@
+---
+layout: post
+title: "A Cup Of Matcha 13"
+date: 2023-06-19 13:59:00
+categories: software
+author: Pete Birkinshaw
+header_image: phuong-nguyen-DgW9B48pRb4-unsplash.jpg
+header_credit: Photo by Phuong Nguyen at Unsplash
+published: true
+---
+
+I had lots of fun last week starting to rebuild my big old metadata processing app using the new [Smee](https://github.com/Digital-Identity-Labs/smee) libraries that were 
+originally based on chunks of scrappy code copied from it. A few things don't quite line up properly, a few features are missing,
+and one or two features need to be optional - other uses of Smee so far (like an MDQ app) assume slightly different data. But
+overall it's working out nicely - the new app is simpler, faster and much more reliable.
+
+Last week's interesting identity management links first, as usual:
+
+* [kratos_plug](https://github.com/ScoreVision/kratos_plug) Use the Kratos IdP from Elixir (as an SP)
+* [A long road up to Boruta](https://medium.com/@io.pascal.knoth/a-long-road-up-to-boruta-f3b9ca5a9ac9) History of the Boruta OpenIDC server project
+* [Have I Been Pwned Domain Searches: The Big 5 Announcements!](https://www.troyhunt.com/have-i-been-pwned-domain-searches-the-big-5-announcements/) Improvements to Domain Monitoring in HIBP
+* [What is OpenRoaming?](https://community.jisc.ac.uk/library/network-and-technology-service-docs/what-openroaming) and [eduroam + OpenRoaming](https://eduroam.org/eduroam-openroaming-end-user-information/) EduRoam is looking into linking EduRoam with OpenRoaming somehow
+* [Looking Back to REFEDS 46 in Tirana](https://refeds.org/a/2933) Blog post summarising a recent meeting of REFEDS community ([slides](https://refeds.org/meetings/46th))
+* [ADFSToolkit](https://github.com/fedtools/adfstoolkit) and [How to consume SWAMID metadata with ADFS Toolkit](https://wiki.sunet.se/display/SWAMID/How+to+consume+SWAMID+metadata+with+ADFS+Toolkit) It's possible to sort of brute-force ADFS into behaving as an acceptable federated IdP?
+* [University multilateral federation solution design](https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/multilateral-federation-introduction) Well Microsoft aren't keen and recommend proxying to or from a decent SAML IdP instead
+* [Secure Sign-in Trends Report](https://www.okta.com/the-secure-sign-in-trends-report/) It's obviously marketing for Okta but still contains some useful info
+* [State of browser privacy evolution](https://wiki.refeds.org/display/GROUPS/State+of+browser+privacy+evolution) and [Browser Changes and Federation](https://wiki.refeds.org/display/GROUPS/Browser+Changes+and+Federation) A working group monitoring and responding to misplaced "improvments" to web browsers that may break secure federated authentication
+* [Venafi](https://venafi.com/) A big fancy commercial alternative to OpenStep
+* [Sumsub](https://sumsub.com/) Another user identity verification service 
+* [staticrypt](https://github.com/robinmoisson/staticrypt) Use Javascript to encrypt and decrypt static web pages
+* [How to password protect a static HTML page with no JS](https://shkspr.mobi/blog/2023/02/how-to-password-protect-a-static-html-page-with-no-js/) Or use CSS to "encrypt" instead. Please don't actually do this. Just look at this page with a horrified expression.
+* [Selection results of excellent proposals in the Hwangdang Regulation Contest](https://www.opm.go.kr/opm/news/press-release.do?mode=view&articleNo=153833&article.offset=0&articleLimit=10)
+    South Korea allows people to vote on laws they want to be changed, and they voted to stop forced regular password resets for government accounts. I think.
+
+Someone asked if IRM (Identity Relationship Management) was still a thing, I didn't even know it *was* a thing, or what sort of thing it was. I can now confirm it is still a thing.
+
+* [Identity Knowledge Graph 2023](https://www.indykite.com/identity-knowledge-graph) "A real-world data model of both person and non-person entities and the relationships between them"
+* [3Edges](https://www.3edges.com/) Graphical authorisation policy builder that's aware of entity relationships
+* [SGNL](https://sgnl.ai/) Also seems to use IRM principles
+
+There's now a number of different federated SSH projects across the world, with new plans to work together. I've been 
+thinking about this problem for ages so I'm logging every link I've found:
+
+* [CryptPad](https://cryptpad.fr/slide/#/2/slide/view/Nj0AaaclHpdDwvmrKt8yZYjbXRHOJlo0pwOpBps4pNI/present/) The original presentation on this topic
+* [SSH with OIDC OpenID Connect Access Tokens](https://www.youtube.com/watch?v=090D4s0TNaA) Video for the KIT approach
+* [Demonstration service for using SSH via OpenID Connect](https://ssh-oidc-demo.data.kit.edu/) KIT demo server and instructions
+* [PAM module for OAuth 2.0 Device flow](https://github.com/stfc/pam_oauth2_device) STFC are using a PAM module and OAuth2
+* [PAM module for OAuth 2.0 Device Authorization Grant](https://github.com/ICS-MU/pam_oauth2_device) as is Masaryk University
+* [SSH certs in a federated world](https://github.com/wayf-dk/ssh-certs-in-a-federated-world) WAYF are going with a SSH certificate based approach
+* [PAM web login](https://wiki.surfnet.nl/display/SRAM/PAM+web+login) SURFNet are always doing something cool. PAM for them.
+* [pam-weblogin](https://github.com/SURFscz/pam-weblogin) PSURFNet PAM code 
+* [Web based SSH login](https://www.youtube.com/watch?v=Jyn1FJKAIh4) DAASI have something that looks like what I was planning, but smoothly does it in one step 
+* [Federated SSH login](https://www.youtube.com/watch?v=36g_Waxt2bY) It supports more than one IdP, of course. This is a better user experience than mine, although mine needed no extra software on the server.
+
+Project management and design
+
+* [My Approach to Building Large Technical Projects](https://mitchellh.com/writing/building-large-technical-projects) Someone describes what works for them
+* [The Asymmetry of Open Source](https://matt.life/writing/the-asymmetry-of-open-source) Open Source has very complicated social aspects
+* [Crafting interfaces that empower users.](https://thoughtbot.com/blog/crafting-interfaces-that-empower-users) UI design advice
+* [Classifying Event Driven Architecture](https://www.juxt.pro/blog/event-driven-architecture/) Part of a series on Event Driven Architecture
+* [An Alerting strategy for the cloud](https://abstraction.blog/2023/06/13/cloud-alerting-strategy) Sounding the alarm for online service problems
+* [11 years of hosting a SaaS](https://ghiculescu.substack.com/p/11-years-of-hosting-a-saas) Experiences running a Software As A Service, er, service
+* [10 Tips to stay focused on your personal Projects](https://thoughtbot.com/blog/10-tips-to-stay-focused-on-your-personal-projects) I could honestly do with focusing on other things but this was helpful
+
+Another week of failing to avoid "AI" and machine learning 
+
+* [Why do ML on the Erlang VM?](https://underjord.io/why-ml-on-erlang.html) Machine learning is becoming one of Elixir's strengths
+* [Scholar](https://hexdocs.pm/scholar/Scholar.html) Various "traditional" ML tools for Elixir
+* [elixir-nx/axon](https://github.com/elixir-nx/axon) Elixir Nx-powered Neural Networks
+* [Everyone on AI twitter 2023](https://www.youtube.com/watch?v=sxdDVAv6QDY) 
+
+A big list of general web and dev links
+
+* [Elixir for your next project — this is why](https://medium.com/rewrite-tech/elixir-for-your-next-project-this-is-why-cdc82a98c3b4) It's a great language I apparently can't stop enthusing about here
+* [Ifconfig.me](https://ifconfig.me/) A more modern and detailed way to look up your public IP address, with an API
+* [temple](https://github.com/mhanberg/temple) A DSL-based HTML template language for Elixir, a lot like one that was popular for Rails a long time ago that I can't remember the name of
+* [Lemmy](https://join-lemmy.org/) A Mastodon-style open source clone of Reddit, especially important now that Reddit's owners are Musking it.
+* [Arke](https://arkehub.com/) I'm normally dismissive of "low code" or "no code" software development gimmicks but this has Elixir in so I'm going to be shameless and link to it. I don't actually understand what it does. 
+* [Atlos](https://atlos.org/) Software for researching real-world incidents using witness statements, photos, videos, etc. Useful if you're going all Bellingcat on something.
+* [BEAM process memory usage](https://hauleth.dev/post/beam-process-memory-usage/) A good, knowledgable and education response to a recent bad blog article attempting to benchmark threading in various languages
+* [Stack Overflow Developer Survey 2023](https://survey.stackoverflow.co/2023/#most-popular-technologies-language-learn) and [Stack Overflow Developer Survey 2023](https://survey.stackoverflow.co/2023/#web-frameworks-and-technologies) It's that time of year again
+* [Interview with an Emacs Enthusiast in 2023](https://www.youtube.com/watch?v=urcL86UpqZc) I can't copy in Emacs either
+* [Ruby Adds Support for WebAssembly: What Does This Mean for Ruby Developers?](https://semaphoreci.medium.com/ruby-adds-support-for-webassembly-what-does-this-mean-for-ruby-developers-e389e1c27cca) Ruby WASM has great potential
+* [annotaterb](https://github.com/drwl/annotaterb) A newer way to automatically annotate ActiveRecord models
+* [Fortify Rails](https://www.fastruby.io/blog/fortify-rails-security-webinar.html) A talk on security-hardening Rails apps
+* [What’s New in GraalVM Languages](https://medium.com/graalvm/whats-new-in-graalvm-languages-161527df3d76#951b) GraalVM is amazing but also by Oracle. 
+* [Phoenix Liveview Error Pages](https://smartlogic.io/blog/phoenix-liveview-error-html-pages/) Rather specific but I found it useful
+* [he many states of Elixir](https://underjord.io/the-many-states-of-elixir.html) State in Elixir - lots of details, I learned a lot despite using it for years
+* [Prefixed base62 UUIDv7 Object IDs with Ecto](https://danschultzer.com/posts/prefixed-base62-uuidv7-object-ids-with-ecto) UUIDv7, with prefixes - I've [written a library](https://github.com/Digital-Identity-Labs/prefixed_api_key) for similar use cases, this is more generic
+* [Accessibility and i tags](https://blog.fontawesome.com/accessibility-and-i-tags/) This was published at almost the same there was an discussion on a local Manchester tech forum on this very topic
+* [Scripting with Elixir](https://underjord.io/scripting-with-elixir.html) Useful because I struggle with Elixir scripts
+* [Migrating Netflix to GraphQL safely](https://netflixtechblog.com/migrating-netflix-to-graphql-safely-8e1e4d4f1e72) Real world, large scale GraphQL
+* [I Don't Need Your Query Language](https://antonz.org/fancy-ql/) A very interesting and startling defense of good old SQL
+* [Replace a Dockerfile with Go (or Python, or Node.js)](https://docs.dagger.io/205271/replace-dockerfile/) I'm in two minds on this - I'd like to automate container builds more but this looks awkward and ugly
+
+Ending this week's lists with a few odd things again:
+
+* [egos-2000](https://github.com/yhzhang0128/egos-2000) A tiny, 2000-lines ARM OS for teaching and learning
+* [Kera Desktop](https://desktop.kerahq.com/) I assumed this was Yet Another Linux Desktop, and it is, but it's also a Mac OS and Windows desktop
+* [Miniatua Puts the Micro in Microchip in a Series of Remarkably Precise Miniature Computers](https://www.thisiscolossal.com/2023/06/miniatua-computers/) Tiny model computers including scenes from Wargames!
+* [London-Underground-Dot-Matrix-Typeface](https://github.com/petykowski/London-Underground-Dot-Matrix-Typeface) Strangely soothing UK public transport fonts
+* [CFexpress](https://en.wikipedia.org/wiki/CFexpress) I hadn't noticed a completely new Compact Flash format had appeared - these things are expensive and amazingly fast
+* [mop3](https://github.com/nkizz/mop3) Use Mastodon over POP3, an old mail protocol. Read Mastodon on your Palm Pilot.
+* [New Study: Vegan Diets Can Provide Adequate Nutrition for Dogs](https://scitechdaily.com/new-study-vegan-diets-can-provide-adequate-nutrition-for-dogs/?expand_article=1) Vegan dogs are a good idea - for you, the dog, and the planet.
