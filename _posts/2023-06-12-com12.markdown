@@ -62,7 +62,7 @@ General web and software development things
 * [autocomplete](https://github.com/algolia/autocomplete#readme) A Javascript autocomplete tool
 * [Extending Platforms with WebAssembly](https://www.salaboy.com/2023/04/15/extending-platforms-with-webassembly/) WASM and Dapr
 
-Finally the less 
+Finally the less usual things:
 
 * [DreamBerd](https://github.com/TodePond/DreamBerd) A terrible new programming language that's almost believable
 * [THE ANALOG THING](https://the-analog-thing.org/) Own a small analogue computer!
