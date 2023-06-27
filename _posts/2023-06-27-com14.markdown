@@ -52,7 +52,6 @@ A few general web and software development links:
 * [Intro to Propshaft](https://www.honeybadger.io/blog/propshaft-tutorial-migration/) Propshaft is another way to build Rails assets
 * [Tips for writing Rails tasks with Thor instead of Rake](https://mattbrictson.com/blog/rails-tasks-with-thor) Introduction to using Thor, and alternative to Rake, which is an alternative to Make
 * [Create and Open A Modal in Phoenix 1.7](https://blog.appsignal.com/2023/06/20/create-and-open-a-modal-in-phoenix-1-7.html) Modal dialog boxes in LiveView
-
 * [Unexpected downsides of UUID keys in PostgreSQL](https://www.cybertec-postgresql.com/en/unexpected-downsides-of-uuid-keys-in-postgresql/) I usually use UUID IDs so this was informative
 * [try](https://github.com/binpash/try) A shell command to run other commands and then choose to apply or rollback the changes they make - very clever
 * [DevPod](https://devpod.sh/) I am fascinated and baffled by this and need to put aside some time to try it
@@ -66,4 +65,4 @@ Finally, some of the less serious things I've found
 
 * [Vulnerabilities in smart pet feeders](https://securelist.com/smart-pet-feeder-vulnerabilities/110028/) Actually quite serious, and astonishing that these mistakes can be made in 2023
 * [Comic Mono](https://dtinth.github.io/comic-mono-font/) A relation of Comic Sans specially made for programming with
-* [The MiniMit Wi-Fi Modem Looks to Breathe Fresh Life Into Vintage French Minitel Terminals](https://www.hackster.io/news/the-minimit-wi-fi-modem-looks-to-breathe-fresh-life-into-vintage-french-minitel-terminals-7754f300e9f7) A wifi modem and services to bring old French Minitel terminals back to life (I have something similar for my Mac Plus)
+* [The MiniMit Wi-Fi Modem](https://www.hackster.io/news/the-minimit-wi-fi-modem-looks-to-breathe-fresh-life-into-vintage-french-minitel-terminals-7754f300e9f7) A wifi modem and services to bring old French Minitel terminals back to life (I have something similar for my Mac Plus)
