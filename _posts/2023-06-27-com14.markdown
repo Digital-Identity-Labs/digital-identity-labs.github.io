@@ -1,0 +1,69 @@
+---
+layout: post
+title: "A Cup Of Matcha 14"
+date: 2023-06-27 13:48:00
+categories: software
+author: Pete Birkinshaw
+header_image: phuong-nguyen-DgW9B48pRb4-unsplash.jpg
+header_credit: Photo by Phuong Nguyen at Unsplash
+published: true
+---
+
+Last week I went to a local one-day conference (Manchester Digital) which I think is the first one I've attended since
+the pandemic. A bit of a strain psychologically (and I managed to scald my hands and soak my trousers with hot water in the first 5 minutes)
+but a good experience. Which is fortunate because I've got at least two more conferences coming up in the next few weeks. 
+
+My old conference-attending iPad is on its last legs and getting a replacement delayed this weekly link update.
+
+No proper Identity Management links this week, somehow.
+
+* [Apple is plotting the death of the password](https://qz.com/apple-killing-the-password-ios-macos-1850561638) This isn't a good article - it implies that Apple's Passkeys will work with password-based sites, which isn't what replacing passwords means. Also, passwords will never die.
+
+OTOH I've collected lots of project management themed links:
+
+* [The Dark Side of Open Source](https://redd.one/blog/the-dark-side-of-open-source) The downsides of developing or contributing to Open Source Software
+* [Finish your projects](https://github.com/readme/guides/finish-your-projects) I need to get a LOT better at finishing projects
+* [Imaginary Problems Are the Root of Bad Software](https://cerebralab.com/Imaginary_Problems_Are_the_Root_of_Bad_Software) I'm convinced most of Self Soveriegn Identity movement is about solving imaginary problems
+* [awesome-cto](https://github.com/kuchin/awesome-cto) Lots of CTO (Chief Technology Officer) links
+* [IKEA-Oriented Development](https://taylor.town/ikea-oriented-development) Why IKEA hates air (and other IKEA info) as analogies for good software development
+* [From Technical Debt to Technical Health with HealthCheck](https://mikaelvesavuori.medium.com/from-technical-debt-to-technical-health-with-healthcheck-3e7fdc132f58) A long, detailed look at Technical Debt
+* [Prioritising effectively and getting work done as managers](https://softwareleads.substack.com/p/prioritising-effectively-and-getting) Not one of my strong points
+
+Webmentions aren't a new standard but I've been wondering if they can be used for other things (SAML-related things...)
+
+* [Webmention](https://www.w3.org/TR/webmention/) The Webmention spec
+* [libmention](https://github.com/silbermm/libmention) A Webmention library for Elixir that's recently been released
+* [Webmentions on a static site with GitHub Actions](https://sebastiandedeyne.com/webmentions-on-a-static-site-with-github-actions/) Using a Webmentions proxy service and Github actions to gather mentions for a static site
+* [Webmention.io](https://webmention.io) A Webmentions proxy/API service
+
+A few general web and software development links:
+
+* [The modern way of serving images](https://kurtextrem.de/posts/modern-way-of-img) There's more than just the old `img` tag now
+* [sub.rehab](https://sub.rehab/) A directory of Lemmy services replacing or extendeding parts of Reddit, now that Reddit is being Musked to death
+* [Introducing phx_gen_solid](https://remote.com/blog/introducing-phx_gen_solid) Generators to create new SOLID-style modules for Phoenix apps
+* [Beautiful animated charts for LiveView with ECharts](https://www.richardtaylor.dev/articles/beautiful-animated-charts-for-liveview-with-echarts) Charts, LiveView
+* [Retroactive](https://github.com/cormiertyshawn895/Retroactive) Run old MacOS software on recent versions of MacOS (doesn't help if jumping to ARM/Mn) though
+* [Kill your Phoenix Context](https://www.peterullrich.com/phoenix-contexts) Constructive criticism of "context" modules in Phoenix
+* [Chat2DB](https://github.com/alibaba/Chat2DB) Uh Oh. AliBaba have released an OSS SQL app that can use "AI" to build queries out of English or Chinese prompts
+* [pgMagic](https://pgmagic.app/) Uh oh again: this is a different, commercial product that does the same.
+* [PG Easy Replicate](https://github.com/shayonj/pg_easy_replicate) Ruby app to make setting up replication between postgresql instances easier
+* [Moderation in a Public Commons](https://blueskyweb.xyz/blog/6-23-2023-moderation-proposals) BlueSky proposals for improving moderation (technically)
+* [Bryntum](https://bryntum.com/store/) Mostly linked to because the business model of licensing individual JS/HTML components is interesting
+* [Intro to Propshaft](https://www.honeybadger.io/blog/propshaft-tutorial-migration/) Propshaft is another way to build Rails assets
+* [Tips for writing Rails tasks with Thor instead of Rake](https://mattbrictson.com/blog/rails-tasks-with-thor) Introduction to using Thor, and alternative to Rake, which is an alternative to Make
+* [Create and Open A Modal in Phoenix 1.7](https://blog.appsignal.com/2023/06/20/create-and-open-a-modal-in-phoenix-1-7.html) Modal dialog boxes in LiveView
+
+* [Unexpected downsides of UUID keys in PostgreSQL](https://www.cybertec-postgresql.com/en/unexpected-downsides-of-uuid-keys-in-postgresql/) I usually use UUID IDs so this was informative
+* [try](https://github.com/binpash/try) A shell command to run other commands and then choose to apply or rollback the changes they make - very clever
+* [DevPod](https://devpod.sh/) I am fascinated and baffled by this and need to put aside some time to try it
+* [The gTLDs' New Clothes](https://www.netmeister.org/blog/naked-domains.html) Musings about DNS domains
+* [Monitoring is a Pain](https://matduggan.com/were-all-doing-metrics-wrong/) Constructive criticism of various monitoring approaches 
+* [mailpit:](https://github.com/axllent/mailpit) A local SMTP service to collect and view email from your apps during development
+* [Command Line Applications in Rust](https://rust-cli.github.io/book/tutorial/errors.html) An (old) little book on writing commandline apps in Rust
+* [](https://betterprogramming.pub/building-cli-apps-in-rust-what-you-should-consider-99cdcc67710c) A (recent) list of good libraries and approaches for writing commandline apps in Rust
+
+Finally, some of the less serious things I've found
+
+* [Vulnerabilities in smart pet feeders](https://securelist.com/smart-pet-feeder-vulnerabilities/110028/) Actually quite serious, and astonishing that these mistakes can be made in 2023
+* [Comic Mono](https://dtinth.github.io/comic-mono-font/) A relation of Comic Sans specially made for programming with
+* [The MiniMit Wi-Fi Modem Looks to Breathe Fresh Life Into Vintage French Minitel Terminals](https://www.hackster.io/news/the-minimit-wi-fi-modem-looks-to-breathe-fresh-life-into-vintage-french-minitel-terminals-7754f300e9f7) A wifi modem and services to bring old French Minitel terminals back to life (I have something similar for my Mac Plus)
