@@ -1,0 +1,76 @@
+---
+layout: post
+title: "A Cup Of Matcha 14"
+date: 2023-07-03 13:38:00
+categories: software
+author: Pete Birkinshaw
+header_image: phuong-nguyen-DgW9B48pRb4-unsplash.jpg
+header_credit: Photo by Phuong Nguyen at Unsplash
+published: true
+---
+
+I went to Sheffield last week, which isn't that unusual in itself (lots of people go to Sheffield) but I think it
+might be the first time I've left Greater Manchester in about 3 years. I went to the [UKEduCamp](https://ukeducamp.co.uk) 
+unconference where I only mildly embarrassed myself and met lots of friendly smart people.
+
+Links for Identity Management, IdM, IAM, IDAM, or whatever first:
+
+* [The Password Game](https://neal.fun/password-game/) It's a silly frustrating game but makes a good point too - stop demanding complex passwords, ask for longer passwords
+* [Announcing Windows 11 Insider Preview Build 23486](https://blogs.windows.com/windows-insider/2023/06/22/announcing-windows-11-insider-preview-build-23486/) Passkeys support in Windows beta/preview OS
+* [let_me](https://github.com/woylie/let_me) A nice authorisation library for Elixir
+* [Council and Parliament strike a deal on a European digital identity (eID)](https://www.consilium.europa.eu/en/press/press-releases/2023/06/29/council-and-parliament-strike-a-deal-on-a-european-digital-identity-eid/) EU moves forward with "wallet" plans (which due to the word's association with blockchains immediately makes me queasy)
+* [Worldcoin Expands Into Germany, Adds Okta Identity Management Software Integration](https://www.coindesk.com/tech/2023/06/29/sam-altmans-worldcoin-integrates-with-identity-management-software-okta-as-it-pushes-into-germany/) Awful exploitative eye-scanning scam gets into the Okta/Auth0 catalogue
+* [Bcrypt at 25: A Retrospective on Password Security](https://www.usenix.org/publications/loginonline/bcrypt-25-retrospective-password-security) Great article by the creator of Bcrypt to mark its 25th year. 25 years!
+* [Save and Sign In with Passkeys Using 1Password In the Browser](https://blog.1password.com/save-sign-in-passkeys-1password/) Passkeys are starting to appear in 1Password apps
+* [Recommended IdP Software](https://www.canarie.ca/document/caf-recommended-idp-software/) The Canadian education and research networwork's list of recommended IdPs
+
+Machine learning and "AI" links next:
+
+* [Traditional Machine Learning with Scholar](https://dockyard.com/blog/2023/05/09/traditional-machine-learning-with-scholar) Library with lots of common ML functions, for Elixir
+* [Machine Learning in Rust; Is it worth learning it?](https://medium.com/@chriskaykos/machine-learning-in-rust-is-it-worth-learning-it-31da096de2b0) Rust is surprisingly weak for ML so far
+* [The New New Moats](https://greylock.com/greymatter/the-new-new-moats/) Article on the economics and business models of AI companies
+
+Online safety for people who are particularly at risk was a topic I read around a little last week:
+
+* [Online Free Safety Guide – Games and Online Harassment Hotline](https://gameshotline.org/online-free-safety-guide/) Handling harrassment from online mobs
+* [Surveillance Self-Defense](https://ssd.eff.org/) Resisting online surveilance 
+* [Workbook on Security](https://www.frontlinedefenders.org/en/workbook-security) Lots of brochures on various topics for at-risk organisations
+
+The usual big blog of general web and app development links:
+
+* [What is Tech Radar and Why Teams Need to Have One](https://dzone.com/articles/what-is-tech-radar-why-teams-need-to-have-one) I've only just learned what a tech radar is - I'm not sure if the benefit is from looking at it or just making it
+* [What is east-west traffic?](https://www.techtarget.com/searchnetworking/definition/east-west-traffic) "East West Traffic" was also new to me
+* [Flipper](https://www.joom.com/en/stores/62f64f81a96fa268df9eaa2e) You can buy Flippers (a sort of hacking multi-tool) directly in the UK now
+* [GKE Security Posture now generally available with enhanced features](https://cloud.google.com/blog/products/identity-security/gke-security-posture-now-generally-available-with-enhanced-features/) Google's Kubernetes can now check itself for security issues, which is nice, but also looks a lot like a toast-scraping machine
+* [blog/sysadmin/ReportConfigFileLocations](https://utcc.utoronto.ca/%7Ecks/space/blog/sysadmin/ReportConfigFileLocations) Software should tell you where its config files are (or could be)
+* [WebAssembly runtimes will replace container-based runtimes by 2030](https://changelog.com/posts/webassembly-runtimes-will-replace-container-runtimes-by-2030) A prediction that compiling software to WASM will replace running software in Linux containers
+* [Revolt](https://revolt.chat/) An open source, privacy-focused chatroom service
+* [reddit1.0](https://github.com/reddit-archive/reddit1.0) The LISP sourcecode for the original version of Reddit
+* [Some Elixir Testing Tricks](https://pdx.su/blog/2023-06-14-some-elixir-test-tricks/) I like tests but I want to spend less time on writing them
+* [Introducing the MDN Playground: Bring your code to life! ](https://developer.mozilla.org/en-US/blog/introducing-the-mdn-playground/) Mozilla's MDN docs have their own JS/CSS/HTML sandbox now
+* [Finding Unused Indexes In PostgreSQL](https://pgdash.io/blog/finding-unused-indexes-in-postgresql.html) I have a habit of over-indexing Postgresql databases
+* [GPT detectors are biased against non-native English writers](https://arxiv.org/abs/2304.02819) ChatGPT-detectors misidentify non-native-English writers as AI bots because they are badly-made "AI" too.
+* [GMail is Breaking Email](http://www.igregious.com/2023/03/gmail-is-breaking-email.html) Google is ruining the open Internet, again.
+* [uniq](https://github.com/bitwalker/uniq) Modern UUIDs for Elixir (and a few other neat things)
+* [Deception, exploited workers, and free cash](https://www.technologyreview.com/2022/04/06/1048981/worldcoin-cryptocurrency-biometrics-web3/) More info on awful WorldCoin scam
+* [A simple Twitter archiver](https://tinysubversions.com/twitter-archive/make-your-own/) Convert an exported Twitter archive into a static blog
+* [History of IKEA.com: Static files and Microfrontends](https://medium.com/flat-pack-tech/history-of-ikea-com-static-files-and-microfrontends-6def9d7c4285) Following last weeks link to IKEA metaphors, here's an article on IKEA's actual web infrastructure
+* [5 Important Microservice Design Patterns](https://medium.com/javarevisited/5-important-microservices-design-patterns-c4d636b0051) This clarified a few things for me
+* ["AI"-powered Meeting Recording For All Teams](https://grain.com/) "AI" that helps you in meetings (written in Elixir but OTOH is uploading a private meeting into a cloud ML system a good idea?)
+* [In Your Face](https://www.inyourface.app/) A Mac app to visually yell at you before meetings
+* [ACME Is Uptime](https://www.acmeisuptime.com/) A website promoting the ACME CA protocol
+* [Release v1.14.0 · hashicorp/vault](https://github.com/hashicorp/vault/releases/tag/v1.14.0) Vault now supports ACME! I'm surprised it took this long.
+* [How to Deploy Cross-Platform Rust Binaries with GitHub Actions](https://dzfrias.dev/blog/deploy-rust-cross-platform-github-actions) I'm still pondering a Rust CLI app...
+* [Hello Exograph!](https://exograph.dev/blog/hello-exograph/) Friendly Rust library for adding GraphQL APIs
+* [Zellij](https://github.com/zellij-org/zellij) A new, Rust-based tmux style shell multiplexer -
+* [WebAssembly (Rust) Plugins for your Terminal](https://zellij.dev/news/new-plugin-system/) - which can use web assembly plugins!
+* [Create beautiful images of your source code](https://chalk.ist/) Fancy code screenshots (possibly too fancy)
+* [If You Liked Shoes, You'll Love Glimmer!](https://andymaleh.blogspot.com/2023/06/if-you-liked-shoes-youll-love-glimmer.html) A GUI library for Ruby
+* [Mastering the New UI](https://blog.jetbrains.com/ruby/2023/06/mastering-the-new-ui/) RubyMine has an optional new UI
+* [Keep Your Ruby App Secure with Bundler](https://blog.appsignal.com/2023/06/28/keep-your-ruby-app-secure-with-bundler.html) Using Bundler to run some security checks on Ruby code
+
+Only a few odd things this week:
+
+* [Dwitter](https://www.dwitter.net/) Javascript demos written in 140 characters or less. Mind-boggling.
+* [A Song Of Summer](https://www.youtube.com/watch?v=LJwR4iHxKV0) It's too hot
+* [css-only-chat](https://github.com/kkuchta/css-only-chat) "A truly monstrous async web chat using no JS whatsoever on the frontend"
