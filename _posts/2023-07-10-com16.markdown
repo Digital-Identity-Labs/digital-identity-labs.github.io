@@ -1,0 +1,56 @@
+---
+layout: post
+title: "A Cup Of Matcha 16"
+date: 2023-07-03 10:17:00
+categories: software
+author: Pete Birkinshaw
+header_image: phuong-nguyen-DgW9B48pRb4-unsplash.jpg
+header_credit: Photo by Phuong Nguyen at Unsplash
+published: true
+---
+
+A busy and somewhat stressful week with more surprise consulting work than I'm used to, and unpleasantly muggy weather -
+both may be to blame for the much shorter list of interesting links this week. Or, maybe there were just fewer interesting things.
+
+I got round to trying to link a small Java app with Elixir using Erlang's RPC - it looks as if it can manage a million 
+requests per second on my laptop if I add some concurrency to the Java side. I also tried to use OpenSAML as part of this
+experiment, and failed. 
+
+Identity management of course is always interesting:
+
+* [OpenID Connect Federation 1.0](https://darutk.medium.com/oidc-federation-c2840622dc8f) An overview of OpenID Connect's new federation standard, with lots of diagrams.
+* [The Big OpenSAML Guide](https://blog.samlsecurity.com/p/opensaml.html) Positive: friendly docs for using the OpenSAML library. Negative: I can't get the examples to work
+
+With Evernote behaving as if it's "Musked" - firing staff and doubling fees - it's time to move elsewhere
+
+* [Evernote2MD](https://github.com/wormi4ok/evernote2md) Converts Evernote notebooks to folders of Markdown text (I've not used it yet!)
+* [How to switch from Evernote to Obsidian](https://nesslabs.com/evernote-to-obsidian) Obsidian looks promising as an alternative
+* [Joplin](https://joplinapp.org/) But of course so does Joplin (I have relatives in Joplin - the city - so the name seems a bit weird)
+
+I spent an evening trying to decode the Bluesky firehose feed, for fun.  I got a bit lost trying to decode unusual CBOR records.
+
+* [skyfall](https://github.com/mackuba/skyfall) Stream data from the Bluesky firehose, using Ruby. This works! Unlike my effort.
+* [blue_factory](https://github.com/mackuba/blue_factory) Build Bluesky feeds using Ruby
+* [Twitter is burning, Bluesky is smug](https://www.theguardian.com/commentisfree/2023/jul/07/twitter-is-burning-bluesky-is-smug-where-is-the-best-place-to-do-your-pathetic-doomscrolling) First Dog On The Moon's remarkably accurate summary of today's social media
+
+And some general software development things:
+
+* [typeid](https://github.com/jetpack-io/typeid?utm_source=programmingdigest&utm_medium&utm_campaign=1672) TypeIDs for Elixir (UUID7, encoded to be shorter, with a prefix)
+* [erldash](https://github.com/sile/erldash) A TUI dashboard showing Erlang or Elixir node info, written in Rust!
+* [Type system updates](https://elixir-lang.org/blog/2023/06/22/type-system-updates-research-dev/) Elixir seems to be getting a proper type system. ** Marge Simpson HMMMMM noise **
+* [Top UK universities agree on principles for using generative "AI"](https://qz.com/russel-uk-universities-generative-ai-students-1850603771)  ** Much louder Marge Simpson HMMMMM noise **
+* [Skeeter](https://skeeter.streamlit.app) Twitter/Mastodon to Bluesky user search
+* [Lessons From the Catastrophic Failure of the Metaverse](https://www.thenation.com/article/culture/metaverse-zuckerberg-pr-hype/) GOOD LORD
+* [Data protection for spelling correction in the web browser](https://drive.proton.me/urls/BPXVHPR62C#st5jCDH1dbxE) Translation of Bavarian gov doc highlighting GDPR concerns over browser data handling
+* [nocodb](https://github.com/nocodb/nocodb) An open source AirTable alternative
+* [pugixml.org](https://pugixml.org/) A fast but relaxed XML parser library. 
+* [Goodbye etcd, Hello PostgreSQL](https://martinheinz.dev/blog/100) Using Postgresql to manage/configure a Kubernetes cluster
+* [Nearest Neighbor Indexes](https://www.timescale.com/blog/nearest-neighbor-indexes-what-are-ivfflat-indexes-in-pgvector-and-how-do-they-work/) Nearest Neighbour indexes in Postgresql
+* [Joins 13 Ways](https://justinjaffray.com/joins-13-ways/) Lots of different explanations of SQL Joins
+* [JRuby](https://www.hostingadvice.com/blog/jruby-implements-the-ruby-language-atop-the-jvm/) A great interview article on JRuby
+* [10 Small Search Platforms](https://sematext.com/blog/elasticsearch-opensearch-solr-alternatives/) List of many new, small search engines
+* [Rio terminal](https://medium.com/@raphamorim/rio-terminal-a-native-and-web-terminal-application-powered-by-rust-webgpu-and-webassembly-76d03a8c99ed) Terminal software for various OSs, but also the web
+
+Only one odd link this week:
+
+* [Fix your back ache with BackHug](https://www.mybackhug.com/) This machine *might* fix my back and arm... I am tempted, very tempted.
