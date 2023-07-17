@@ -1,0 +1,69 @@
+---
+layout: post
+title: "A Cup Of Matcha 16"
+date: 2023-07-17 10:45:00
+categories: software
+author: Pete Birkinshaw
+header_image: phuong-nguyen-DgW9B48pRb4-unsplash.jpg
+header_credit: Photo by Phuong Nguyen at Unsplash
+published: true
+---
+
+Going to an interesting conference early last week ([Manchester Dev Con](https://www.mcrdevcon.co.uk)) coincided with a 
+week of weird migraine symptoms. I've been zombie-like. I think my part of my brain has had a week off work - I got absolutely no coding done at all. 
+
+But have still gathered a few interesting links. First off, the identity management things:
+
+* [RBAC: An Opportunity to Innovate?](https://www.thecyberhut.com/rbac-an-opportunity-to-innovate/) Interesting article on Role Based Access control - not dead yet.
+* [How Hype Will Turn Your Security Key Into Junk](https://fy.blackhats.net.au/blog/2023-02-02-how-hype-will-turn-your-security-key-into-junk/) I've been warning people about this for awhile: physical FIDO devices have limited storage for resident keys
+* [Azure-AD becomes Microsoft Entra ID](https://www.microsoft.com/en-us/security/blog/2023/07/11/microsoft-entra-expands-into-security-service-edge-and-azure-ad-becomes-microsoft-entra-id/) Azure ADFS is being rebranded as "Entra ID"
+* [Adequacy decision for the EU-US Data Privacy Framework](https://commission.europa.eu/document/fa09cbad-dd7d-4684-ae60-be03fcb0fddf_en) New agreement for EU - USA data sharing
+* [Revealed: Metropolitan police shared sensitive data about crime victims with Facebook](https://www.theguardian.com/uk-news/2023/jul/15/revealed-metropolitan-police-shared-sensitive-data-about-victims-with-facebook) UK police are also passing private data to Facebook. No sympathy for this now - they didn't even fix it after the earlier scandals elsewhere came to light.
+
+BlueSky's protocol increasingly looks like it started off as an idealistic/naive/stupid blockchain-based project and then dropped
+the bits that couldn't work (blockchain obviously) until only the bits weren't actively bad were left. I have mixed feelings about it.
+
+* ["Fucking Christ the @protocol is the most obtuse c…"](https://urbanists.social/@sam/110339902538138997) A Mastodon thread on how needlessly complicated the AT Protocol appears to be
+* [Setting up Bossett's BlueSky Feed Generator](https://bossett.io/setting-up-bossetts-bluesky-feed-generator/) Setting up the BSky-Feeds feeds service using Docker and a VM
+* [Building a Perl module for posting to Bluesky](https://betterprogramming.pub/building-a-perl-module-for-posting-to-bluesky-social-92fc732fc297) I enjoyed reading this, I sometimes miss Perl
+
+WASM is still interesting and so close to being massively important: 
+
+* [mod_wasm](https://wasmlabs.dev/articles/apache-mod-wasm/) (more details [here]( https://github.com/vmware-labs/mod_wasm)) Run WASM code in Apache, but sadly without integration with Apache's interals
+* [Orb Wasmtime](https://github.com/RoyalIcing/OrbWasmtime) A new Elixir package for embedding WASM
+
+Only two ML/"AI" links. Maybe the hype is dying down now. 
+
+* [ChatGPT monthly traffic has dropped for the first time](https://qz.com/chatgpt-monthly-traffic-has-dropped-for-the-first-time-1850607033) Has ChatGTP traffic peaked? Usage is wobbling a bit now
+* [The Future of Large Language Models is Elixir](https://www.youtube.com/watch?v=5eRgX2tugbo) More general and ranty than the title suggests
+
+Product management time:
+
+* [How to optimize your pricing page](https://kylepoyar.substack.com/p/how-to-optimize-your-pricing-page) I don't even *have* pricing pages right now
+* [2023 State of SaaS trends](https://productiv.com/state-of-saas-trends/) SaaS trends as an irritating slideshow
+* [Tech Stack Canvas](https://techstackcanvas.io/) A way to document (illustrate, really) your technical stack
+
+Linux on Macs:
+
+* [lima-vm/lima](https://github.com/lima-vm/lima) Lima is easy to get started with, a little fiddly in places. Think of it like WSL2 for Macs.
+* [Lima: a nice way to run Linux VMs on Mac](https://jvns.ca/blog/2023/07/10/lima--a-nice-way-to-run-linux-vms-on-mac/) An article about Lima
+* [OrbStack · Fast, light, simple Docker & Linux on macOS](https://orbstack.dev/) An alternative to both Lima and Docker Desktop, for Macs.
+
+A bunch of general web development, sysadmin and programming links now:
+
+* [Suc](https://gitlab.com/edouardklein/suc) and [A slack clone in 5 lines of bash](https://the-dam.org/docs/explanations/suc.html) A crude Slack clone on Linux, using bash.
+* [Bespoke](https://github.com/bespoke-surf/bespoke) A useful-looking open source mailing list manager. Like Mailchimp, etc, but with an openly creepy focus on gathering user data to use for marketing. Ugh.
+* [featurevisor](https://github.com/fahad19/featurevisor?utm_source=changelog-news) "Git-based feature flags and experimentation management solution for developers"
+* [Shortening the Let's Encrypt Chain of Trust](https://letsencrypt.org/2023/07/10/cross-sign-expiration.html) Older Android devices may stop accepting Lets Encrypt certificates
+* [given-exunit](https://github.com/devstopfix/given-exunit) Cucumber-style BDD tests within Elixir's ExUnit
+* [Easy SVG sparklines](https://alexplescan.com/posts/2023/07/08/easy-svg-sparklines/) Making your own sparkline graphs, directly with SVG
+* [Ideas for crafting CLI in Rust](https://dev.to/64bit/ideas-for-crafting-cli-in-rust-5b0d) I've still not started my Rust CLI app
+* [aqua Official Website](https://aquaproj.github.io/) Aqua appears to be similar to ASDF - a way to configure different terminal software in different folders/directories
+* [Driver.js](https://driverjs.com/) Interactive tours of web app features
+* [The Git Rebase Handbook](https://www.freecodecamp.org/news/git-rebase-handbook/) "A Definitive Guide to Rebasing" Nice explanation of a Git feature
+* [Gossip Protocol](https://systemdesign.one/gossip-protocol/) How the Gossip clustering protocol works. Interesting! Really!
+* [ntroduce defp keyword for defining overloadable, pattern matched methods](https://bugs.ruby-lang.org/issues/19764) A proposal to add Elixir-style function pattern matching to Ruby 
+
+Only one odd link today, and it's less odd than just not really fitting in anywhere else:
+
+* [Psychological ‘specialness spirals’ can make ordinary items feel like treasures — and may explain how clutter accumulates](https://medium.com/the-conversation/psychological-specialness-spirals-can-make-ordinary-items-feel-like-treasures-and-may-explain-d1bd9d1a0c6b) How people can turn normal objects into special object they shouldn't actually use
