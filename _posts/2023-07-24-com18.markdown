@@ -1,0 +1,72 @@
+---
+layout: post
+title: "A Cup Of Matcha 18"
+date: 2023-07-24 10:23:00
+categories: software
+author: Pete Birkinshaw
+header_image: phuong-nguyen-DgW9B48pRb4-unsplash.jpg
+header_credit: Photo by Phuong Nguyen at Unsplash
+published: true
+---
+
+I had some time off last week - I went to RHS Bridgewater and failed to photograph bees, and to a big Yayoi Kusama exhibition. 
+The rest of the week was apparently headaches. But I still have links!
+
+First the Identity Management links:
+
+* [IAMActionHunter](https://rhinosecuritylabs.com/aws/iamactionhunter-aws-iam-permissions/) I don't use AWS IAM much but I do like how this tool extracts settings and presents them in a spreadsheet for review
+* [Why Identity Governance needs authorization controls](https://www.theidentityjedi.com/p/iga-needs-authz) Beyond the actual topic (not letting direct access conflict with automated, controlled changes) I find it interest that "governance" has already become a service, a technology, rather than just agreements and organisational culture. I don't like this - I think governance should exist totally outside any technical service used to apply changes.
+* [app_identity](https://github.com/KineticCafe/app_identity) Another way for services to authenticate with each other (and [an Elixir implementation](https://github.com/KineticCafe/app_identity/tree/main/elixir))
+* [TikTok Passkeys for Login](https://newsroom.tiktok.com/en-us/passkeys-fido-alliance) TikTok adds Passkeys. SSID/DID's fox has been absolutely machine-gunned to bits now.
+* [Repel OAuth refresh token replay attacks with Elixir and Ecto](https://medium.com/@mpotra/repel-oauth-refresh-token-replay-attacks-with-elixir-and-ecto-1ac5c6d2495b) Article on preventing oauth replay attacks in Elixir (a bit too specific I know)
+* [Proton Pass is open source and audited for security](https://proton.me/blog/pass-open-source-security-audit) Proton have open sourced their password manager
+
+
+Last week Google attempted to sneak out a proposal to destroy the open Web by implementing a form of DRM in browsers. Nobody liked that.
+
+* [A terrible idea explained dishonestly](https://github.com/RupertBenWiser/Web-Environment-Integrity/blob/main/explainer.md)
+* [Web-Environment-Integrity/issues](https://github.com/RupertBenWiser/Web-Environment-Integrity/issues) Github issues for the proposal were locked after a crowd with flaming torches and pitchforks appeared
+* [So, you don't like a web platform proposal](https://blog.yoav.ws/posts/web_platform_change_you_do_not_like/) We don't like it because it's obviously awful
+
+The number of project management related links seems to be growing each week. Here are some more:
+
+* [Accidentally load-bearing](https://www.jefftk.com/p/accidentally-load-bearing) Here for the mention of Chesterton's Fence
+* [You can't stop the business, or why rewrites fail](https://swizec.com/blog/you-can-t-stop-the-business-or-why-rewrites-fail/) Ah, failed rewrites... 
+* [Names should be as short as possible while still being clear](https://benhoyt.com/writings/short-names/) Good advice about naming functions
+* [Why Do SBOM Haters Hate?](https://dfrlab.org/2023/07/19/why-do-sbom-haters-hate/) I don't hate SBOMs but I haven't made any either, so there's time
+* [Why software projects take longer than you think: a statistical model](https://erikbern.com/2019/04/15/why-software-projects-take-longer-than-you-think-a-statistical-model.html) "I suspect devs are actually decent at estimating the *median* time to complete a task. Planning is hard because they suck at the *average*."
+* [The unconference toolbox](https://devonzuegel.com/post/the-unconference-toolbox) I enjoyed my first unconference a few weeks ago, and this page looks like a good resource for people planning them. 
+
+People enthusing about things:
+
+* [DisplayPort: A Better Video Interface](https://hackaday.com/2023/07/11/displayport-a-better-video-interface/) Why DisplayPort is the best way to connect a monitor
+* [2023 May Be A Year Of TOML](https://tomaszs2.medium.com/2023-may-be-a-year-of-toml-b3c5f0e37efc) Why TOML is the best config file format
+
+Lots of software and web development links as usual:
+
+* [sniffnet](https://github.com/GyulyVGC/sniffnet) A nice TUI app that monitors network traffic. I might have linked to this before but I'm too lazy to check.
+* [Event sourcing : But why?](https://medium.com/@vinciabhinav7/event-sourcing-3a1a2b75a971) an overview of Event Sourcing
+* [charming](https://github.com/yuankunzhang/charming) Nice server-side graphs and charts for Rust
+* [LiFi Standard Released](https://www.tomshardware.com/news/li-fi-standard-released) A new relative of WiFi that uses flickering light rather than radio.
+* [Introducing ADBC: Database Access for Apache Arrow](https://arrow.apache.org/blog/2023/01/05/introducing-arrow-adbc/) Apache Arrow has its own version of database drivers that focus on columns
+* [do_it](https://github.com/rzcastilho/do_it) A CLI framework for Elixir
+* [twenty](https://github.com/twentyhq/twenty) An open source alternative to SalesForce for CRM
+* [GoRead](https://github.com/TypicalAM/goread) A TUI RSS reader
+* [Pop](https://github.com/charmbracelet/pop) A commandline email client - people seem to think this is a new thing, it really isn't!
+* [The Case Against Ecto.Multi](https://tomkonidas.com/repo-transact/) When to not use Ecto Multi, and to just use database transactions instead
+* [Timeseries with PostgreSQL](https://alexplescan.com/posts/2023/07/15/postgres-timeseries/) Maybe you don't need special plugins to do time series work with PG
+* [Skiff Mail review](https://news.itsfoss.com/skiff-mail-review/) Open Source secure webmail
+* [systemd vs init Controversy, A Layman's Guide](https://itsfoss.com/systemd-init/) An alternative to listening to old sysadmins grumble about SystemD
+* [Observe Your Phoenix App with Structured Logging](https://blog.appsignal.com/2023/07/18/observe-your-phoenix-app-with-structured-logging.html) A more semantic way to log from Elixir
+* [Configuring Phoenix apps](https://bitcrowd.dev/two-small-adjustments-of-phoenix-application-configuration/) An alternative way to configure your Phoenix configuration
+* [TrueMail](https://github.com/truemail-rb/truemail) A Very comprehensive library for validating email addresses in Ruby
+* [ShaleRB](https://www.shalerb.org/) An object mapper for Ruby with lots of serialisation formats and features
+* [New MLS protocol provides groups better and more efficient security at Internet scale](https://www.ietf.org/blog/mls-protocol-published/) Encrypting group messages
+* [lazydocker](https://github.com/jesseduffield/lazydocker) a Docker TUI by the author of [lazygit](https://github.com/jesseduffield/lazygit)
+* [2023 State of the API Report](https://www.postman.com/state-of-api/api-technologies/#api-technologies) I am, frankly, shocked at how much SOAP is being used in 2023
+* [Rethinking infrastructure as code from scratch](https://nathanpeck.com/rethinking-infrastructure-as-code-from-scratch/) A very interesting proposal to restructure infrastructure as code to resemble the HTML and CSS split
+* [How malicious libraries can steal all your application secrets](https://www.peterullrich.com/how-malicious-libraries-can-steal-all-your-application-secrets) Not a huge risk but worth considering
+
+Only one silly thing, but it is really quite silly:
+
+* [minegrub-theme](https://github.com/Lxtharia/minegrub-theme) This makes GRUB boot menus (as seen on Linux PCs) look like Minecraft. 
