@@ -1,0 +1,61 @@
+---
+layout: post
+title: "A Cup Of Matcha 19"
+date: 2023-07-31 14:45:00
+categories: software
+author: Pete Birkinshaw
+header_image: phuong-nguyen-DgW9B48pRb4-unsplash.jpg
+header_credit: Photo by Phuong Nguyen at Unsplash
+published: true
+---
+
+I had some time off this week and didn't get much done when I should have, but it wasn't a bad week. Certainly not as bad
+as it was for some Google staff. I've been dabbling/recoiling in horror at Javascript again. 
+
+As always, identity management links first, although technically this week I'm including an identity management scam.
+
+* [New cryptocurrency offers users tokens for scanning their eyeballs](https://www.theguardian.com/technology/2023/jul/25/cryptocurrency-eyeballs-worldcoin-chatgpt-openai) An irresponsibly gentle article in The Guardian about the launch of the WorldCoin scam
+* [Worldcoin: a solution in search of its problem](https://open.substack.com/pub/mollywhite/p/worldcoin-a-solution-in-search-of) Molly White's appropriately ungentle summary of the WorldCoin scam.
+* [Measuring the Risk Password Reuse Poses for a University](https://www.usenix.org/publications/loginonline/measuring-risk-password-reuse-poses-university) The University of Chicago has been studying their users password use for 20 years!
+* [SSH TPM Agent](https://github.com/Foxboron/ssh-tpm-agent) Store SSH keys in your computer's secure TPM module
+
+Google's clumsy attempt to sneak in web DRM is continuing to rumble on:
+
+* [Ensure Origin Trial enables full feature ](https://github.com/chromium/chromium/commit/6f47a22906b2899412e79a2727355efa9cc8f5bd) One week it was just an unofficial suggestion, then parts of it are going into Chrome... Hmmm. 
+* [Intent to Prototype: Web environment integrity API](https://groups.google.com/a/chromium.org/g/blink-dev/c/Ux5h_kGO22g/m/XCAIgPtxAQAJ) Critics of Google's plan are apparently "Bullies and criminals!"
+* [Fight for the open web: F**k off Google](https://github.com/Young-Lord/fight-for-the-open-web) Javascript to block browsers using Google's DRM 
+* [Francisco Tolmasky \(@tolmasky@mastodon.social\)](https://mastodon.social/@tolmasky/110780599992085798) A call for Google to be kicked out of W3C
+* ["Web Environment Integrity" is an all-out attack on the free Internet](https://www.fsf.org/blogs/community/web-environment-integrity-is-an-all-out-attack-on-the-free-internet) The FSF aren't happy either
+* [Apple already shipped attestation on the web, and we barely noticed](https://httptoolkit.com/blog/apple-private-access-tokens-attestation/) I'm not convinced that Apple's (and Cloudflare's) anti-spambot attestation is the same thing as Google's proposal but its worth worrying about whether it not it could *become* similar
+
+General sysadmin and tech thing:
+
+* [What happened to Vivaldi Social?](https://thomasp.vivaldi.net/2023/07/28/what-happened-to-vivaldi-social/) A fascinating look at a service failure and the sysadmin work to fix it
+* [Elixir is Safe](https://dockyard.com/blog/2021/03/30/elixir-is-safe) Old article on how safe/secure Elixir is
+* [Elixir is \(Still\) Safe](https://paraxial.io/blog/still-safe) New article on how safe/secure Elixir is
+* [From Python to Elixir Machine Learning](https://www.thestackcanary.com/from-python-pytorch-to-elixir-nx/) Moving from Python to Elixir for ML/AI work
+* [FBI Seizure of Mastodon Server is a Wakeup Call to Fediverse Users and Hosts to Protect their Users](https://www.eff.org/deeplinks/2023/07/fbi-seizure-mastodon-server-wakeup-call-fediverse-users-and-hosts-protect-their) It's like Steve Jackson's servers all over again
+* [Twitter archiver](https://tinysubversions.com/twitter-archive/make-your-own/) Build a static website from exported Twitter data
+* [Detection And Response Development Lifecycle (DR-DLC) For Detection Engineering](https://www.forrester.com/blogs/announcing-the-detection-and-response-development-lifecycle-dr-dlc-for-detection-engineering/) Forrester consultancy waffle on DR-DLC
+* [Rethinking Window Management – Space and Meaning](https://blogs.gnome.org/tbernard/2023/07/26/rethinking-window-management/) Interesting article on how GUI window management could be different
+* [bloomberg/blazingmq: A modern high-performance open source message queuing system](https://github.com/bloomberg/blazingmq) Bloomberg releases their own message queueing server software
+* [Twist](https://twist.com/) An open source Slack/Teams sort of thing
+* [CoPhone](https://cophone.io/) An Android phone... in the cloud. For everyday use, not just for testing apps. 
+* [Powerful Machine Learning at Your Fingertips by Jonatan Klosko](https://www.youtube.com/watch?v=VcOvNTxUaIo) ML with Elixir video
+* [Why not just use fetch with GraphQL?](https://graphql.wtf/episodes/88-why-not-just-use-fetch-with-graphql) Video - Reasons to use a proper GraphQL client rather than a direct HTTP request 
+* [MapKick](https://chartkick.com/mapkick-js) I need a map soon.
+* [oclif](https://github.com/oclif/oclif) CLI framework for Node.js
+* [Risor](https://risor.io/) An embeddable, scriptable variant of Go
+* [PGCat](https://github.com/postgresml/pgcat) PGCat has nice new features for loadbalancing Postgresql
+* [TUIGrid](https://ui.toast.com/tui-grid) A nice looking Javascript data table library
+* [JPEG XL: How It Started, How It’s Going](https://cloudinary.com/blog/jpeg-xl-how-it-started-how-its-going) The new version of JPEG might actually be useful after all. Soon.
+* [Easy SVG sparklines](https://alexplescan.com/posts/2023/07/08/easy-svg-sparklines/) Craft your own SVG sparklines
+* [A Breakdown of HTTP Clients in Elixir](https://andrealeopardi.com/posts/breakdown-of-http-clients-in-elixir/) Describes differences between various HTTP libraries, but misses out Tesla!
+* [GitID](https://github.com/InderdeepBajwa/gitid) A Git identity/profile management utility
+* [What it takes to build a real-time recommendation system](https://www.tinybird.co/blog-posts/real-time-recommendation-system) I might need this, eventually
+* [Passkey Authentication with Rodauth](https://janko.io/passkey-authentication-with-rodauth/) Popular Ruby auth framework gets Passkeys, this tutorial shows how to get that working.
+
+Finally a few odder things:
+
+* [textual-paint](https://github.com/1j01/textual-paint) MS Paint clone in a terminal window
+* [Shakespeare Serif](https://shkspr.mobi/blog/2023/07/shakespeare-serif-a-new-font-based-on-the-first-folio/) A font based on the early Shakespeare Folios' typeface
