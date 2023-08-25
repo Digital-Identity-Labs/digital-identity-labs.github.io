@@ -1,0 +1,74 @@
+---
+layout: post
+title: "A Cup Of Matcha 20"
+date: 2023-08-08 14:25:00
+categories: software
+author: Pete Birkinshaw
+header_image: phuong-nguyen-DgW9B48pRb4-unsplash.jpg
+header_credit: Photo by Phuong Nguyen at Unsplash
+published: true
+---
+
+(Apologies, it's taken me weeks to actually *publish* this)
+
+Identity management first, and this week Microsoft has been behaving badly with regards to Azure ADFS security (or whatever else it's called now)
+
+* [After Identity](https://blog.symops.com/2023/07/21/after-identity/) Rather sprawling article on Okta, the identity Saas market, and the role of identity management in general
+* [Personal Information Removal Service](https://incogni.com/deal/?transaction_id=102e09cc6f1b55fdd55f28b2802796) A service that removes your personal info from data brokers, for a price. This is the free market alternative to GDPR I suppose.
+* [Kanidm](https://github.com/kanidm/kanidm) An off-the-shelf open source, Rust-based IdP
+* [Compromised Microsoft Key: More Impactful Than We Thought ](https://www.wiz.io/blog/storm-0558-compromised-microsoft-key-enables-authentication-of-countless-micr) MS leak critical keys, log things badly, respond badly.
+* [Guarding the bridge: new attack vectors in azure ad connect](https://blog.sygnia.co/guarding-the-bridge-new-attack-vectors-in-azure-ad-connect) Other security problems with Azure ADFS, this time it's Password Hash Sync
+* [What might authentication attacks look like in a phishing-resistant future?](https://blog.talosintelligence.com/what-might-authentication-attacks-look-like-in-a-phishing-resistant-future/)
+* [Senator Wyden's Letter](https://www.wyden.senate.gov/imo/media/doc/wyden_letter_to_cisa_doj_ftc_re_2023_microsoft_breach.pdf) Senator Wyden's letter to various US agencies complaining about MS's poor response to recent security problems
+* [Microsoft… The Truth Is Even Worse Than You Think](https://www.linkedin.com/pulse/microsoftthe-truth-even-worse-than-you-think-amit-yoran/) A summary of the recent problems with Microsoft's authentication services
+* [2024 List of Identity and Related Conferences](https://github.com/fedidcg/meetings/wiki/2024-List-of-Identity-and-Related-Conferences) A (growing) list of identity management conferences next year
+* [Authorization – the Next Big Thing](https://idpro.org/authorization-the-next-big-thing/) Why is Authorization the Next Big Thing? My opinion is that the *technical* aspects of authentication are now solved, or at least, solved *enough*. Authorisation on the other hand is not adequately solved.
+* [Sam Altman's Worldcoin might unleash worse problems than those it's trying to solve](https://qz.com/worldcoin-iris-scan-sam-altman-kenya-crypto-m-pesa-1850670272) Quartz article on the WorldCoin scam
+* [Kenya suspends Worldcoin's crypto project over safety concerns](https://www.reuters.com/world/africa/kenyan-government-suspends-activities-worldcoin-country-2023-08-02/) Kenyan government stops WorldCoin operating there, at least for awhile
+
+
+A few AI and ML links again:
+
+* [Large language models, explained with a minimum of math and jargon](https://www.understandingai.org/p/large-language-models-explained-with) A pretty clear and useful intro to how large language models work. Or so it seems, I don't really know how they work.
+* [Identifying Cats and Dogs](https://medium.com/pragmatic-programmers/identifying-cats-and-dogs-c2811075644d) A tutorial on building an image recognising system using LiveBook.
+* [Turns out there’s another problem with AI – its environmental toll](https://www.theguardian.com/technology/2023/aug/01/techscape-environment-cost-ai-artificial-intelligence) Things like ChatGPT burn lots of money and energy to simulate nonsense.
+* [Using the OpenAI Functions API to Estimate Story Points](https://revelry.co/insights/artificial-intelligence/openai-functions-api-to-estimate-story-points/) "AI" might actually be useful for estimating work
+
+Project management time:
+
+* [Enhancing Your "Definition of Done" Can Improve Your Minimum Viable Architecture](https://www.infoq.com/articles/definition-of-done-mva/) It's good to know when to stop
+* [What does a CTO actually do?](https://vadimkravcenko.com/shorts/what-cto-does/) I might need a better job title one day
+
+A big block of general software development and web dev links:
+
+* [Google vs. the Open Web](https://interpeer.io/blog/2023/07/google-vs-the-open-web/) Google's shitty behaviour with browser DRM is still rumbling on
+* [Google's New Web Environment Integrity Proposal Dismissed by Brave, Mozilla, and Vivaldi](https://news.itsfoss.com/google-controversial-tracker/) Other browsers aren't keen
+* [BBC Research & Development](https://social.bbc/@BBCRD) The BBC are experimenting with a Mastodon service (mostly for their R&D staff at present)
+* [LocalCan](https://www.localcan.com/) A fancy commercial app for Macs for managing local dev domains and certificates - nothing new, but neatly packaged.
+* [Enquirer](https://github.com/enquirer/enquirer) A nice Javascript package for CLI questions and forms
+* [Bram Moolenaar](https://en.wikipedia.org/wiki/Bram_Moolenaar) The creator of VIM has passed away - seems to have been a nice guy.
+* [Eight Months Pregnant and Arrested After False Facial Recognition Match](https://www.nytimes.com/2023/08/06/technology/facial-recognition-false-arrest.html) More obviously racist software being used by obliviously racist police
+* [Typograms](https://google.github.io/typograms/) Turn ASCII art into graphics
+* [Forcing your computer to rat you out](https://pluralistic.net/2023/08/02/self-incrimination/) Cory Doctorow essay on privacy and online identity
+* [Introduction](https://a11y-dialog.netlify.app/) "a11y-dialog is a lightweight yet flexible script to create accessible dialog windows"
+* [Add a Form to a Modal in Phoenix 1.7](https://blog.appsignal.com/2023/08/01/add-a-form-to-a-modal-in-phoenix-1-7.html) LiveView modal forms
+* [Elixir to WebAssembly with Orb](https://podcast.thinkingelixir.com/162) Interesting new approach to building WebAssembly
+* [OpenSMS](https://github.com/Skocimis/opensms) Send SMS from your software the old fashioned way - by controlling a phone
+* [seedie](https://github.com/keshavbiswa/seedie) Fancy database seeding, in Ruby, mostly for Rails.
+* [jless](https://github.com/PaulJuliusMartinez/jless)and [A Command-Line JSON Viewer](https://jless.io/) A JSON viewer for the commandline
+* [Wolfi](https://github.com/wolfi-dev/) Wolfi is an OS-like packaging ecosystem
+* [wolfi-act](https://www.chainguard.dev/unchained/wolfi-act-dynamic-github-actions-from-wolfi-packages) * [](https://sematext.com/blog/ssl-certificate-monitoring/) Using Wolfi packages dynamically within GitHub Actions
+* [4 Tips to Monetize APIs With Usage-Based Pricing](https://openviewpartners.com/blog/4-tips-to-monetize-apis-with-usage-based-pricing/) Pricing is difficult, this article was helpful
+* [Treemaps are awesome](https://blog.phronemophobic.com/treemaps-are-awesome.html) Treemaps can be very useful
+* [Tailscale Funnel](https://tailscale.com/blog/tailscale-funnel-beta/) Tailscale funnel looks useful, as does the rest of the service
+
+Finally some odds and ends - a lot more than usual
+
+* [Render images into ASCII art](https://aniso.studiofreight.com/?characters=+*%2C++++.%2FO%23SF&granularity=15&charactersLimit=16&fontSize=72&matrix=false&invert=false&greyscale=false&fillPixels=false&color=ffffff&background=000000)
+* [Zelda ToTK Inventions](https://www.youtube.com/watch?v=99BO4-R3Vwc) How does any of this work (I'm still working my way through BoTW)
+* [Praxis — alternative iOS browser](https://praxis.a6s.nz/) A browser for iPad and iPhone that has no Javascript at all
+* [Imax emulates palmpilot](https://arstechnica.com/gadgets/2023/07/imax-emulates-palmpilot-software-to-power-oppenheimers-70-mm-release) IMAX cinema screens use emulated Palm Pilots for control (not even good ones)
+* [About](https://cloudpilot-emu.github.io/) A PalmOS emulator for the web - you need your own ROMs
+* [basic-computer-games](https://github.com/coding-horror/basic-computer-games) The original 1970 computer games book, with modern conversions of the code examples
+* [Macintosh.js](https://github.com/felixrieseberg/macintosh.js) Lots of different types of Macintosh (68k and PPC) emulated in an Electron app. Not the optimal way to do this, but friendly.
+* [Moss Voltaics](https://iaac.net/project/moss-voltaics/) Using moss as solar cells
