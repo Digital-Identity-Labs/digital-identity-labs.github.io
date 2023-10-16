@@ -1,0 +1,29 @@
+---
+layout: post
+title: "Ishigaki 4.0.0 released (now with Shibboleth IdP 5)"
+date: 2023-10-16 14:42:00
+categories: software
+author: Pete Birkinshaw
+header_image: 39371663884_c29cf054ae_w.jpg
+published: true
+---
+
+On Friday we released version 4.0.0 of [Ishigaki](https://github.com/Digital-Identity-Labs/ishigaki), another major
+update to our Shibboleth IdP container. Ishigaki is probably the best Shibboleth IdP
+base container for use with Docker, Kubernetes and other container services, and is available for both AMD64 and
+ARM64 platforms. This is the first release of Ishigaki based on Shibboleth IdP v5.
+
+This latest release contains a number of major updates:
+
+ * [Shibboleth IdP 5.0.0 ](https://shibboleth.atlassian.net/wiki/spaces/IDP5/pages/3199500367/ReleaseNotes#5.0.0-(Sep-13th%2C-2023))
+ * [Jetty 11.0.17](https://www.eclipse.org/lists/jetty-announce/msg00149.html)
+ * Bitnami's minDeb OS based on [Debian 12.2](https://www.debian.org/News/2023/20231007)
+
+As with previous major updates it will be necessary to update configuration files and [read the updated documentation for
+Shibboleth IdP 5](https://shibboleth.atlassian.net/wiki/spaces/IDP5/overview).
+
+Ishigaki container images are available from [Github](https://github.com/Digital-Identity-Labs/ishigaki/pkgs/container/ishigaki) and
+[Docker Hub](https://hub.docker.com/r/digitalidentity/ishigaki).
+
+
+You can read about other minor changes in the [Changelog](https://github.com/Digital-Identity-Labs/ishigaki/blob/master/CHANGELOG.md) on Github.	
