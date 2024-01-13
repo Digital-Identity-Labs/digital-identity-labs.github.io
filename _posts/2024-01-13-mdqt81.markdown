@@ -1,0 +1,20 @@
+---
+layout: post
+title: "MDQT 0.8.0"
+date: 2024-01-13 14:50:00
+categories: software
+author: Pete Birkinshaw
+---
+It's been awhile since [MDQT](https://github.com/Digital-Identity-Labs/mdqt) had an update and two bugs have been irritating me, so I'm please to announce there's a 
+[new release available now from Rubygems](https://rubygems.org/gems/mdqt). MDQT is a simple commandline tool for 
+accessing MDQ services, and also working with local SAML metadata.
+
+The `mdqt url` and `mdqt get` commands can now cope with MDQ servers with a base URL that includes a path. I don't 
+know any official services that do this, which is largely why the bug wasn't spotted, but mine do.
+
+There have also been odd cases where installed optional gems for XML processing aren't picked up by non-root users
+if the install was done via Ansible, on Ubuntu. Rather than work around this I've made the XML gems mandatory - they'll be
+installed in the same location and should be available to all users. A number of current and planned features depend
+on XML support, and the LibXML-based gems such as Nokogiri are no longer tricky to install, so this seemed the best solution.
+
+The gems used by mdqt have been updated too, so Ruby 3.0.0 is now the minimum supported version.
