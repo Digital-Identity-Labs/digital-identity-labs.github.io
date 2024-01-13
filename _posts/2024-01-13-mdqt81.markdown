@@ -5,7 +5,7 @@ date: 2024-01-13 14:50:00
 categories: software
 author: Pete Birkinshaw
 ---
-It's been awhile since [MDQT](https://github.com/Digital-Identity-Labs/mdqt) had an update and two bugs have been irritating me, so I'm please to announce there's a 
+It's been awhile since [MDQT](https://github.com/Digital-Identity-Labs/mdqt) has had an update and two bugs have been irritating me, so I'm please to announce there's a 
 [new release available now from Rubygems](https://rubygems.org/gems/mdqt). MDQT is a simple commandline tool for 
 accessing MDQ services, and also working with local SAML metadata.
 
