@@ -1,0 +1,36 @@
+---
+layout: post
+title: "Smee Updates"
+date: 2024-03-07 16:10:00
+categories: software
+author: Pete Birkinshaw
+---
+New releases for the Smee libraries! There are still bugs and missing features, but the suite is now maturing well and
+has over 1000 tests.
+
+## Smee 0.4.0
+
+New features but also much faster. Source, Metadata and Entity records can be serialised to JSON, or as interpolated
+text, and dumps to screen are smaller and clearer. Parsing XML is over twice as fast. Entities can now be linked to
+Federation records. There's more control over caching. All records can now have tags. There are many more filters. Smee
+now works with the new `xmlsec1` command line options, and OTP 26 and Elixir 1.16.
+See [Changelog](https://github.com/Digital-Identity-Labs/smee/blob/main/CHANGELOG.md) for more details.
+
+## SmeeFeds 0.3.0
+
+Better quality example federation data (still not perfect, but much better), support for tags, and new Federation
+filters. SmeeFeds has become more of a general purpose library for federation records and not just an archive of test
+data. JSON export and import have been improved. And there's many more fields in Federation records: logos,
+interfederation, IDs that link to other lists. There are now some nice friendly mix tasks to dump data in a readable
+format. See [Changelog](https://github.com/Digital-Identity-Labs/smee_feds/blob/main/CHANGELOG.md) for more details.
+
+## SmeeView 0.2.0
+
+This release is mostly bug fixes and performance improvements. More data from Smee Entities is now passed to the parsed
+View, including the new tags. Entity attributes are merged, Sirtfi contact addresses are properly extracted, and the
+processing speed increased. The compile warnings with Elixir 1.16 should now be gone.
+See [Changelog](https://github.com/Digital-Identity-Labs/smee_view/blob/main/CHANGELOG.md) for more details.
+
+* [Smee](https://github.com/Digital-Identity-Labs/smee)
+* [SmeeFeds](https://github.com/Digital-Identity-Labs/smee_feds)
+* [SmeeView](https://github.com/Digital-Identity-Labs/smee_view)
