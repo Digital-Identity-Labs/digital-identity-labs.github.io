@@ -4,6 +4,7 @@ title: "Smee Updates"
 date: 2024-03-07 16:10:00
 categories: software
 author: Pete Birkinshaw
+header_image: smee.png
 ---
 New releases for the Smee libraries! There are still bugs and missing features, but the suite is now maturing well and
 has over 1000 tests.
