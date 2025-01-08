@@ -1,0 +1,37 @@
+---
+layout: post
+title: "Smee Updates"
+date: 2024-12-20 13:10:00
+categories: software
+author: Pete Birkinshaw
+header_image: smee.png
+---
+# Smee 0.5.0: Publish and be damned impressed 
+
+A major new release for the main Smee library, 0.5.0: the publish features have been rewritten and extended with more formats
+and options. When Smee was started it was very much focused on consuming SAML metadata, but the new features in
+version 0.5.0 now make it possible to export metadata too.
+
+It may eventually be practical to use Smee to produce federation metadata
+as well as consume it.
+
+## Publishing formats 
+
+* `saml` - Smee will output the entity data as a SAML metadata file. There's no signing yet so this isn't suitable for 
+  publishing to others, but may be useful for applications within an organisation.
+* `index` - A simple plain text list of entityID URIs and (optionally) names, as used by some of our services, and as an
+  MDQ extension
+* `disco` - Smee can now publish metadata in the JSON DiscoFeed format, as used by Shibboleth WAYF/Discovery services
+* `thiss` - alternatively Smee can convert metadata to the format used by Seamless Access services
+* `udisco` and `udest`- we have some of our own WAYF/Discovery tools with their own format, uDisco, which is a much smaller and more
+  efficient format than DiscoFeed. I'll write more about this in the future.
+* `markdown` - we still have the old Markdown publishing format, for when you just want to document a list of entities in
+  a nice table.
+
+## Aggregates and individual items
+
+Out of a misguided urge to be consistent, *all* output format can produce both aggregates and collections of individual 
+files. For some this makes a lot of sense - SAML metadata can be output as singe file aggregates or as MDQ-style collections - 
+for others it's *possibly* useful but keeps the API consistent.
+
+We now have over 1100 tests for the main Smee library.
