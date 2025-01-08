@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Smee Updates"
+title: "Smee 0.5.0: Publish and be damned impressed"
 date: 2024-12-20 13:10:00
 categories: software
 author: Pete Birkinshaw
 header_image: smee.png
 ---
-# Smee 0.5.0: Publish and be damned impressed 
+New export options for Smee, including three WAYF/Discovery formats.
 
 A major new release for the main Smee library, 0.5.0: the publish features have been rewritten and extended with more formats
 and options. When Smee was started it was very much focused on consuming SAML metadata, but the new features in

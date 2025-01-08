@@ -4,9 +4,9 @@ title: "ROR! An Elixir client for The Research Organization Registry"
 date: 2025-01-08 16:38:00
 categories: software
 author: Pete Birkinshaw
-header_image: ror.svg
+header_image: big_ror.png
 ---
-# ROR! An Elixir client for The Research Organization Registry 
+A new Elixir library for accessing research organization data
 
 We've recently released [ROR](https://github.com/Digital-Identity-Labs/ror), an unofficial Elixir client for the
 [Research Organization Registry (ROR)](https://ror.org) API.
