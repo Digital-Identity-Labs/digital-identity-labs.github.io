@@ -1,0 +1,36 @@
+---
+layout: post
+title: "ROR! An Elixir client for The Research Organization Registry"
+date: 2025-01-08 16:38:00
+categories: software
+author: Pete Birkinshaw
+header_image: ror.svg
+---
+# ROR! An Elixir client for The Research Organization Registry 
+
+We've recently released [ROR](https://github.com/Digital-Identity-Labs/ror), an unofficial Elixir client for the
+[Research Organization Registry (ROR)](https://ror.org) API.
+
+> The Research Organization Registry (ROR) includes IDs and metadata for more than 110,000 organizations and counting.
+> Registry data is CC0 and openly available via a search interface, REST API, and data dump. Registry updates are curated
+> through a community process and released at least once a month
+
+If you have LiveBook installed you can try it out right now:
+
+[![Run in Livebook](https://livebook.dev/badge/v1/blue.svg)](https://livebook.dev/run?url=https%3A%2F%2Fraw.githubusercontent.com%2FDigital-Identity-Labs%2Fror%2Fmain%2Fror_notebook.livemd)
+
+Otherwise the ROR client can be installed via [Hex.pm](https://hex.pm/packages/ror) as you'd expect.
+
+There are already plans to use the ROR client in some open source projects ([Smee](https://github.com/Digital-Identity-Labs/smee), for a start)
+and in a new commercial application we're working on. We hope to add some functions to the library over time - if you 
+have any requests please let us know.
+
+## Features
+
+* Lookup individual ROR records by ID
+* Search and Quick Search based on names or record attributes
+* Paging and filters are supported
+* Match text to records, possibly identifying an organisation from existing data
+* Records are returned as typed structs (slightly different to the ROR JSON responses, but containing all the information)
+* Client ID authentication is supported and optional
+
